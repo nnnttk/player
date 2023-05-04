@@ -20,6 +20,20 @@ body{margin:0}
   
 <div style="position:relative;width:100%">
 <div class="nonton"><div id="result-container">Loading&hellip;</div></div>
+<script src='https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js'></script>
+<video muted='' controls='' id='sponsored-video' style='width: 100%; height: 300px'>
+	<source src='https://lh3.googleusercontent.com/-oAlgphBzJ2I/WjBpdG07nKI/AAAAAAAAAIw/C3gkOsUp7l0ddHuWLF7VXnkoRPWdQmBCACPcBGAYYCw/s200-rh/download.gif' type='video/mp4'></source>
+</video>
+<script>
+var myFP = fluidPlayer('sponsored-video',{layoutControls:{primaryColor:false,playButtonShowing:true,playPauseAnimation:true,fillToContainer:false,autoPlay:true,preload:false,mute:true,doubleclickFullscreen:true,subtitlesEnabled:	false,keyboardControl:true,layout:'default',allowDownload:false,playbackRateEnabled:true,allowTheatre:true,title:'Advertisement',loop:true,logo: {imageUrl:null,imageMargin:'5px',position:'top right',clickUrl:null,opacity:1},controlBar: {autoHide:true, autoHideTimeout:	3, animated:true}, timelinePreview:	{},htmlOnPauseBlock: {html:null,height:null, width:null }, playerInitCallback:(function() {console.log('player loaded!')}) },
+vastOptions: {"adList": [{"roll": "preRoll","vastTag": "https://emotionalfriendship.com/dKmrFyzgd.GgNzv/ZZGaUu/dewms9EuWZ/UVlHk/PiTUQ/3IM/D/AS3JMizcEYt/NPDocuwUMNDpc/zOM/gw"}],
+	vastAdvanced: {
+		vastLoadedCallback: (function() {var spvid = document.getElementById('fluid_video_wrapper_sponsored-video');spvid.style = 'display:unset;width:100%;height:300px;top:0px;left:0px'}),
+        vastVideoSkippedCallback: (function() {var spvid = document.getElementById('fluid_video_wrapper_sponsored-video');spvid.style ='display:none'}),
+        vastVideoEndedCallback: (function() {var spvid = document.getElementById('fluid_video_wrapper_sponsored-video');spvid.style = 'display:none'})
+    }
+}});
+</script>  
 Follow Twitter : <a href="https://twitter.com/dniihen">@dniihen</a> | Follow Facebook : <a href="https://facebook.com/animehentong">@animehentong</a> |  Follow Telegram : <a href="https://t.me/blogmeat2">@blogmeat2</a>
 
 
