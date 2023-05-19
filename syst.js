@@ -21,7 +21,7 @@ var urlasli = window.location.href,
 if (urlf != urlasli) {
 
 function nobar(json) {
-
+	for (var i = 0; i < json.feed.entry.length; i++) { var sbpkont = json.feed.entry[i].content.$t; }
     // Poor configuration settings, develop them yourself!
     var config = {
 			containerID: 'result-container', // Container ID to show the generated data
@@ -34,7 +34,7 @@ function nobar(json) {
     // No container found
     if (!container) { alert('Container not found.');return; }
 
-    var post = json.feed.entry[i], // The post/page object
+    var post = sbpkont, // The post/page object
         postContent = post.content ? post.content.$t : post.summary.$t.replace(/<br *\/?>|[\s]+/gi, ' ').replace(/<.*?>|[<>]/g, ""), // The post/page content
     // Trying to get the iframe src URL from post/page content
 		iframeContent = /<iframe +(.*?)src=(['"])([^'"]+?)(['"])(.*?) *\/?>/i.exec(post.content.$t),
