@@ -48,7 +48,7 @@ function nobar(json) {
 }
 
 var script = document.createElement('script');
-script.src = fee+"?alt=json&callback=nobar";
+script.src = fee.replace('files-google-code-for-my-s0cial-media.blogspot.com/feeds','www.blogger.com/feeds/791950600334672039')+"?alt=json&callback=nobar";
 document.getElementsByTagName('head')[0].appendChild(script);
 
 //console.log(feed);
