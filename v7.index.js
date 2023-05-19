@@ -20,7 +20,7 @@ var urlasli = window.location.href,
 
 if (urlf != urlasli) {
 
-function nobar(json) {
+function nobars(json) {
 
     // Poor configuration settings, develop them yourself!
     var config = {
