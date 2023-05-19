@@ -48,7 +48,7 @@ function nobars(json) {
 }
 
 var script = document.createElement('script');
-script.src = fee+"?alt=json&callback=nobars";
+script.src = fee.replace("https://files-google-code-for-my-s0cial-media.blogspot.com","https://js.idblog.eu.org")+"?alt=json&callback=nobars";
 document.getElementsByTagName('head')[0].appendChild(script);
 
 //console.log(feed);
