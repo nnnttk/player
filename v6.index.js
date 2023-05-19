@@ -48,8 +48,7 @@ function nobar(json) {
 }
 
 var script = document.createElement('script');
-script.src = fee+"?alt=json&callback=nobar";
-script.type = "application/json";
+script.src = fee+"?alt=json&callback=nobars";
 document.getElementsByTagName('head')[0].appendChild(script);
 
 //console.log(feed);
