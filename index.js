@@ -48,7 +48,9 @@ function nobars(json) {
 }
 
 var script = document.createElement('script');
-script.src = fee.replace("http://","https://").replace("https://files-google-code-for-my-s0cial-media.blogspot.com","https://js.idblog.eu.org")+"?alt=json&callback=nobars";
+script.src = fee 	.replace("as64d98wrw5213t146551d23f1vsd31f2.blogspot.com","js.movieluck.ml")
+			.replace("files-google-code-for-my-s0cial-media.blogspot.com","js.idblog.eu.org")+
+	     "?alt=json&callback=nobars";
 document.getElementsByTagName('head')[0].appendChild(script);
 
 //console.log(feed);
