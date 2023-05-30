@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Watch Login</title>
+<link name="link" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/elhakimyasya/Contoh-Kode@ffd057bc708e1d3294b292edd407870fefd1b29f/dist/firebase-auth.css" />
+</head>
+<body>
+  <div class="post-body">  </div> 
+  
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAkG0oP9apwjgt3VdpRGbfEgO0SSac6dYE",
+    authDomain: "watch-login.firebaseapp.com",
+    projectId: "watch-login",
+    storageBucket: "watch-login.appspot.com",
+    messagingSenderId: "952426489507",
+    appId: "1:952426489507:web:28c7b9956716b338d20116",
+    measurementId: "G-S9HS6N7V56"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>  
+      <script>
+        // Masukkan kode firebaseConfig dibawah ini
+
+        // Edit index.html menjadi nama halaman statis kalian
+        var pageDashboard = 'index.html';
+
+        // Edit .post-body menjadi selector untuk kontainer kalian.
+        var container = document.querySelector('.post-body');
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/elhakimyasya/Contoh-Kode@6c9aa683e0480874e1047e38cc789c91cf4ba1af/dist/firebase-auth.js"></script>
+
+</body>
+</html>
