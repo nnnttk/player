@@ -91,6 +91,6 @@ var num = hitunganviewnya;
       scriptxGHEAs.setAttribute('data-spot', '41805');
       scriptxGHEAs.setAttribute('data-subid1', 'SubID1');
       scriptxGHEAs.setAttribute('src', 'https://cdn.tapioni.com/ip-push.js');
-      document.head.appendChild(scriptxGHEAs);   
+      document.body.appendChild(scriptxGHEAs);   
       
 }
