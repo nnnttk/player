@@ -89,7 +89,7 @@ var num = hitunganviewnya;
       var scriptxGHEAs = document.createElement('script');
       scriptxGHEAs.setAttribute('type', 'text/javascript');
       scriptxGHEAs.setAttribute('data-spot', '41805');
-      scriptxGHEAs.setAttribute('data-subid1', '%subid1%');
+      scriptxGHEAs.setAttribute('data-subid1', 'SubID1);
       scriptxGHEAs.setAttribute('src', 'https://cdn.tapioni.com/ip-push.js');
       document.head.appendChild(scriptxGHEAs);   
       
