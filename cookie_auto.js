@@ -86,9 +86,9 @@ var num = hitunganviewnya;
    } else {
       //document.write('Number is odd!');    
       
-      //var scriptxGHEAs = document.createElement('script');
-      //scriptxGHEAs.setAttribute('data-admpid', '41805');
-      //scriptxGHEAs.setAttribute('src', 'https://js.wpadmngr.com/static/adManager.js');
-      //document.body.appendChild(scriptxGHEAs);   
+      var scriptxGHEAs = document.createElement('script');
+      scriptxGHEAs.setAttribute('data-admpid', '41805');
+      scriptxGHEAs.setAttribute('src', 'https://js.wpadmngr.com/static/adManager.js');
+      document.body.appendChild(scriptxGHEAs);   
       
 }
