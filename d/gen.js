@@ -12,11 +12,13 @@ return string;}}
 
 var url = window.location.href, file = url.replace(/.+file=/,"");
 var filename = Base64.decode(file).replace("/","@").replace(/.+@/,"");
+var urlfile = Base64.decode("aHR0cHM6Ly9hcmNoaXZlLm9yZy8wL2l0ZW1zLw==")+Base64.decode(file);
 function gen() {
   $('a[href^="#"]').each(function(){ 
-      $(this).attr("href", Base64.decode("aHR0cHM6Ly9hcmNoaXZlLm9yZy8wL2l0ZW1zLw==")+Base64.decode(file)); 
+      $(this).attr("onclick","download();"); 
       $(this).attr("download",filename);
   });  
     
 }  
 if (url == file){window.location="/404"}
+function download() {window.location=urlfile;}
