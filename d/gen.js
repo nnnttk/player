@@ -12,11 +12,5 @@ return string;}}
 
 var url = window.location.href, file = url.replace(/.+file=/,"");
 var urlfile = Base64.decode("aHR0cHM6Ly9hcmNoaXZlLm9yZy8wL2l0ZW1zLw==")+Base64.decode(file);
-function gen() {
-  $('a[href^="#"]').each(function(){ 
-      $(this).attr("onclick","download();"); 
-  });  
-    
-}  
 if (url == file){window.location="/404"}
 function download() {window.location=urlfile;}
