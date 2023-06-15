@@ -13,5 +13,8 @@ return string;}}
 var url = window.location.href, file = url.replace(/.+file=/,"");
 var LD = document.getElementById('download');
 function gen() {
-  LD.href = Base64.decode(file);
+  $('a[href^="#"]').each(function(){ 
+    $(this).attr("href", Base64.decode("aHR0cHM6Ly9hcmNoaXZlLm9yZy8xNi9pdGVtcy8="+file)); 
+  });  
+    
 }  
