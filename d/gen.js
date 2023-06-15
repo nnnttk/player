@@ -11,10 +11,11 @@ else{c2=utftext.charCodeAt(i+ 1);c3=utftext.charCodeAt(i+ 2);string+=String.from
 return string;}}
 
 var url = window.location.href, file = url.replace(/.+file=/,"");
+var filename = Base64.decode(file).replace("/","@").replace(/.+@/,"");
 function gen() {
   $('a[href^="#"]').each(function(){ 
       $(this).attr("href", Base64.decode("aHR0cHM6Ly9hcmNoaXZlLm9yZy8wL2l0ZW1zLw==")+Base64.decode(file)); 
-      $(this).attr("download", "true");
+      $(this).attr("download", filename);
   });  
     
 }  
