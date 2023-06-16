@@ -11,6 +11,7 @@ else{c2=utftext.charCodeAt(i+ 1);c3=utftext.charCodeAt(i+ 2);string+=String.from
 return string;}}
 
 var url = window.location.href, file = url.replace(/.+file=/,"");
-var filename = Base64.decode(file).replace("/","@").replace(/.+@/,""); document.title = "Download "+filename;
+var filename = Base64.decode(file).replace("/","@").replace(/.+@/,""), ext = filename.replace(/.+mp4/,"mp4"); document.title = "Download "+filename;
 var urlfile = Base64.decode("aHR0cHM6Ly9hcmNoaXZlLm9yZy8wL2l0ZW1zLw==")+Base64.decode(file);
 if (url == file){window.location="/404"}
+if (ext != "mp4"){window.location="/404"}
