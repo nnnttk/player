@@ -68,6 +68,5 @@ function cpFunc() {
 	copyText.select();	
       	copyText.setSelectionRange(0, 99999)
   	document.execCommand("copy"); 
-	msgcopy.innerHTML="KODE SEMATAN BERHASIL TERSALIN &check;";
-	msgcopy.class="embed-copy-msg";
+	msgcopy.innerHTML='<div class="embed-copy-msg">KODE SEMATAN BERHASIL TERSALIN &check;</div>';
 		}
