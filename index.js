@@ -63,8 +63,11 @@ $(document).ready(function(){
 
 }else{window.location="/home"}
 
-		function cpFunc() {
-  		var copyText = document.getElementById("embcd");	copyText.select();	
+function cpFunc() {
+	var copyText = document.getElementById("embcd"), msgcopy = document.getElementById("embed-copy-msg");	
+	copyText.select();	
       	copyText.setSelectionRange(0, 99999)
-  		document.execCommand("copy"); document.getElementById("embed-copy-msg").innerHTML="KODE SEMATAN BERHASIL TERSALIN &check;";
+  	document.execCommand("copy"); 
+	msgcopy.innerHTML="KODE SEMATAN BERHASIL TERSALIN &check;";
+	msgcopy.class="embed-copy-msg";
 		}
