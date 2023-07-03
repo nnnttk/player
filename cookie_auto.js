@@ -62,7 +62,9 @@ console.log(hitunganviewnya);
 var num = hitunganviewnya;
    //document.write("Number = "+num+"<br>");
    if(num == 10) { 
-      window.location='https://s.zlinkb.com/d.php?z=4767250';
+      var adLink = 'https://s.zlinkb.com/d.php?z=', datingAd = '4767250', camAd = '4836662', gameAd = '4836666';
+      window.location=adLink+camAd; 
+      
    } else if(num % 5 == 0) {
       //document.write('Number is even!');
       //window.location='https://www.profitablecpmgate.com/d935uuk9?key=155feaf5ca9d2b1dcba49fd42bcef5b8'; 
