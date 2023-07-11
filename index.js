@@ -17,7 +17,14 @@ var urlasli = window.location.href,
 	  feed = Base64.decode(feeds),
 	  fee = feed.replace("@",".blogspot.com/feeds/posts/default/"),
 	  idnonton = urlasli.replace(/.+?m=1#/,"");
-var drhttSDlt = feed.replace(/.+ult/,""); if (fee == drhttSDlt){window.location="/home"}
+
+var drhttSdAt = feed+"@";
+var drUltSdAt = drhttSdAt.replace(/.+ult/,"ult").replace(/ult.+@/,"@").replace("@",""); 
+var noCutFeed = drhttSdAt.replace("@",""); 
+
+if (drUltSdAt == noCutFeed){window.location="/home"}
+
+
 if (urlf != urlasli) {
 
 function nobars(json) {
