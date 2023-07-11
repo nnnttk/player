@@ -51,7 +51,10 @@ var script = document.createElement('script');
 script.src = fee 	.replace("as64d98wrw5213t146551d23f1vsd31f2.blogspot.com","js.movieluck.ml")
 			.replace("files-google-code-for-my-s0cial-media.blogspot.com","js.idblog.eu.org")+
 	     "?alt=json&callback=nobars";
-document.getElementsByTagName('head')[0].appendChild(script);
+
+try { 	
+document.getElementsByTagName('head')[0].appendChild(script);}
+catch(err) {window.location="/home"}
 
 //console.log(feed);
 
