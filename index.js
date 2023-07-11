@@ -17,7 +17,7 @@ var urlasli = window.location.href,
 	  feed = Base64.decode(feeds),
 	  fee = feed.replace("@",".blogspot.com/feeds/posts/default/"),
 	  idnonton = urlasli.replace(/.+?m=1#/,"");
-if (feed == fee) {window.location="/home"}
+
 if (urlf != urlasli) {
 
 function nobars(json) {
