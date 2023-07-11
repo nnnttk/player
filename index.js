@@ -48,13 +48,14 @@ function nobars(json) {
 }
 
 var script = document.createElement('script');
-script.src = fee 	.replace("as64d98wrw5213t146551d23f1vsd31f2.blogspot.com","js.movieluck.ml")
-			.replace("files-google-code-for-my-s0cial-media.blogspot.com","js.idblog.eu.org")+
-	     "?alt=json&callback=nobars";
+var gntMVL = fee 	.replace(Base64.decode("YXM2NGQ5OHdydzUyMTN0MTQ2NTUxZDIzZjF2c2QzMWYyLmJsb2dzcG90LmNvbQ=="),Base64.decode("anMubW92aWVsdWNrLm1s"))
+			.replace(Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20="),Base64.decode("anMuaWRibG9nLmV1Lm9yZw=="))+
+	     Base64.decode("P2FsdD0=")+"json"+Base64.decode("JmNhbGxiYWNrPQ==")+"nobars";
 
-try { 	
-document.getElementsByTagName('head')[0].appendChild(script);}
-catch(err) {window.location="/home"}
+script.src = gntMVL;
+			if (fee==gntMVL) {window.location="/home"}
+			document.getElementsByTagName('head')[0].appendChild(script);
+
 
 //console.log(feed);
 
