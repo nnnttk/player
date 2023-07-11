@@ -61,7 +61,7 @@ $(document).ready(function(){
 	});
 });
 
-}else{window.location="/home"}
+}else{window.location="/home"} if (urlasli == urlasli.replace(/#.+/,"#")){window.location="/home"}
 
 function cpFunc() {
 	var copyText = document.getElementById("embcd"), msgcopy = document.getElementById("embed-copy-msg");	
