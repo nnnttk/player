@@ -12,11 +12,11 @@ return string;}}
 
 var urlasli = window.location.href,
       urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT"),
-	  ufeeds = urlf.replace(/http.+html#/,""),
+	  ufeeds = urlf.replace(/.+#/,""),
 	  feeds = Base64.decode(ufeeds),
 	  feed = Base64.decode(feeds),
 	  fee = feed.replace("@",".blogspot.com/feeds/posts/default/"),
-	  idnonton = urlasli.replace(/http.+?m=1#/,"");
+	  idnonton = urlasli.replace(/.+?m=1#/,"");
 
 if (urlf != urlasli) {
 
