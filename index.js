@@ -16,7 +16,7 @@ var penyederhanaan = urlasli.replace(tmbkd,"###").replace(/.+###/,"###").replace
 
 if (penyederhanaan == "###") {window.location=urlasli.replace(tmbkd,"%")}
 //if(penyederhanaan == "###"){urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT")} 	
-else {urlf = urlasli.replace("?m=1#%","#YUhSMGNITTZMeT"+tmbkd)}
+else {var urlf = urlasli.replace("?m=1#%","#YUhSMGNITTZMeT"+tmbkd)}
 
 
 var  	ufeeds = urlf.replace(/.+#/,""),
