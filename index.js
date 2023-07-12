@@ -22,7 +22,7 @@ var drhttSdAt = feed+"@";
 var drUltSdAt = drhttSdAt.replace(/.+ult/,"ult").replace(/ult.+@/,"@").replace("@",""); 
 var noCutFeed = drhttSdAt.replace("@",""); 
 
-if (drUltSdAt == noCutFeed){window.location="/home"}
+//if (drUltSdAt == noCutFeed){window.location="/home"}
 
 
 if (urlf != urlasli) {
