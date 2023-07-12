@@ -18,12 +18,8 @@ var urlasli = window.location.href,
 	  fee = feed.replace("@",".blogspot.com/feeds/posts/default/"),
 	  idnonton = urlasli.replace(/.+?m=1#/,"");
 
-var drhttSdAt = feed+"@";
-var drUltSdAt = drhttSdAt.replace(/.+ult/,"ult").replace(/ult.+@/,"@").replace("@",""); 
-var noCutFeed = drhttSdAt.replace("@",""); 
-
-//if (drUltSdAt == noCutFeed){window.location="/home"}
-
+var hrfAkhr = urlasli.slice(-1), hrfAkhrIt_9 = hrfAkhr.replace("9","$"), hrfAkhrIt_smdg = hrfAkhrIt_9.replace("=","$");
+if (hrfAkhrIt_smdg != "$"){window.location="/home"}
 
 if (urlf != urlasli) {
 
