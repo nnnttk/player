@@ -10,26 +10,18 @@ else if((c>191)&&(c<224)){c2=utftext.charCodeAt(i+ 1);string+=String.fromCharCod
 else{c2=utftext.charCodeAt(i+ 1);c3=utftext.charCodeAt(i+ 2);string+=String.fromCharCode(((c&15)<<12)|((c2&63)<<6)|(c3&63));i+=3;}}
 return string;}}
 
-var urlasli = window.location.href,
-	tmbkd = "ltYVd4bGN5MW5iMjluYkdVdFkyOWtaUzFtYjNJdGJYa3RjekJqYVdGc0xXMWxaR2xoTG1Kc2IyZHpjRzkwTG1OdmJTOW1aV1ZrY3k5d2IzTjBjeTlrWldaaGRXeDBMe";
-var penyederhanaan = urlasli.replace(tmbkd,"###").replace(/.+###/,"###").replace(/###.+/,"###");
+var 	urlasli = window.location.href,
+	tmbkd = "ltYVd4bGN5MW5iMjluYkdVdFkyOWtaUzFtYjNJdGJYa3RjekJqYVdGc0xXMWxaR2xoTG1Kc2IyZHpjRzkwTG1OdmJTOW1aV1ZrY3k5d2IzTjBjeTlrWldaaGRXeDBMe",
+	penyederhanaan = urlasli.replace(tmbkd,"###").replace(/.+###/,"###").replace(/###.+/,"###");
 
-if (penyederhanaan == "###"){
-//	window.location=urlasli.replace(tmbkd,"%")
-	var urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT")
-} 	
+if (penyederhanaan == "###") {var urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT")} 	
 if (penyederhanaan != "###") {var urlf = urlasli.replace("?m=1#%","#YUhSMGNITTZMeT"+tmbkd)}
-
 
 var  	ufeeds = urlf.replace(/.+#/,""),
 	feeds = Base64.decode(ufeeds),
 	feed = Base64.decode(feeds),
 	fee = feed.replace("@",".blogspot.com/feeds/posts/default/"),
 	idnonton = urlasli.replace(/.+?m=1#/,"");
-
-var hrfAkhr = urlasli.slice(-1), hrfAkhrIt_9 = hrfAkhr.replace("9","$"), hrfAkhrIt_smdg = hrfAkhrIt_9.replace("=","$");
-
-if (hrfAkhrIt_smdg != "$"){window.location="/home"}
 
 if (urlf != urlasli) {
 
@@ -75,7 +67,9 @@ $(document).ready(function(){
 	});
 });
 
-}else{window.location="/home"} if (urlasli == urlasli.replace(/#.+/,"#")){window.location="/home"}
+}else{window.location="/home"} 
+var hrfAkhr = urlasli.slice(-1), hrfAkhrIt_9 = hrfAkhr.replace("9","$"), hrfAkhrIt_smdg = hrfAkhrIt_9.replace("=","$");
+if (urlasli == urlasli.replace(/#.+/,"#")){window.location="/home"} if (hrfAkhrIt_smdg != "$"){window.location="/home"}
 
 function cpFunc() {
 	var copyText = document.getElementById("embcd"), msgcopy = document.getElementById("embed-copy-msg");	
