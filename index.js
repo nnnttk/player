@@ -11,17 +11,22 @@ else{c2=utftext.charCodeAt(i+ 1);c3=utftext.charCodeAt(i+ 2);string+=String.from
 return string;}}
 
 var urlasli = window.location.href,
-	tmbkd = "ltYVd4bGN5MW5iMjluYkdVdFkyOWtaUzFtYjNJdGJYa3RjekJqYVdGc0xXMWxaR2xoTG1Kc2IyZHpjRzkwTG1OdmJTOW1aV1ZrY3k5d2IzTjBjeTlrWldaaGRXeDBMe",
-      	urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT"),
-	  ufeeds = urlf.replace(/.+#/,""),
-	  feeds = Base64.decode(ufeeds),
-	  feed = Base64.decode(feeds),
-	  fee = feed.replace("@",".blogspot.com/feeds/posts/default/"),
-	  idnonton = urlasli.replace(/.+?m=1#/,"");
+	tmbkd = "ltYVd4bGN5MW5iMjluYkdVdFkyOWtaUzFtYjNJdGJYa3RjekJqYVdGc0xXMWxaR2xoTG1Kc2IyZHpjRzkwTG1OdmJTOW1aV1ZrY3k5d2IzTjBjeTlrWldaaGRXeDBMe";
+var penyederhanaan = urlasli.replace(tmbkd,"###").replace(/.+###/,"###").replace(/###.+/,"###");
+
+if (penyederhanaan == "###") {window.location=urlasli.replace(tmbkd,"%")}
+//if(penyederhanaan == "###"){urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT")} 	
+else {urlf = urlasli.replace("?m=1#%","#YUhSMGNITTZMeT"+tmbkd)}
+
+
+var  	ufeeds = urlf.replace(/.+#/,""),
+	feeds = Base64.decode(ufeeds),
+	feed = Base64.decode(feeds),
+	fee = feed.replace("@",".blogspot.com/feeds/posts/default/"),
+	idnonton = urlasli.replace(/.+?m=1#/,"");
 
 var hrfAkhr = urlasli.slice(-1), hrfAkhrIt_9 = hrfAkhr.replace("9","$"), hrfAkhrIt_smdg = hrfAkhrIt_9.replace("=","$");
-var penyederhanaan = urlasli.replace(tmbkd,"###").replace(/.+###/,"###").replace(/###.+/,"###");
-//if (penyederhanaan == "###") {window.location=urlasli.replace(tmbkd,"")}
+
 if (hrfAkhrIt_smdg != "$"){window.location="/home"}
 
 if (urlf != urlasli) {
