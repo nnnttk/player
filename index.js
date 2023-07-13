@@ -18,7 +18,7 @@ var 	urlasli = window.location.href,
 
 var hAnime = urlasli.includes(tmbkd2);
 if (penyederhanaan != "###") {if(hAnime == true){var urlf = konting} else {var urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT"+tmbkd)}}else{var urlf = konting}
-console.log(urlf);
+//console.log(urlf);
 
 var  	ufeeds = urlf.replace(/.+#/,""),
 	feeds = Base64.decode(ufeeds),
