@@ -72,7 +72,8 @@ $(document).ready(function(){
 
 }else{window.location="/home"} 
 var hrfAkhr = urlasli.slice(-1), hrfAkhrIt_9 = hrfAkhr.replace("9","$"), hrfAkhrIt_smdg = hrfAkhrIt_9.replace("=","$");
-if (urlasli == urlasli.replace(/#.+/,"#")){window.location="/home"} //if (hrfAkhrIt_smdg != "$"){window.location="/home"}
+if (urlasli == urlasli.replace(/#.+/,"#")){window.location="/home"} 
+if (hAnime == false){ if (hrfAkhrIt_smdg != "$"){window.location="/home"} }
 
 function cpFunc() {
 	var copyText = document.getElementById("embcd"), msgcopy = document.getElementById("embed-copy-msg");	
