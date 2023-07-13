@@ -15,7 +15,7 @@ var 	urlasli = window.location.href,
 	penyederhanaan = urlasli.replace(tmbkd,"###").replace(/.+###/,"###").replace(/###.+/,"###"),
 	penyederhanaan2 = urlasli.replace("lxY3k1dGIzWnBaV3gxWTJzdWJXd3ZabVZsWkhNdmNHOXpkSE12WkdWbVlYVnNkQz","###").replace(/.+###/,"###").replace(/###.+/,"###");
 
-if (penyederhanaan == "###") || (penyederhanaan == penyederhanaan2) {var urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT")} 	
+if (penyederhanaan == "###") || (penyederhanaan2 == "###") {var urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT")} 	
 if (penyederhanaan != "###") {var urlf = urlasli.replace("?m=1#%","#YUhSMGNITTZMeT"+tmbkd)}
 
 var  	ufeeds = urlf.replace(/.+#/,""),
