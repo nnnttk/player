@@ -19,7 +19,7 @@ var 	urlasli = window.location.href,
 
 if (penyederhanaan == "###") {var urlf = konting;} else
 if (penyederhanaan2 == tmbkd2) {var urlf = konting;}
-if (penyederhanaan != "###") {var urlf = konting+tmbkd);}
+if (penyederhanaan != "###") {var urlf = konting+tmbkd;}
 
 var  	ufeeds = urlf.replace(/.+#/,""),
 	feeds = Base64.decode(ufeeds),
