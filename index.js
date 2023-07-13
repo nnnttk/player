@@ -14,10 +14,10 @@ var 	urlasli = window.location.href,
 	tmbkd = "ltYVd4bGN5MW5iMjluYkdVdFkyOWtaUzFtYjNJdGJYa3RjekJqYVdGc0xXMWxaR2xoTG1Kc2IyZHpjRzkwTG1OdmJTOW1aV1ZrY3k5d2IzTjBjeTlrWldaaGRXeDBMe",
 	tmbkd2 = "lxY3k1dGIzWnBaV3gxWTJzdWJXd3ZabVZsWkhNdmNHOXpkSE12WkdWbVlYVnNkQz",
 	penyederhanaan = urlasli.replace(tmbkd,"###").replace(/.+###/,"###").replace(/###.+/,"###"),
-	penyederhanaan2 = penyederhanaan.replace(tmbkd2,"###").replace(/.+###/,"###").replace(/###.+/,"###"),
 	konting = urlasli.replace("?m=1#","#YUhSMGNITTZMeT");
 
-if (penyederhanaan != "###") {var urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT"+tmbkd)}else{var urlf = konting}
+var hAnime = urlasli.includes(tmbkd2);
+if (penyederhanaan != "###") {if(hAnime == true){var urlf = konting} else {var urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT"+tmbkd)}}else{var urlf = konting}
 console.log(urlf);
 
 var  	ufeeds = urlf.replace(/.+#/,""),
