@@ -12,9 +12,10 @@ return string;}}
 
 var 	urlasli = window.location.href,
 	tmbkd = "ltYVd4bGN5MW5iMjluYkdVdFkyOWtaUzFtYjNJdGJYa3RjekJqYVdGc0xXMWxaR2xoTG1Kc2IyZHpjRzkwTG1OdmJTOW1aV1ZrY3k5d2IzTjBjeTlrWldaaGRXeDBMe",
-	penyederhanaan = urlasli.replace(tmbkd,"###").replace(/.+###/,"###").replace(/###.+/,"###");
+	penyederhanaan = urlasli.replace(tmbkd,"###").replace(/.+###/,"###").replace(/###.+/,"###"),
+	penyederhanaan2 = urlasli.replace("lxY3k1dGIzWnBaV3gxWTJzdWJXd3ZabVZsWkhNdmNHOXpkSE12WkdWbVlYVnNkQz","###").replace(/.+###/,"###").replace(/###.+/,"###");
 
-if (penyederhanaan == "###") {var urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT")} 	
+if (penyederhanaan == "###") || (penyederhanaan == penyederhanaan2) {var urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT")} 	
 if (penyederhanaan != "###") {var urlf = urlasli.replace("?m=1#%","#YUhSMGNITTZMeT"+tmbkd)}
 
 var  	ufeeds = urlf.replace(/.+#/,""),
