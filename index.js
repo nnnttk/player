@@ -18,6 +18,7 @@ var 	urlasli = window.location.href,
 	konting = urlasli.replace("?m=1#","#YUhSMGNITTZMeT");
 
 if (penyederhanaan != "###") {var urlf = urlasli.replace("?m=1#","#YUhSMGNITTZMeT"+tmbkd)}else{var urlf = konting}
+console.log(urlf);
 
 var  	ufeeds = urlf.replace(/.+#/,""),
 	feeds = Base64.decode(ufeeds),
