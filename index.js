@@ -60,7 +60,20 @@ function nobars(json) {
 	
 }
 	
-function plst(json) {console.log("SIAP NGELIST");}
+function plst(json) {
+	var endata = json.feed.entry, othrPrt = "";
+	for (var i = 0; i < endata.length; i++) {
+		var title = endata[i].title.$t,
+			url = endata[i].link.pop().href,
+			urlf = endata[i].link[0].href,
+			stw = urlf.replace(/feed.+default/,""),
+			urlfe = urlf.replace("/comments/default",""),
+			urlfee = urlfe.replace(".blogspot.com/feeds/","@").replace(Base64.decode("d3d3LmJsb2dnZXIuY29tL2ZlZWRzLzc5MTk1MDYwMDMzNDY3MjAzOQ=="),Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20vZmVlZHM=")).replace(Base64.decode("ZHJhZnQuYmxvZ2dlci5jb20vZmVlZHMvNzkxOTUwNjAwMzM0NjcyMDM5"),Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20vZmVlZHM=")),
+			urlfeed = Base64.encode(urlfee),
+			ktn = Base64.encode(urlfeed).replace("YUhSMGNITTZMeTltYVd4bGN5MW5iMjluYkdVdFkyOWtaUzFtYjNJdGJYa3RjekJqYVdGc0xXMWxaR2xoTG1Kc2IyZHpjRzkwTG1OdmJTOW1aV1ZrY3k5d2IzTjBjeTlrWldaaGRXeDBMe","%"), pgntn = "p/stream.html?m=1#";
+	othrPrt += '<li>'+window.location.href.replace(/#.+/,'#')+ktn+'</li>';
+	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';	     
+}
 	
 var script = document.createElement('script');
 var gntMVL = fee 	.replace(Base64.decode("YXM2NGQ5OHdydzUyMTN0MTQ2NTUxZDIzZjF2c2QzMWYyLmJsb2dzcG90LmNvbQ=="),Base64.decode("anMubW92aWVsdWNrLm1s"))
