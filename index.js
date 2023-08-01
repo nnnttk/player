@@ -92,18 +92,20 @@ function cpFunc() {
 		}
 
 function plst(json) {
+	var config = { noSrc: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABIAQMAAABvIyEEAAAABGdBTUEAALGPC/xhBQAAAAZQTFRFOjo6JycnNkxyjQAAADZJREFUKM9j+A8DDFRnNTCAACP9WewPGNgfkMmiwN7GH0CGfCPdWZT5V/7/DwZyWeSHFa1SHQDDGF2E0US40gAAAABJRU5ErkJggg==' }
 	var endata = json.feed.entry, othrPrt = "";
 	for (var i = 0; i < endata.length; i++) {
 		var title = endata[i].title.$t,
 			url = endata[i].link.pop().href,
 			imgContent = /<img +(.*?)src=(['"])([^'"]+?)(['"])(.*?) *\/?>/i.exec(endata[i].content.$t),
+			imgSrc = imgContent && imgContent[3] ? imgContent[3] : config.noSrc,
 			urlf = endata[i].link[0].href,
 			stw = urlf.replace(/feed.+default/,""),
 			urlfe = urlf.replace("/comments/default",""),
 			urlfee = urlfe.replace(".blogspot.com/feeds/","@").replace(Base64.decode("d3d3LmJsb2dnZXIuY29tL2ZlZWRzLzc5MTk1MDYwMDMzNDY3MjAzOQ=="),Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20vZmVlZHM=")).replace(Base64.decode("ZHJhZnQuYmxvZ2dlci5jb20vZmVlZHMvNzkxOTUwNjAwMzM0NjcyMDM5"),Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20vZmVlZHM=")),
 			urlfeed = Base64.encode(urlfee),
 			ktn = Base64.encode(urlfeed).replace("YUhSMGNITTZMeTltYVd4bGN5MW5iMjluYkdVdFkyOWtaUzFtYjNJdGJYa3RjekJqYVdGc0xXMWxaR2xoTG1Kc2IyZHpjRzkwTG1OdmJTOW1aV1ZrY3k5d2IzTjBjeTlrWldaaGRXeDBMe","%"), pgntn = "p/stream.html?m=1#";
-		othrPrt += '<li>'+imgContent+window.location.href.replace(/#.+/,'#')+ktn+'</li>';  console.log(imgContent);  
+		othrPrt += '<li>'+imgContent+window.location.href.replace(/#.+/,'#')+ktn+'</li>';  console.log(imgSrc);  
 	}		
 	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';	  
 }
