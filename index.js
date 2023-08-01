@@ -48,20 +48,23 @@ function nobars(json) {
     // Trying to get the iframe src URL from post/page content
 		iframeContent = /<iframe +(.*?)src=(['"])([^'"]+?)(['"])(.*?) *\/?>/i.exec(post.content.$t),
         iframeSrc = iframeContent && iframeContent[3] ? iframeContent[3] : config.noSrc;
-	console.log(BvID+vparts);
+	
 	//console.log(iframeSrc);
 	//console.log(iframeContent[0]);
 	container.innerHTML = iframeContent;
 	emdc.innerHTML = '<textarea readonly id="embcd" onclick="cpFunc();"> <iframe scrolling="no" allowfullscreen style="width:100%;height:480px;border:0px;overflow:hidden;" src="'+urlasli+'" ></iframe></textarea>';
 	
 }
-
+	
+function plst(json) {console.log("SIAP NGELIST");}
+	
 var script = document.createElement('script');
 var gntMVL = fee 	.replace(Base64.decode("YXM2NGQ5OHdydzUyMTN0MTQ2NTUxZDIzZjF2c2QzMWYyLmJsb2dzcG90LmNvbQ=="),Base64.decode("anMubW92aWVsdWNrLm1s"))
 			.replace(Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20="),Base64.decode("anMuaWRibG9nLmV1Lm9yZw=="))+
 	     Base64.decode("P2FsdD0=")+"json"+Base64.decode("JmNhbGxiYWNrPQ==")+"nobars";
 script.src = gntMVL;
-document.getElementsByTagName('head')[0].appendChild(script);
+var ngeList = document.createElement('script'), ngeList.src = Base64.decode("aHR0cHM6Ly93d3cuYmxvZ2dlci5jb20vZmVlZHMv")+BvID+Base64.decode("L3Bvc3RzL2RlZmF1bHQvLS8=")+vparts+Base64.decode("P2FsdD0=")+"json"+Base64.decode("JmNhbGxiYWNrPQ==")+"plst";	
+document.getElementsByTagName('head')[0].appendChild(script);document.getElementsByTagName('head')[0].appendChild(ngeList);
 
 //console.log(feed);
 
