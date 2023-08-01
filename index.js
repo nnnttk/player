@@ -43,11 +43,12 @@ function nobars(json) {
     if (!container) { alert('Container not found.');return; }
 
     var post = json.entry, // The post/page object
+	vparts = post.category[0].term, BvID = post.id.$t.replaceAll('.','@').replaceAll('-','#').replace(/.+blog#/,'').replace(/@post-.+/',''),
         postContent = post.content ? post.content.$t : post.summary.$t.replace(/<br *\/?>|[\s]+/gi, ' ').replace(/<.*?>|[<>]/g, ""), // The post/page content
     // Trying to get the iframe src URL from post/page content
 		iframeContent = /<iframe +(.*?)src=(['"])([^'"]+?)(['"])(.*?) *\/?>/i.exec(post.content.$t),
         iframeSrc = iframeContent && iframeContent[3] ? iframeContent[3] : config.noSrc;
-
+	console.log(BvID+vparts);
 	//console.log(iframeSrc);
 	//console.log(iframeContent[0]);
 	container.innerHTML = iframeContent;
