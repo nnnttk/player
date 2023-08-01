@@ -105,3 +105,4 @@ function plst(json) {
 	othrPrt += '<li>'+ktn+'</li>';
 	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';	     
 }
+}
