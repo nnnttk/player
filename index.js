@@ -23,7 +23,7 @@ if (penyederhanaan != "###") {if(hAnime == true){var urlf = konting} else {var u
 var  	ufeeds = urlf.replace(/.+#/,""),
 	feeds = Base64.decode(ufeeds),
 	feed = Base64.decode(feeds),
-	fee = feed.replace("@",".blogspot.com/feeds/posts/default/"),
+	fee = feed.replace("@",Base64.decode("LmJsb2dzcG90LmNvbS9mZWVkcy9wb3N0cy9kZWZhdWx0Lw==")),
 	idnonton = urlasli.replace(/.+?m=1#/,"");
 
 if (urlf != urlasli) {
@@ -102,7 +102,7 @@ function plst(json) {
 			urlf = endata[i].link[0].href,
 			stw = urlf.replace(/feed.+default/,""),
 			urlfe = urlf.replace("/comments/default",""),
-			urlfee = urlfe.replace(".blogspot.com/feeds/","@").replace(Base64.decode("d3d3LmJsb2dnZXIuY29tL2ZlZWRzLzc5MTk1MDYwMDMzNDY3MjAzOQ=="),Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20vZmVlZHM=")).replace(Base64.decode("ZHJhZnQuYmxvZ2dlci5jb20vZmVlZHMvNzkxOTUwNjAwMzM0NjcyMDM5"),Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20vZmVlZHM=")),
+			urlfee = urlfe.replace(Base64.decode("LmJsb2dzcG90LmNvbS9mZWVkcy8="),"@").replace(Base64.decode("d3d3LmJsb2dnZXIuY29tL2ZlZWRzLzc5MTk1MDYwMDMzNDY3MjAzOQ=="),Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20vZmVlZHM=")).replace(Base64.decode("ZHJhZnQuYmxvZ2dlci5jb20vZmVlZHMvNzkxOTUwNjAwMzM0NjcyMDM5"),Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20vZmVlZHM=")),
 			urlfeed = Base64.encode(urlfee),
 			ktn = Base64.encode(urlfeed).replace("YUhSMGNITTZMeTltYVd4bGN5MW5iMjluYkdVdFkyOWtaUzFtYjNJdGJYa3RjekJqYVdGc0xXMWxaR2xoTG1Kc2IyZHpjRzkwTG1OdmJTOW1aV1ZrY3k5d2IzTjBjeTlrWldaaGRXeDBMe","%"), pgntn = "p/stream.html?m=1#";
 		othrPrt += '<li><a href="'+window.location.href.replace('/?m=1#','/v?m=1#').replace(/#.+/,'#')+ktn+'" ><img src="'+imgSrc+'"/><br /><div class="jdlPart">Part '+title.slice(-1)+'</div></a></li>';
