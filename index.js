@@ -105,7 +105,7 @@ function plst(json) {
 			urlfee = urlfe.replace(".blogspot.com/feeds/","@").replace(Base64.decode("d3d3LmJsb2dnZXIuY29tL2ZlZWRzLzc5MTk1MDYwMDMzNDY3MjAzOQ=="),Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20vZmVlZHM=")).replace(Base64.decode("ZHJhZnQuYmxvZ2dlci5jb20vZmVlZHMvNzkxOTUwNjAwMzM0NjcyMDM5"),Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20vZmVlZHM=")),
 			urlfeed = Base64.encode(urlfee),
 			ktn = Base64.encode(urlfeed).replace("YUhSMGNITTZMeTltYVd4bGN5MW5iMjluYkdVdFkyOWtaUzFtYjNJdGJYa3RjekJqYVdGc0xXMWxaR2xoTG1Kc2IyZHpjRzkwTG1OdmJTOW1aV1ZrY3k5d2IzTjBjeTlrWldaaGRXeDBMe","%"), pgntn = "p/stream.html?m=1#";
-		othrPrt += '<li><a href="'+window.location.href.replace('/?m=1#','/v?m=1#').replace(/#.+/,'')+ktn+'" ><img src="'+imgSrc+'"/><br /><div class="jdlPart">Part '+title.slice(-1)+'</div></a></li>';
+		othrPrt += '<li><a href="'+window.location.href.replace('/?m=1#','/v?m=1#').replace(/#.+/,'#')+ktn+'" ><img src="'+imgSrc+'"/><br /><div class="jdlPart">Part '+title.slice(-1)+'</div></a></li>';
 	}		
 	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';	  
 }
