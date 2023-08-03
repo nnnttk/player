@@ -99,7 +99,7 @@ function plst(json) {
 			url = endata[i].link.pop().href,
 			imgContent = /<img +(.*?)src=(['"])([^'"]+?)(['"])(.*?) *\/?>/i.exec(endata[i].content.$t),
 			imgSrc = imgContent && imgContent[3] ? imgContent[3] : config.noSrc,
-			imgSrcEnc = encodeURIComponent(imgSrc).replace("https%3A%2F%2F","").split("%2F"), imgSrcFix = 'https://dl.kaskus.id/blogger.googleusercontent.com/img/'+imgSrcEnc[2]+'/'+imgSrcEnc[3]+'/'+imgSrcEnc[4]+'/w352-h288-c-rw/thumb.webp',
+			imgSrcEnc = encodeURIComponent(imgSrc).replace("https%3A%2F%2F","").split("%2F"), imgSrcFix = 'https://dl.kaskus.id/blogger.googleusercontent.com/img/'+imgSrcEnc[2]+'/'+imgSrcEnc[3]+'/'+imgSrcEnc[4]+'/w330-h185-c-rw/thumb.webp',
 			urlf = endata[i].link[0].href,
 			stw = urlf.replace(/feed.+default/,""),
 			urlfe = urlf.replace("/comments/default",""),
