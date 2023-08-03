@@ -99,6 +99,7 @@ function plst(json) {
 			url = endata[i].link.pop().href,
 			imgContent = /<img +(.*?)src=(['"])([^'"]+?)(['"])(.*?) *\/?>/i.exec(endata[i].content.$t),
 			imgSrc = imgContent && imgContent[3] ? imgContent[3] : config.noSrc,
+			imgSrcEnc = encodeURIComponent(imgSrc).replace("https%3A%2F%2F","").split("%2F"),
 			urlf = endata[i].link[0].href,
 			stw = urlf.replace(/feed.+default/,""),
 			urlfe = urlf.replace("/comments/default",""),
@@ -107,5 +108,5 @@ function plst(json) {
 			ktn = Base64.encode(urlfeed).replace("YUhSMGNITTZMeTltYVd4bGN5MW5iMjluYkdVdFkyOWtaUzFtYjNJdGJYa3RjekJqYVdGc0xXMWxaR2xoTG1Kc2IyZHpjRzkwTG1OdmJTOW1aV1ZrY3k5d2IzTjBjeTlrWldaaGRXeDBMe","%"), pgntn = "p/stream.html?m=1#";
 		othrPrt += '<li><a href="'+window.location.href.replace('/?m=1#','/v?m=1#').replace(/#.+/,'#')+ktn+'" ><img src="'+imgSrc+'"/><br /><div class="jdlPart">Part '+title.slice(-1)+'</div></a></li>';
 	}		
-	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';	  
+	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';	  console.log(imgSrcEnc);
 }
