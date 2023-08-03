@@ -108,5 +108,5 @@ function plst(json) {
 			ktn = Base64.encode(urlfeed).replace("YUhSMGNITTZMeTltYVd4bGN5MW5iMjluYkdVdFkyOWtaUzFtYjNJdGJYa3RjekJqYVdGc0xXMWxaR2xoTG1Kc2IyZHpjRzkwTG1OdmJTOW1aV1ZrY3k5d2IzTjBjeTlrWldaaGRXeDBMe","%"), pgntn = "p/stream.html?m=1#";
 		othrPrt += '<li><a href="'+window.location.href.replace('/?m=1#','/v?m=1#').replace(/#.+/,'#')+ktn+'" ><img src="'+imgSrc+'"/><br /><div class="jdlPart">Part '+title.slice(-1)+'</div></a></li>';
 	}		
-	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';	  console.log(imgSrcEnc);
+	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';	  console.log('https://dl.kaskus.id/blogger.googleusercontent.com/img/'+imgSrcEnc[2]+'/'+imgSrcEnc[3]+'/'+imgSrcEnc[4]+'/w352-h288-rw/thumb.webp');
 }
