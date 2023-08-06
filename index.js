@@ -111,3 +111,19 @@ function plst(json) {
 	}		
 	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';	
 }
+
+async function detectAdBlock() {
+  let adBlockEnabled = false;
+  const ClickAdillaAdUrl = 'https://js.wpadmngr.com/static/adManager.js';
+  try {
+    await fetch(new Request(ClickAdillaAdUrl)).catch(_ => adBlockEnabled = true);
+  } catch (e) {
+    adBlockEnabled = true;
+  } finally {
+		if(adBlockEnabled==true){
+			alert('Adblock / Pemblokir Iklan Terdeteksi');
+			window.location='/premium';
+		}
+  }
+}
+detectAdBlock();
