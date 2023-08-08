@@ -67,21 +67,21 @@ function sepuluhdtk() {
 var num = hitunganviewnya;
    //document.write("Number = "+num+"<br>");
    if (num == 1) {
-      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) };  sepuluhdtk();
    } else if (num == 2) {
-      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) };  sepuluhdtk();
    } else if (num == 3) {
-      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) };  sepuluhdtk();
    } else if (num == 4) {
-      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) };  sepuluhdtk(); 
    } else if (num == 6) {
-      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) };  sepuluhdtk();
    } else if (num == 7) {
-      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) };  sepuluhdtk();
    } else if (num == 8) {
-      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) };  sepuluhdtk();
    } else if (num == 9) {
-      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) };  sepuluhdtk();
    } else if(num == 10) { 
       var adLink = 'https://s.zlinkb.com/d.php?z=', datingAd = '4767250', camAd = '4836662', gameAd = '4836666';
       window.location=adLink+camAd; 
