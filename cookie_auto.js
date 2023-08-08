@@ -57,11 +57,32 @@ return unescape(document.cookie.substring(offset, endstr));
 var hitunganviewnya = amt();
 console.log(hitunganviewnya);
 
-
+function sepuluhdtk() { 
+      var scriptxGHEAs69 = document.createElement('script');
+      scriptxGHEAs69.setAttribute('data-admpid', '41805');
+      scriptxGHEAs69.setAttribute('src', 'https://js.wpadmngr.com/static/adManager.js');
+      document.body.appendChild(scriptxGHEAs69);             
+}
 
 var num = hitunganviewnya;
    //document.write("Number = "+num+"<br>");
-   if(num == 10) { 
+   if (num == 1) {
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+   } else if (num == 2) {
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+   } else if (num == 3) {
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+   } else if (num == 4) {
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+   } else if (num == 6) {
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+   } else if (num == 7) {
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+   } else if (num == 8) {
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+   } else if (num == 9) {
+      window.onload = function() { setTimeout(sepuluhdtk, 10000) }; 
+   } else if(num == 10) { 
       var adLink = 'https://s.zlinkb.com/d.php?z=', datingAd = '4767250', camAd = '4836662', gameAd = '4836666';
       window.location=adLink+camAd; 
       
@@ -75,22 +96,19 @@ var num = hitunganviewnya;
       _cpp['onePer'] = '0';
       _cpp['freq'] = '20';
       _cpp['fb'] = '10';
-      var scriptxGHEAs = document.createElement('script');
-      scriptxGHEAs.setAttribute('async', 'true');
-      scriptxGHEAs.setAttribute('src', 'https://cdn1.adcdnx.com/s/adp1v3.js');
+      var scriptxGHEAs68 = document.createElement('script');
+      scriptxGHEAs68.setAttribute('async', 'true');
+      scriptxGHEAs68.setAttribute('src', 'https://cdn1.adcdnx.com/s/adp1v3.js');
  
       //scriptxGHEAs.setAttribute('data-zone', '4985181');
       //scriptxGHEAs.setAttribute('src', 'https://inklinkor.com/tag.min.js');
       
       
-      document.head.appendChild(scriptxGHEAs);   
+      document.head.appendChild(scriptxGHEAs68);   
 
    } else {
       //document.write('Number is odd!');    
-      
-      var scriptxGHEAs = document.createElement('script');
-      scriptxGHEAs.setAttribute('data-admpid', '41805');
-      scriptxGHEAs.setAttribute('src', 'https://js.wpadmngr.com/static/adManager.js');
-      document.body.appendChild(scriptxGHEAs);   
+     sepuluhdtk(); 
+
       
 }
