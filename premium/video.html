@@ -18,9 +18,7 @@ function accessGranted(){
 
 var script = document.createElement('script');
 script.src = dtAcc;
-document.body.appendChild(script); 
-
- fetch(dtAcc)
+document.body.appendChild(script)
     .then(function(response)
      {
       if(response.status===401)
