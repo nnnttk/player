@@ -11,18 +11,25 @@
 </head>
 <body>
 <script>
+var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt=json";
+	
 function accessGranted(){
 	alert('Selamat');
 }	  
-function getAccess(json) {
-	var isidata = json.feed.entry.length 
-  accessGranted();
-};
-var script = document.createElement('script');
-script.src = "https://www.blogger.com/feeds/8773474132886073027/posts/default?max-results=2&start-index=1&callback=getAccess&alt=json-in-script";
-try { document.getElementsByTagName('head')[0].appendChild(script);  	}
-catch(err) { alert('No Access Permission') }	
- fetch("https://www.blogger.com/feeds/8773474132886073027/posts/default?max-results=2&start-index=1&callback=getAccess&alt=json-in-script")
+
+
+var obj;
+fetch(dtAcc)
+  .then(res => res.json())
+  .then(data => {
+    obj = data;
+   })
+  .then(() => {
+    console.log(obj);
+   });
+	
+
+ fetch(dtAcc)
     .then(function(response)
      {
       if(response.status!==200)
