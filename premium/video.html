@@ -18,13 +18,22 @@ function accessGranted(){
 
 var script = document.createElement('script');
 script.src = dtAcc;
-try {	
-	document.head.appendChild(script);
-}
-catch(err) { 
-	alert('Access Denied !!!');
-}
+document.head.appendChild(script);
+
+
+
+
 	
+function catchError( error ){
+    console.log( error );
+}
+request.then(response => {
+    if( !response.ok ){
+        catchError( response );
+    } else {
+        console.log('Tidak ada Masalah');
+    }
+}).catch( catchError );	
 </script>
 
 </body>
