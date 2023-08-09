@@ -19,7 +19,7 @@ function accessGranted(){
 var script = document.createElement('script');
 script.src = dtAcc;
 try {	
-	document.body.appendChild(script)
+	document.head.appendChild(script);
 }
 catch(err) { 
 	alert('Access Denied !!!');
