@@ -26,7 +26,7 @@ script.src = dtAcc;
 script.setAttribute('type', 'application/json');
 script.setAttribute('id', 'json-data');	
  
-try { document.head.appendChild(script); getData(); }
+try { document.body.appendChild(script); getData(); }
 catch(err) { alert("Access Denied !!!") }	
 </script>
 
