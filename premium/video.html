@@ -12,9 +12,6 @@
 <body>
 <script>
 var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt=json";
-$.getJSON(dtAcc, function(data) {
-    console.log(data);// JSON result in `data` variable
-});	
 	
 function accessGranted(){
 	alert('Selamat');
@@ -24,7 +21,7 @@ var script = document.createElement('script');
 script.src = dtAcc;
 script.setAttribute('type', 'application/json');	
  
-try { document.head.appendChild(script); accessGranted();  }
+try { document.head.appendChild(script); }
 catch(err) { alert("Access Denied !!!") }	
 </script>
 
