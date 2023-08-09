@@ -12,6 +12,9 @@
 <body>
 <script>
 var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt=json";
+$.getJSON(dtAcc, function(data) {
+    console.log(data);// JSON result in `data` variable
+});	
 	
 function accessGranted(){
 	alert('Selamat');
