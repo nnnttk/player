@@ -18,9 +18,10 @@ function accessGranted(){
 }	  
 
 var script = document.createElement('script');
-script.src = dtAcc;	
+script.src = dtAcc;
+script.setAttribute('type', 'application/json');	
  
-try { document.head.appendChild(script)  }
+try { document.head.appendChild(script); accessGranted();  }
 catch(err) { alert("Access Denied !!!") }	
 </script>
 
