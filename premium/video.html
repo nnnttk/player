@@ -10,15 +10,19 @@
 <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
 </head>
 <body>
-  <script>
+<script>
+function accessGranted(){
+	alert('Selamat');
+}	  
 function getAccess(json) {
-
-	try { var isidata = json.feed.entry.length }
-	catch(err) { alert('No Access Permission') }
-
+	var isidata = json.feed.entry.length 
   accessGranted();
 };
-  </script>
-  <script src="https://www.blogger.com/feeds/8773474132886073027/posts/default?max-results=2&start-index=1&callback=getAccess&alt=json-in-script"></script>
+var script = document.createElement('script');
+script.src = "https://www.blogger.com/feeds/8773474132886073027/posts/default?max-results=2&start-index=1&callback=getAccess&alt=json-in-script";
+try { document.getElementsByTagName('head')[0].appendChild(script);  	}
+catch(err) { alert('No Access Permission') }	
+</script>
+
 </body>
 </html>
