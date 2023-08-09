@@ -22,6 +22,18 @@ var script = document.createElement('script');
 script.src = "https://www.blogger.com/feeds/8773474132886073027/posts/default?max-results=2&start-index=1&callback=getAccess&alt=json-in-script";
 try { document.getElementsByTagName('head')[0].appendChild(script);  	}
 catch(err) { alert('No Access Permission') }	
+ fetch("https://www.blogger.com/feeds/8773474132886073027/posts/default?max-results=2&start-index=1&callback=getAccess&alt=json-in-script")
+    .then(function(response)
+     {
+      if(response.status!==200)
+       {
+          throw new Error(response.status)
+       }
+     })
+    .catch(function(error)
+    {
+      alert('No Access Permission') ///if status code 401...
+    });	
 </script>
 
 </body>
