@@ -17,30 +17,11 @@ function accessGranted(){
 	alert('Selamat');
 }	  
 
-
-var obj;
-fetch(dtAcc)
-  .then(res => res.json())
-  .then(data => {
-    obj = data;
-   })
-  .then(() => {
-    console.log(obj);
-   });
-	
-
- fetch(dtAcc)
-    .then(function(response)
-     {
-      if(response.status!==200)
-       {
-          throw new Error(response.status)
-       }
-     })
-    .catch(function(error)
-    {
-      alert('No Access Permission') ///if status code 401...
-    });	
+var script = document.createElement('script');
+script.src = dtAcc;	
+ 
+try { document.head.appendChild(script)  }
+catch(err) { alert("Access Denied !!!") }	
 </script>
 
 </body>
