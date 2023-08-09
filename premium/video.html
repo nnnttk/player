@@ -12,21 +12,15 @@
 <body>
 <script>
 var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt=json&max-results=1&start-index=2";
-function getData() {
-const jsonStr = document.getElementById('json-data').textContent;
-const jsonData = JSON.parse(jsonStr);
-console.log(jsonData); 
-}	
+	
 function accessGranted(){
 	alert('Selamat');
 }	  
 
 var script = document.createElement('script');
 script.src = dtAcc;
-script.setAttribute('type', 'application/json');
-script.setAttribute('id', 'json-data');	
  
-try { document.body.appendChild(script); getData(); }
+try { document.body.appendChild(script); }
 catch(err) { alert("Access Denied !!!") }	
 </script>
 
