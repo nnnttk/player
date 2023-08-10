@@ -13,7 +13,7 @@
 	
 <body>
 <div id="maindspl"></div>
-<div class='thismain'>	
+<div class='thismain' style='display:none'>	
 <nav class='navigasi'>
 	<span class='logo'><img src='../i/wtftube.jpg' alt='WTFTUBE Logo' /></span>
 	<span class='social' id='userX'><a href="https://blogger.com/login.g"><img src="../i/user.png" id="user" /></a></span>
@@ -21,7 +21,7 @@
 <div style="position:relative;width:100%">
 <div class="nonton"><div id="result-container"><div class="muat"></div></div></div>
 </div>
-<div class="socinetw" style=" width: 100%; text-align: center;"> 
+<div class="socinetw" style=" width: 100%; text-align: center; display:none "> 
 	<a href="https://facebook.com/animemontok">
 		<img style="width: 32%;max-height:28px;max-width: 121px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI1xsiUhpMzxenMCFJJ5v9r4L1ikm37xfJ2DAfvNHDV6dZslXTNncc7bxffTOCDzIuwD-rmIuhynJu84ztlnLLQXkuGAjB8KmZVVIZRlA15CPGHDOdbo1kwxMMasjB9ZeKABAS-o2hZykmuCtqr_Eqp4JdrXW8RHA8QZUgEWTWrMtLdsHltXZltXfo/s0-rw/fb-button.png"/>
 	</a> 
@@ -38,6 +38,7 @@
 </div>	
 <script type="text/javascript">
 var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt=json";
+
 function accessauth() {
 	var identity = "Premium";
 	document.cookie = "User=Premium;path=/";  
@@ -45,6 +46,8 @@ function accessauth() {
 	scriptup.setAttribute('src', './up.js');
 	document.head.appendChild(scriptup); 
 	document.getElementById('userX').innerHTML = '<img src="../i/premium.png" id="premium" />';	
+	document.querySelector(".thismain").style.display = "";
+	document.querySelector(".socinetw").style.display = "";
 }
 $.getScript( 
 	dtAcc, 
@@ -52,7 +55,7 @@ $.getScript(
 		if (jqxhr.status == 200) {accessauth()}
 	}
 ); 	
-var selection = '', select = selection+identity;
+
 </script>	
 	
 </body>
