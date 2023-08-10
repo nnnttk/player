@@ -90,7 +90,7 @@ a:visited { color: #000; }
 <div class='thismain'>	
 <nav class='navigasi'>
 	<span class='logo'><img src='./i/wtftube.jpg' alt='WTFTUBE Logo' /></span>
-	<span class='social'><a href="/premium/video"><img src="../i/user.png" id="user" /></a></span>
+	<span class='social'><a id="premiumvideo"><img src="../i/user.png" id="user" /></a></span>
 </nav>	
 <script src='./cookie_auto.js'></script> 
 <img alt='' src='https://mc.yandex.ru/watch/89177880' style='position:absolute; left:-9999px;'></img>   
@@ -141,6 +141,12 @@ vastOptions: {"adList": [{"roll": "preRoll","vastTag": "https://emotionalfriends
 <button class="embdBTN" onclick="document.getElementById('embed-code').style.display='block';">Show Embed Code</button>
 
 <script>
+$(document).ready(function(){
+	$('#premiumvideo').each(function(){ 
+		$(this).attr("href", window.location.href.replace('/?m=1#','/premium/video?m=1#'));
+	});
+});  
+	
 var drcl1 = 'https://cadrctlnk.com/in/p/?spot_id=53619&cat=24&sub_id=1289925167';
 var drcl2 = 'https://s.zlinkb.com/d.php?z=4767250';
 var drcl3 = 'https://goll.my.id/movieluck';
