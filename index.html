@@ -141,7 +141,7 @@ vastOptions: {"adList": [{"roll": "preRoll","vastTag": "https://emotionalfriends
 
 <script>
 if (document.cookie.length != 0) {
-    var array = document.cookie.split("=");
+    var array = document.cookie.split(";");
     var peserta = array[1];
     var ujian = encodeURIComponent(peserta).replace(/%3B.+/,"");
 console.log(array);
