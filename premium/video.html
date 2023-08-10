@@ -39,7 +39,7 @@
 <script type="text/javascript">
 var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt=json";
 function accessauth() {
-	
+	var identity = "Premium";
 	document.cookie = "User=Premium;path=/";  
 	var scriptup = document.createElement('script');
 	scriptup.setAttribute('src', './up.js');
@@ -52,6 +52,7 @@ $.getScript(
 		if (jqxhr.status == 200) {accessauth()}
 	}
 ); 	
+var selection = '', select = selection+identity;
 </script>	
 	
 </body>
