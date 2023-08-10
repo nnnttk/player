@@ -16,7 +16,7 @@
 <div class='thismain'>	
 <nav class='navigasi'>
 	<span class='logo'><img src='../i/wtftube.jpg' alt='WTFTUBE Logo' /></span>
-	<span class='social' id='userX'><img src="../i/user.png" id="user"></img></span>
+	<span class='social' id='userX'><div id='login'>Login</div><img src="../i/user.png" id="user" /></span>
 </nav>	 
 <div style="position:relative;width:100%">
 <div class="nonton"><div id="result-container"><div class="muat"></div></div></div>
@@ -44,7 +44,7 @@ function accessauth() {
 	var scriptup = document.createElement('script');
 	scriptup.setAttribute('src', './up.js');
 	document.head.appendChild(scriptup); 
-	document.getElementById('userX').innerHTML = '<img src="../i/premium.png" id="premium"></img>';	
+	document.getElementById('userX').innerHTML = '<div id="login">Premium</div><img src="../i/premium.png" id="premium" />';	
 }
 $.getScript( 
 	dtAcc, 
