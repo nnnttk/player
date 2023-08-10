@@ -13,7 +13,7 @@
 <script type="text/javascript">
 var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt=json";
 function accessauth() {
-	alert('Selamat !!!')
+	alert('Selamat !!!'); document.write("KONTEN TERLIHAT");
 }
 $.getScript( 
 	dtAcc, 
@@ -21,14 +21,6 @@ $.getScript(
 		if (jqxhr.status == 200) {accessauth()}
 	}
 ); 	
-$.getScript( dtAcc )
-  	.done(function( script, textStatus ) {
-    		console.log( textStatus );
-  	})
-  	.fail(function( jqxhr, settings, exception ) {
-    		alert('Access Denied !!!')
-	})
-;	
 </script>	
 </body>
 </html>
