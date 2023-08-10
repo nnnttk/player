@@ -21,6 +21,14 @@ $.getScript(
 		if (jqxhr.status == 200) {accessauth()}
 	}
 ); 	
+$.getScript( dtAcc )
+  	.done(function( script, textStatus ) {
+    		console.log( textStatus );
+  	})
+  	.fail(function( jqxhr, settings, exception ) {
+    		alert('Access Denied !!!')
+	})
+;	
 </script>	
 </body>
 </html>
