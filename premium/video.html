@@ -10,7 +10,6 @@
 <link rel="stylesheet" type="text/css" href="./default.css">
 <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
 </head>
-	
 <body>
 <div id="maindspl"></div>
 <div class='thismain'>	
@@ -38,9 +37,7 @@
 </div>	
 <script type="text/javascript">
 var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt=json";
-
 function accessauth() {
-	var identity = "Premium";
 	document.cookie = "User=Premium;path=/";  
 	var scriptup = document.createElement('script');
 	scriptup.setAttribute('src', './up.js');
@@ -55,8 +52,6 @@ $.getScript(
 		if (jqxhr.status == 200) {accessauth()}
 	}
 ); 	
-
-</script>	
-	
+</script>		
 </body>
 </html>
