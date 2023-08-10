@@ -18,6 +18,9 @@ var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt
 function accessauth() {
 	
 	document.cookie = "User=Premium;path=/";  
+	var scriptup = document.createElement('script');
+	scriptup.setAttribute('src', './up.js');
+	document.head.appendChild(scriptup);  gayaasli();
 }
 $.getScript( 
 	dtAcc, 
