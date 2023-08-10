@@ -30,7 +30,7 @@
 		}
 		var getFeedData = function () {
 			divFeed.empty();
-			divFeed.append('<img src="loader.gif" />');
+			divFeed.append('<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfFRO-iE0rh8IDza7hn1pC5h27C5SxIduMzAQXRbk2b2nY6vhQcvFUYn3NlhgFuqXKtElc0eC1x8DZnRBSk2OCGwUPpjs3E07eRqtFn5Z7H6aBEDH5jcPXxFEIKWR4I2NvWMW2dfzhLCDT7NzEHZC6kCUDIKMkYVJYmiljtNzRdH8qf81GKB7fvLfn/s100-rw/loading.gif" />');
 			$.ajax({
 				url: "https://feed.jquery-plugins.net/load?url=" + def.FeedUrl + "&maxCount=" + def.MaxCount + "&dateCulture=" + def.DateFormatLang + "&dateFormat=" + def.DateFormat + "&offset=" + def.Offset,
 				dataType: "json",
