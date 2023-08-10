@@ -12,13 +12,14 @@
 <body>
 <script type="text/javascript">
 var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt=rss";
-
-
+function accessauth() {
+	alert('Selamat !!!')
+}
 $.getScript( 
 	dtAcc, 
 	function( data, textStatus, jqxhr ) {
   		var statusconsole = jqxhr.status; 
-		if (statusconsole == 200) {alert('Selamat !!!')} else {alert('Access Desnied !!!')}
+		if (statusconsole == 200) {accessauth()}
 	}
 ); 	
 </script>	
