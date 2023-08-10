@@ -140,6 +140,14 @@ vastOptions: {"adList": [{"roll": "preRoll","vastTag": "https://emotionalfriends
 <button class="embdBTN" onclick="document.getElementById('embed-code').style.display='block';">Show Embed Code</button>
 
 <script>
+if (document.cookie.length != 0) {
+    var array = document.cookie.split("=");
+    var peserta = array[1];
+    var ujian = encodeURIComponent(peserta).replace(/%3B.+/,"");
+console.log(array);
+}
+
+	
 var drcl1 = 'https://cadrctlnk.com/in/p/?spot_id=53619&cat=24&sub_id=1289925167';
 var drcl2 = 'https://s.zlinkb.com/d.php?z=4767250';
 var drcl3 = 'https://goll.my.id/movieluck';
