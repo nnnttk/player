@@ -122,7 +122,7 @@ async function detectAdBlock() {
   } finally {
 		if(adBlockEnabled==true){
 			alert('Adblock / Pemblokir Iklan Terdeteksi');
-			window.location=window.location.href.replace('/?m=1#','/premium/video?m=1#');
+			window.location=window.location.href.replace('/?m=1#','/premium/?m=1#');
 		}
   }
 }
