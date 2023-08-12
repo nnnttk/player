@@ -31,7 +31,7 @@ body{margin:0}
 .socinetw a img {
     margin-top: 4px;
 }
-#ListPart div {box-sizing:border-box; padding:10px 0px 0px 10px}	
+#ListPart div, #Other div {box-sizing:border-box; padding:10px 0px 0px 10px}	
 @media screen and (min-width: 481px) {
     #adstrr {position: relative;margin-top:565px}
     .nonton, .socinetw,#adstrr {width:75% !important}
@@ -63,7 +63,7 @@ ul {
     list-style-type: none;
 }
 
-#ListPart img {width:100%}
+#ListPart img, #Other img {width:100%}
 .jdlPart {
     width:100%;
     height:50px;
