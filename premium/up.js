@@ -107,9 +107,19 @@ function plst(json) {
 		var ranapiurl1 = awRanapiurl+randcat[0].term+akhRanapiurl+'plst1';
 		var ranapiurl2 = awRanapiurl+randcat[1].term+akhRanapiurl+'plst2';
 		var ranapiurl3 = awRanapiurl+randcat[2].term+akhRanapiurl+'plst3';
-		randata += ranapiurl1+ranapiurl2+ranapiurl3;
 		
-	console.log('<textarea>'+randata+'</textarea>');
+	var scriptpls1 = document.createElement('script'); scriptpls1.setAttribute('src', ranapiurl1); document.head.appendChild(scriptpls1);  
+	var scriptpls2 = document.createElement('script'); scriptpls2.setAttribute('src', ranapiurl2); document.head.appendChild(scriptpls2);  
+	var scriptpls3 = document.createElement('script'); scriptpls3.setAttribute('src', ranapiurl3); document.head.appendChild(scriptpls3);  	
 	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';	
 }
 	
+function plst1(json) {
+console.log('plst1 Ready');
+}
+function plst2(json) {
+console.log('plst2 Ready');
+}
+function plst3(json) {
+console.log('plst3 Ready');
+}
