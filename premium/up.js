@@ -132,7 +132,8 @@ function plst1(json) {
 		var titLtr = /^[a-z]*$/.test(title.slice(-1)); if (titLtr == true) { var titleFix = title.slice(-1).charCodeAt(0)-96; } else { var titleFix = title.slice(-1); }
 		othrPrt += '<li><a href="'+window.location.href.replace('/premium/video?m=1#','/v?m=1#').replace(/#.+/,'#')+ktn+'" ><img src="'+imgSrcFix+'"/><br /><div class="jdlPart">Part '+titleFix+'</div></a></li>';
 	}	
-	document.getElementById('Other').innerHTML = '<ul>'+othrPrt+'</ul>';	
+	//document.getElementById('OtherUl').innerHTML = othrPrt;	
+	$(document).ready(function(){  $('#OtherUl').append(othrPrt)  });
 }
 function plst2(json) {
 console.log('plst2 Ready');
