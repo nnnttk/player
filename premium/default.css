@@ -33,11 +33,17 @@ body{margin:0}
 }
 #ListPart div {box-sizing:border-box; padding:10px 0px 0px 10px}	
 @media screen and (min-width: 481px) {
-#adstrr {position: relative;margin-top:565px}
-.nonton, .socinetw,#adstrr {width:75% !important}
-#ListPart {position:absolute;width:23.3%;top:45px;right:10px}	
-#ListPart img {border-radius:3%}
-iframe {min-height:730px}  
+    #adstrr {position: relative;margin-top:565px}
+    .nonton, .socinetw,#adstrr {width:75% !important}
+    #ListPart {position:absolute;width:23.3%;top:45px;right:10px}	
+    #ListPart img {border-radius:3%}
+    #Other {
+        width: 75%;
+        height: 480px;
+        display: block;
+        position: relative;
+        top: 570px;
+    }
 }	
 @media screen and (max-width: 480px) {
   #result-container {
