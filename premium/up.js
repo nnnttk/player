@@ -101,11 +101,13 @@ function plst(json) {
 		othrPrt += '<li><a href="'+window.location.href.replace('/premium/video?m=1#','/v?m=1#').replace(/#.+/,'#')+ktn+'" ><img src="'+imgSrcFix+'"/><br /><div class="jdlPart">Part '+titleFix+'</div></a></li>';
 	}	
 
-	var randata = ""; 
-	for (var i = 0; i < 5; i++) {
-		var randcat = json.feed.category[i].term, ranID = json.feed.id.$t.replaceAll('-','#').replace(/.+blog#/,'');
-		var ranapiurl = 'https://www.blogger.com/feeds/'+ranID+'/posts/default/-/'+randcat+'?max-results=1&alt=json&callback=plst'+i;
-		randata += ranapiurl;
+	var maxrandata = 3, randata = ""; 
+	for (var i = 0; i < maxrandata; i++) {
+		var randcat = json.feed.category[i].term, ranID = json.feed.id.$t.replaceAll('-','#').replace(/.+blog#/,''), awRanapiurl = Base64.decode('aHR0cHM6Ly93d3cuYmxvZ2dlci5jb20vZmVlZHMv')+ranID+Base64.decode('L3Bvc3RzL2RlZmF1bHQvLS8='), akhRanapiurl = Base64.decode('P21heC1yZXN1bHRzPTEmYWx0PWpzb24mY2FsbGJhY2s9');
+		var ranapiurl1 = awRanapiurl+randcat[0]+akhRanapiurl+'plst1';
+		var ranapiurl2 = awRanapiurl+randcat[1]+akhRanapiurl+'plst2';
+		var ranapiurl3 = awRanapiurl+randcat[2]+akhRanapiurl+'plst3';
+		randata += ranapiurl1+ranapiurl2+ranapiurl3;
 	}	
 	console.log('<textarea>'+randata+'</textarea>');
 	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';	
