@@ -44,6 +44,10 @@ body{margin:0}
         position: relative;
         top: 570px;
     }
+    #OtherUl li {
+        display: inline-block;
+        margin: 13px;
+    }
 }	
 @media screen and (max-width: 480px) {
   #result-container {
