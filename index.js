@@ -339,7 +339,7 @@ function plst0(json) {
 
 async function detectAdBlock() {
   let adBlockEnabled = false;
-  const ClickAdillaAdUrl = 'https://js.wpadmngr.com/static/adManager.js';
+  const ClickAdillaAdUrl = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
   try {
     await fetch(new Request(ClickAdillaAdUrl)).catch(_ => adBlockEnabled = true);
   } catch (e) {
