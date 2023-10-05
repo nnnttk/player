@@ -54,8 +54,8 @@ function nobars(json) {
 	container.innerHTML = iframeContent;
 	
 	try {
-		var vparts = post.category[0].term, BvID = post.id.$t.replaceAll('.','@').replaceAll('-','#').replace(/.+blog#/,'').replace(/@post#.+/,'');
-	    	var ngeList = document.createElement('script'); ngeList.src = Base64.decode("aHR0cHM6Ly93d3cuYmxvZ2dlci5jb20vZmVlZHMv")+BvID+Base64.decode("L3Bvc3RzL2RlZmF1bHQvLS8=")+vparts+Base64.decode("P2FsdD0=")+"json"+Base64.decode("JmNhbGxiYWNrPQ==")+"plst"; document.getElementsByTagName('head')[0].appendChild(ngeList);	
+		var vparts = post.category[0].term, myDom = post.link.pop().href.replace(/\/[^/]+(\.[^/.]+)$/,"");
+	    	var ngeList = document.createElement('script'); ngeList.src = myDom+Base64.decode("L2ZlZWRzL3Bvc3RzL2RlZmF1bHQvLS8")+vparts+Base64.decode("P2FsdD0")+"json"+Base64.decode("JmNhbGxiYWNrPQ")+"plst"; document.getElementsByTagName('head')[0].appendChild(ngeList);	
 	    }
 	catch(err) {}
 	
