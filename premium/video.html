@@ -39,6 +39,9 @@
 </div>	
 <div id="writemore"></div>	
 <script type="text/javascript">
+var datamin = window.location.href.replace(/.+%/,"data-");
+document.getElementById('userX').innerHTML = '<a href="'+datamin+'"><img id="premium" src="https://watch.idblog.eu.org/i/premium.png"/></a>';
+	
 var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt=json";
 function accessauth() {
 	document.cookie = "User=Premium;path=/";  
@@ -49,7 +52,7 @@ function accessauth() {
 	document.getElementById('maindspl').style.display = "none";	
 	document.querySelector(".nonton").style.display = "";
 	document.querySelector(".socinetw").style.display = "";
-}
+}	
 $.getScript( 
 	dtAcc, 
 	function( data, textStatus, jqxhr ) {
