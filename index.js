@@ -52,9 +52,10 @@ function nobars(json) {
 	//console.log(iframeContent[0]);
 	container.innerHTML = iframeContent;
 	emdc.innerHTML = '<textarea readonly id="embcd" onclick="cpFunc();"> <iframe scrolling="no" allowfullscreen style="width:100%;height:480px;border:0px;overflow:hidden;" src="'+urlasli+'" ></iframe></textarea>';
+	
 	try {
-		var vparts = post.category[0].term, BvID = post.id.$t.replaceAll('.','@').replaceAll('-','#').replace(/.+blog#/,'').replace(/@post#.+/,'');
-	    	var ngeList = document.createElement('script'); ngeList.src = Base64.decode("aHR0cHM6Ly93d3cuYmxvZ2dlci5jb20vZmVlZHMv")+BvID+Base64.decode("L3Bvc3RzL2RlZmF1bHQvLS8=")+vparts+Base64.decode("P2FsdD0=")+"json"+Base64.decode("JmNhbGxiYWNrPQ==")+"plst"; document.getElementsByTagName('head')[0].appendChild(ngeList);	
+		var vparts = post.category[0].term, myDom = post.link.pop().href.replace("https://","").replace(/\/[^/]+(\.[^/.]+)$/,"").split("/");
+	    	var ngeList = document.createElement('script'); ngeList.src = "https://"+myDom[0]+"/feeds/posts/default/-/"+vparts+"?alt="+"json"+"&callback="+"plst"; document.getElementsByTagName('head')[0].appendChild(ngeList);	
 	    }
 	catch(err) {}
 	
