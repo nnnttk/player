@@ -102,7 +102,7 @@ function plst(json) {
 	}	
 	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';	
 	
-	var randcat = json.feed.category, myTLDom = json.feed.link.pop().href.replace("https://","").replace(/\/[^/]+(\.[^/.]+)$/,"").split("/"), awRanapiurl = myTLDom+Base64.decode('L2ZlZWRzL3Bvc3RzL2RlZmF1bHQvLS8'), akhRanapiurl = Base64.decode('P21heC1yZXN1bHRzPTEmYWx0PWpzb24mY2FsbGJhY2s9');
+	var randcat = json.feed.category, myTLDom = json.feed.link.pop().href.replace("https://","").replace(/\/[^/]+(\.[^/.]+)$/,"").split("/"), awRanapiurl = "https://"+myTLDom[0]+Base64.decode('L2ZlZWRzL3Bvc3RzL2RlZmF1bHQvLS8'), akhRanapiurl = Base64.decode('P21heC1yZXN1bHRzPTEmYWx0PWpzb24mY2FsbGJhY2s9');
 	var wrmr = document.getElementById("writemore");
 	for (var i = 0; i < randcat.length; i++) {	
 		var ranapiurl = awRanapiurl+randcat[i].term+akhRanapiurl+'plst'+(i+1), script = document.createElement('script');script.setAttribute('src', ranapiurl); document.head.appendChild(script); 
