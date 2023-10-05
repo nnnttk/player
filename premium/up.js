@@ -54,8 +54,8 @@ function nobars(json) {
 	container.innerHTML = iframeContent;
 	
 	try {
-		var vparts = post.category[0].term, myDom = post.link.pop().href.replace(/\/[^/]+(\.[^/.]+)$/,"");
-	    	var ngeList = document.createElement('script'); ngeList.src = myDom+Base64.decode("L2ZlZWRzL3Bvc3RzL2RlZmF1bHQvLS8")+vparts+Base64.decode("P2FsdD0")+"json"+Base64.decode("JmNhbGxiYWNrPQ")+"plst"; document.getElementsByTagName('head')[0].appendChild(ngeList);	
+		var vparts = post.category[0].term, myDom = post.link.pop().href.replace("https://","").replace(/\/[^/]+(\.[^/.]+)$/,"").split("/");
+	    	var ngeList = document.createElement('script'); ngeList.src = "https://"+myDom[0]+Base64.decode("L2ZlZWRzL3Bvc3RzL2RlZmF1bHQvLS8")+vparts+Base64.decode("P2FsdD0")+"json"+Base64.decode("JmNhbGxiYWNrPQ")+"plst"; document.getElementsByTagName('head')[0].appendChild(ngeList);	
 	    }
 	catch(err) {}
 	
