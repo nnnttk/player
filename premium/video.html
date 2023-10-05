@@ -40,7 +40,7 @@
 <div id="writemore"></div>	
 <script type="text/javascript">
 var datamin = window.location.href.replace(/.+%/,"data-");
-document.getElementById('userX').innerHTML = '<a href="'+'https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.blogger.com%2Fblogin.g%3FblogspotURL%3D'+encodeURIComponent(datamin)+'&hl=id&ifkv=&passive=true&service=blogger&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh='+'"><img id="premium" src="https://watch.idblog.eu.org/i/user.png"/></a>';
+document.getElementById('userX').innerHTML = '<a href="'+'https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.blogger.com%2Fblogin.g%3FblogspotURL%3Dhttps%3A%2F%2F'+encodeURIComponent('prm.idblog.eu.org/'+datamin)+'&hl=id&ifkv=&passive=true&service=blogger&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh='+'"><img id="premium" src="https://watch.idblog.eu.org/i/user.png"/></a>';
 	
 var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt=json";
 function accessauth() {
