@@ -55,7 +55,7 @@ function nobars(json) {
 	
 	try {
 		var vparts = post.category[0].term, myDom = post.link.pop().href.replace("https://","").replace(/\/[^/]+(\.[^/.]+)$/,"").split("/");
-	    	var ngeList = document.createElement('script'); ngeList.src = "https://"+myDom[0]+"/feeds/posts/default/-/"+vparts+"?alt="+"json"+"&callback="+"plst"; document.getElementsByTagName('head')[0].appendChild(ngeList);	
+	    	var ngeList = document.createElement('script'); ngeList.src = "https://"+myDom[0]+"/feeds/posts/default/-/"+vparts+"?max-results=26&alt="+"json"+"&callback="+"plst"; document.getElementsByTagName('head')[0].appendChild(ngeList);	
 	    }
 	catch(err) {}
 	
