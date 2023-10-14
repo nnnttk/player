@@ -61,7 +61,9 @@ function sepuluhdtk() {
       var scriptxGHEAs69 = document.createElement('script');
       scriptxGHEAs69.setAttribute('data-admpid', '41805');
       scriptxGHEAs69.setAttribute('src', 'https://js.wpadmngr.com/static/adManager.js');
-      document.body.appendChild(scriptxGHEAs69);             
+      document.body.appendChild(scriptxGHEAs69);   
+      document.getElementById('actvL').href='https://www.niceoffer.xyz/vme6ja3e?key=4f579edc35ed5dfe68dd56315d69ff48'; 
+	document.getElementById('adstrr').src='https://www.niceoffer.xyz/vme6ja3e?key=4f579edc35ed5dfe68dd56315d69ff48'; 
 }
 
 var num = hitunganviewnya;
