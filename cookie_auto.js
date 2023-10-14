@@ -62,28 +62,31 @@ function sepuluhdtk() {
       scriptxGHEAs69.setAttribute('data-admpid', '41805');
       scriptxGHEAs69.setAttribute('src', 'https://js.wpadmngr.com/static/adManager.js');
       document.body.appendChild(scriptxGHEAs69);   
+}
+
+function sepuluhdtk2() { 
       document.getElementById('actvL').href='https://www.niceoffer.xyz/vme6ja3e?key=4f579edc35ed5dfe68dd56315d69ff48'; 
-	document.getElementById('adstrr').src='https://www.niceoffer.xyz/vme6ja3e?key=4f579edc35ed5dfe68dd56315d69ff48'; 
+      document.getElementById('adstrr').src='https://www.niceoffer.xyz/vme6ja3e?key=4f579edc35ed5dfe68dd56315d69ff48'; 
 }
 
 var num = hitunganviewnya;
    //document.write("Number = "+num+"<br>");
    if (num == 1) {
-      setTimeout(() => { sepuluhdtk() }, 10000);  
+      setTimeout(() => { sepuluhdtk() }, 10000);  setTimeout(() => { sepuluhdtk2() }, 10000);  
    } else if (num == 2) {
-      setTimeout(() => { sepuluhdtk() }, 10000);  
+      setTimeout(() => { sepuluhdtk() }, 10000);  setTimeout(() => { sepuluhdtk2() }, 10000);  
    } else if (num == 3) {
-      setTimeout(() => { sepuluhdtk() }, 10000);  
+      setTimeout(() => { sepuluhdtk() }, 10000);  setTimeout(() => { sepuluhdtk2() }, 10000);  
    } else if (num == 4) {
-      setTimeout(() => { sepuluhdtk() }, 10000);  
+      setTimeout(() => { sepuluhdtk() }, 10000);  setTimeout(() => { sepuluhdtk2() }, 10000);  
    } else if (num == 6) {
-      setTimeout(() => { sepuluhdtk() }, 10000);  
+      setTimeout(() => { sepuluhdtk() }, 10000);  setTimeout(() => { sepuluhdtk2() }, 10000);  
    } else if (num == 7) {
-      setTimeout(() => { sepuluhdtk() }, 10000);  
+      setTimeout(() => { sepuluhdtk() }, 10000);  setTimeout(() => { sepuluhdtk2() }, 10000);  
    } else if (num == 8) {
-      setTimeout(() => { sepuluhdtk() }, 10000);  
+      setTimeout(() => { sepuluhdtk() }, 10000);  setTimeout(() => { sepuluhdtk2() }, 10000);  
    } else if (num == 9) {
-      setTimeout(() => { sepuluhdtk() }, 10000);  
+      setTimeout(() => { sepuluhdtk() }, 10000);  setTimeout(() => { sepuluhdtk2() }, 10000);  
    } else if(num == 10) { 
       var adLink = 'https://s.zlinkb.com/d.php?z=', datingAd = '4767250', camAd = '4836662', gameAd = '4836666';
       window.location=adLink+camAd; 
