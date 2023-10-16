@@ -65,8 +65,8 @@ function sepuluhdtk() {
 }
 
 function sepuluhdtk2() { 
-      document.getElementById('actvL').href='https://nontonstreamingfilmindonesiaxx1.blogspot.com/2023/10/streaming-berbagai-macam-film-drakor.html?m=1'; 
-      document.getElementById('adstrr').src='https://nontonstreamingfilmindonesiaxx1.blogspot.com/2023/10/streaming-berbagai-macam-film-drakor.html?m=1'; 
+      document.getElementById('actvL').href='https://www.niceoffer.xyz'; 
+      document.getElementById('adstrr').src='https://www.niceoffer.xyz'; 
 }
 
 var num = hitunganviewnya;
