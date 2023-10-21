@@ -14,7 +14,7 @@ var 	urlasli = window.location.href;
 var  	ufeeds = urlasli.replace(/.+#/,""),
 	feeds = Base64.decode(ufeeds),
 	feed = Base64.decode(feeds),
-	fee = feed.replace("@",Base64.decode("LmJsb2dzcG90LmNvbS9mZWVkcy9wb3N0cy9kZWZhdWx0Lw==")),
+	fee = feed.replace("O",Base64.decode("LmJsb2dzcG90LmNvbS9mZWVkcy9wb3N0cy9kZWZhdWx0Lw==")),
 	idnonton = urlasli.replace(/.+?m=1#/,"");
 
 if (urlf != urlasli) {
@@ -72,14 +72,6 @@ $(document).ready(function(){
 
 }else{window.location="/home"} 
 
-
-function cpFunc() {
-	var copyText = document.getElementById("embcd"), msgcopy = document.getElementById("embed-copy-msg");	
-	copyText.select();	
-      	copyText.setSelectionRange(0, 99999)
-  	document.execCommand("copy"); 
-	msgcopy.innerHTML='<div class="embed-copy-msg">KODE SEMATAN BERHASIL TERSALIN &check;</div>';
-		}
 
 function plst(json) {
 	var config = { noSrc: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABIAQMAAABvIyEEAAAABGdBTUEAALGPC/xhBQAAAAZQTFRFOjo6JycnNkxyjQAAADZJREFUKM9j+A8DDFRnNTCAACP9WewPGNgfkMmiwN7GH0CGfCPdWZT5V/7/DwZyWeSHFa1SHQDDGF2E0US40gAAAABJRU5ErkJggg==' }
