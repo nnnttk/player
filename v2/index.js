@@ -57,7 +57,7 @@ function nobars(json) {
 
 	
 var script = document.createElement('script');
-var gntMVL = "https://"+fee+"alt=json&callback=nobars";
+var gntMVL = "https://"+fee+"?alt=json&callback=nobars";
 script.src = gntMVL;
 
 document.getElementsByTagName('head')[0].appendChild(script); 
