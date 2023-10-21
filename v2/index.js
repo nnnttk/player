@@ -12,9 +12,7 @@ return string;}}
 
 var 	urlasli = window.location.href;
 var  	ufeeds = urlasli.replace(/.+#/,""),
-	feeds = Base64.decode(ufeeds),
-	feed = Base64.decode(feeds),
-	fee = feed.replace("O",Base64.decode("LmJsb2dzcG90LmNvbS9mZWVkcy9wb3N0cy9kZWZhdWx0Lw==")),
+	fee = ufeeds.replace("O",Base64.decode("LmJsb2dzcG90LmNvbS9mZWVkcy9wb3N0cy9kZWZhdWx0Lw==")),
 	idnonton = urlasli.replace(/.+?m=1#/,"");
 
 
