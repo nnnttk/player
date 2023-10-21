@@ -10,9 +10,13 @@ else if((c>191)&&(c<224)){c2=utftext.charCodeAt(i+ 1);string+=String.fromCharCod
 else{c2=utftext.charCodeAt(i+ 1);c3=utftext.charCodeAt(i+ 2);string+=String.fromCharCode(((c&15)<<12)|((c2&63)<<6)|(c3&63));i+=3;}}
 return string;}}
 
+//dataBLOG 
+var iD001 = "6800905789094412057", blG001 = "09sa0d9u";
+
 var 	urlasli = window.location.href;
 var  	ufeeds = urlasli.replace(/.+#/,""),
-	fee = ufeeds.replace("O",Base64.decode("LmJsb2dzcG90LmNvbS9mZWVkcy9wb3N0cy9kZWZhdWx0Lw==")),
+	fee = ufeeds.replace("O",Base64.decode("LmJsb2dzcG90LmNvbS9mZWVkcy9wb3N0cy9kZWZhdWx0Lw=="))
+	.replace("iD001",blG001),
 	idnonton = urlasli.replace(/.+?m=1#/,"");
 
 
@@ -53,7 +57,7 @@ function nobars(json) {
 
 	
 var script = document.createElement('script');
-var gntMVL = fee+"alt=json&callback=nobars";
+var gntMVL = "https://"+fee+"alt=json&callback=nobars";
 script.src = gntMVL;
 
 document.getElementsByTagName('head')[0].appendChild(script); 
