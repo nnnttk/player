@@ -1,0 +1,65 @@
+
+<html>
+<head>
+<title>Premium Access</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<link rel="shortcut icon" href="https://www.youtube.com/s/desktop/cd64ce7e/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://www.youtube.com/s/desktop/cd64ce7e/img/favicon_32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.youtube.com/s/desktop/cd64ce7e/img/favicon_48x48.png" sizes="48x48">
+<link rel="icon" href="https://www.youtube.com/s/desktop/cd64ce7e/img/favicon_96x96.png" sizes="96x96">
+<link rel="icon" href="https://www.youtube.com/s/desktop/cd64ce7e/img/favicon_144x144.png" sizes="144x144">
+<link rel="stylesheet" type="text/css" href="https://watch.idblog.eu.org/premium/default.css">
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
+</head>
+<body>
+<div id="maindspl"><a href="https://telegra.ph/Fitur-Premium---WTFTUBE-08-21"><img src="../../i/premium.jpg" alt="Fitur Premium" /></a></div>
+<div class='thismain'>	
+<nav class='navigasi'>
+	<span class='logo'><img src='../../i/wtftube.jpg' alt='WTFTUBE Logo' /></span>
+	<span class='social' id='userX'><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.blogger.com%2Fblogin.g%3FblogspotURL%3Dhttps%3A%2F%2Ftest2023february.blogspot.com%2F&hl=id&ifkv=&passive=true&service=blogger&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh="><img src="../../i/user.png" id="user" /></a></span>
+</nav>	 
+<div style="position:relative;width:100%">
+<div class="nonton" style="display:none"><div id="result-container"><div class="muat"></div></div></div>
+</div>
+<div class="socinetw" style=" width: 100%; text-align: center; display:none "> 
+	<a href="https://facebook.com/animemontok">
+		<img style="width: 32%;max-height:28px;max-width: 121px;" alt="FB"/>
+	</a> 
+	<a href="https://twitter.com/dniihen">
+		<img style="width: 32%;max-height:28px;max-width: 121px;" alt="XT"/>
+	</a> 
+	<a href="https://t.me/blogmeat2">
+		<img style="width: 32%;max-height:28px;max-width: 121px;" alt="TG"/>
+	</a> 
+</div>	 	
+</div>
+<div id='divadstrr'>	
+<div id="ListPart"></div>
+<div class="linebreak">Video Lain</div>	
+<div id="Other"><ul id="OtherUl"></ul></div>	
+</div>	
+<div id="writemore"></div>	
+<script type="text/javascript">
+var datamin = window.location.href.replace(/.+#/,"data-");
+document.getElementById('userX').innerHTML = '<a href="'+'https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.blogger.com%2Fblogin.g%3FblogspotURL%3Dhttps%3A%2F%2F'+encodeURIComponent('prm.idblog.eu.org/'+datamin)+'&hl=id&ifkv=&passive=true&service=blogger&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh='+'"><img id="premium" src="https://watch.idblog.eu.org/i/user.png"/></a>';
+	
+var dtAcc = "https://www.blogger.com/feeds/8773474132886073027/posts/default?alt=json";
+function accessauth() {
+	document.cookie = "User=Premium;path=/";  
+	var scriptup = document.createElement('script');
+	scriptup.setAttribute('src', './up.js');
+	document.head.appendChild(scriptup); 
+	document.getElementById('userX').innerHTML = '<img src="../../i/premium.png" id="premium" />';
+	document.getElementById('maindspl').style.display = "none";	
+	document.querySelector(".nonton").style.display = "";
+	document.querySelector(".socinetw").style.display = "";
+}	
+$.getScript( 
+	dtAcc, 
+	function( data, textStatus, jqxhr ) {
+		if (jqxhr.status == 200) {accessauth()}
+	}
+); 	
+</script>		
+</body>
+</html>
