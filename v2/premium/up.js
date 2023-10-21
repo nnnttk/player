@@ -44,7 +44,6 @@ function nobars(json) {
 	//console.log(iframeSrc);
 	//console.log(iframeContent[0]);
 	container.innerHTML = iframeContent;
-	emdc.innerHTML = '<textarea readonly id="embcd" onclick="cpFunc();"> <iframe scrolling="no" allowfullscreen style="width:100%;height:480px;border:0px;overflow:hidden;" src="'+urlasli+'" ></iframe></textarea>';
 	
 	try {
 		var vparts = post.category[0].term, myDom = post.link.pop().href.replace("https://","").replace(/\/[^/]+(\.[^/.]+)$/,"").split("/");
