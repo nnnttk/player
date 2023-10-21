@@ -89,7 +89,7 @@ function plst(json) {
 		var titLtr = /^[a-z]*$/.test(title.slice(-1)); if (titLtr == true) { var titleFix = title.slice(-1).charCodeAt(0)-96; } else { var titleFix = title.slice(-1); }
 
 		var ktnfix = ktn.replace(iD001,"iD001");
-		othrPrt += '<li><a href="'+window.location.href.replace('/video?m=1#','/v?m=1#').replace(/#.+/,'#')+ktnfix+'" ><img src="'+imgSrcFix+'"/><br /><div class="jdlPart">Part '+titleFix+'</div></a></li>';
+		othrPrt += '<li><a href="'+window.location.href.replace('/video?m=1#','/v?m=1#').replace(/prm.+#/,'prm.idblog.eu.org/v?m=1#').replace(/#.+/,'#')+ktnfix+'" ><img src="'+imgSrcFix+'"/><br /><div class="jdlPart">Part '+titleFix+'</div></a></li>';
 	}		
 	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';		
 	
