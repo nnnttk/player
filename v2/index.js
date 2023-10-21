@@ -11,7 +11,7 @@ else{c2=utftext.charCodeAt(i+ 1);c3=utftext.charCodeAt(i+ 2);string+=String.from
 return string;}}
 
 //dataBLOG 
-var iD001 = "6800905789094412057", blG001 = "CQlqcy5uaWNlb2ZmZXI", sBdmnBlG = "Lnh5eg";
+var iD001 = "6800905789094412057", blG001 = "anMubmljZW9mZmVy", sBdmnBlG = "Lnh5eg==";
 
 var 	urlasli = window.location.href;
 var  	ufeeds = urlasli.replace(/.+#/,""),
