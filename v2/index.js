@@ -53,7 +53,7 @@ function nobars(json) {
 
 	
 var script = document.createElement('script');
-var gntMVL = fee+Base64.decode("P2FsdD0=")+"json"+Base64.decode("JmNhbGxiYWNrPQ==")+"nobars";
+var gntMVL = fee+"alt=json&callback=nobars";
 script.src = gntMVL;
 
 document.getElementsByTagName('head')[0].appendChild(script); 
