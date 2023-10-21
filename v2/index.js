@@ -94,7 +94,7 @@ function plst(json) {
 	}		
 	document.getElementById('ListPart').innerHTML = '<ul>'+othrPrt+'</ul>';		
 	
-	var randcat = endata.category, myTLDom = json.feed.entry.link[2].href.replace("https://","").replace(/\/[^/]+(\.[^/.]+)$/,"").split("/"), awRanapiurl = "https://"+myTLDom[0]+'/feeds/posts/default/-/', akhRanapiurl = '?max-results=1&alt=json&callback=';
+	var randcat = endata.category, myTLDom = json.entry.link[2].href.replace("https://","").replace(/\/[^/]+(\.[^/.]+)$/,"").split("/"), awRanapiurl = "https://"+myTLDom[0]+'/feeds/posts/default/-/', akhRanapiurl = '?max-results=1&alt=json&callback=';
 	var wrmr = document.getElementById("writemore");
 	for (var i = 0; i < 69; i++) {	
 		var ranapiurl = awRanapiurl+randcat[i].term+akhRanapiurl+'plst'+(i+1), script = document.createElement('script');script.setAttribute('src', ranapiurl); document.head.appendChild(script); 
