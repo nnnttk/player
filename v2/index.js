@@ -83,7 +83,7 @@ function plst(json) {
 			imgSrc = imgContent && imgContent[3] ? imgContent[3] : config.noSrc,
 			urlf = endata[i].link[0].href,
 			stw = urlf.replace(/feed.+default/,""),
-			urlfe = urlf.replace("/comments/default",""),
+			urlfe = urlf.replace("/comments/default","").replace(/ht.+ds/,""),
 			ktn = urlfe.replace("/posts/default/","O").replaceAll("/",""), 
 			pgntn = "v2/?m=1#";
 		var imgSrcEnc = encodeURIComponent(imgSrc).replace("https%3A%2F%2F","").split("%2F"), imgBlggr = 'blogger.googleusercontent.com/img/'; if(imgSrc.includes(imgBlggr) == true){ var imgSrcFix = 'https://dl.kaskus.id/'+imgBlggr+imgSrcEnc[2]+'/'+imgSrcEnc[3]+'/'+imgSrcEnc[4]+'/w330-h185-c-rw/thumb.webp'; } else {var imgSrcFix = imgSrc;}
