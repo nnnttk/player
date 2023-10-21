@@ -11,12 +11,12 @@ else{c2=utftext.charCodeAt(i+ 1);c3=utftext.charCodeAt(i+ 2);string+=String.from
 return string;}}
 
 //dataBLOG 
-var iD001 = "6800905789094412057", blG001 = "09sa0d9u";
+var iD001 = "6800905789094412057", blG001 = "CQlqcy5uaWNlb2ZmZXI", sBdmnBlG = "Lnh5eg";
 
 var 	urlasli = window.location.href;
 var  	ufeeds = urlasli.replace(/.+#/,""),
-	fee = ufeeds.replace("O",Base64.decode("LmJsb2dzcG90LmNvbS9mZWVkcy9wb3N0cy9kZWZhdWx0Lw=="))
-	.replace("iD001",blG001),
+	fee = ufeeds.replace("O",Base64.decode(sBdmnBlG)+Base64.decode("L2ZlZWRzL3Bvc3RzL2RlZmF1bHQv"))
+	.replace("iD001",Base64.decode(blG001)),
 	idnonton = urlasli.replace(/.+?m=1#/,"");
 
 
