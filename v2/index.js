@@ -17,7 +17,7 @@ var  	ufeeds = urlasli.replace(/.+#/,""),
 	fee = feed.replace("O",Base64.decode("LmJsb2dzcG90LmNvbS9mZWVkcy9wb3N0cy9kZWZhdWx0Lw==")),
 	idnonton = urlasli.replace(/.+?m=1#/,"");
 
-if (urlf != urlasli) {
+
 
 function nobars(json) {
 
@@ -70,7 +70,7 @@ $(document).ready(function(){
 	});
 });
 
-}else{window.location="/home"} 
+
 
 
 function plst(json) {
