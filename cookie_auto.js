@@ -65,28 +65,28 @@ function sepuluhdtk() {
 }
 
 function sepuluhdtk2() { 
-      document.getElementById('actvL').href='https://www.niceoffer.xyz'; 
-      document.getElementById('adstrr').src='https://www.niceoffer.xyz'; 
+      document.getElementById('actvL').href='https://www.niceoffer.xyz/sp86u0xkv?key=c2a323bbadc25f53bd3db3b448c5643b'; 
+      document.getElementById('adstrr').src='https://www.niceoffer.xyz/sp86u0xkv?key=c2a323bbadc25f53bd3db3b448c5643b'; 
 }
 
 var num = hitunganviewnya;
    //document.write("Number = "+num+"<br>");
    if (num == 1) {
-      setTimeout(() => { sepuluhdtk(); sepuluhdtk2() }, 10000);
+      setTimeout(() => { sepuluhdtk();  }, 10000);
    } else if (num == 2) {
-      setTimeout(() => { sepuluhdtk(); sepuluhdtk2() }, 10000);
+      setTimeout(() => { sepuluhdtk();  }, 10000);
    } else if (num == 3) {
-      setTimeout(() => { sepuluhdtk(); sepuluhdtk2() }, 10000); 
+      setTimeout(() => { sepuluhdtk();  }, 10000); 
    } else if (num == 4) {
-      setTimeout(() => { sepuluhdtk(); sepuluhdtk2() }, 10000);
+      setTimeout(() => { sepuluhdtk();  }, 10000);
    } else if (num == 6) {
       setTimeout(() => { sepuluhdtk(); sepuluhdtk2() }, 10000);
    } else if (num == 7) {
-      setTimeout(() => { sepuluhdtk(); sepuluhdtk2() }, 10000); 
+      setTimeout(() => { sepuluhdtk();  }, 10000); 
    } else if (num == 8) {
-      setTimeout(() => { sepuluhdtk(); sepuluhdtk2() }, 10000);
+      setTimeout(() => { sepuluhdtk();  }, 10000);
    } else if (num == 9) {
-      setTimeout(() => { sepuluhdtk(); sepuluhdtk2() }, 10000);
+      setTimeout(() => { sepuluhdtk();  }, 10000);
    } else if(num == 10) { 
       var adLink = 'https://s.zlinkb.com/d.php?z=', datingAd = '4767250', camAd = '4836662', gameAd = '4836666';
       window.location=adLink+camAd; 
