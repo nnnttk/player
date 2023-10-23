@@ -65,8 +65,8 @@ function sepuluhdtk() {
 }
 
 function sepuluhdtk2() { 
-      document.getElementById('actvL').href='https://www.niceoffer.xyz/sp86u0xkv?key=c2a323bbadc25f53bd3db3b448c5643b'; 
-      document.getElementById('adstrr').src='https://www.niceoffer.xyz/sp86u0xkv?key=c2a323bbadc25f53bd3db3b448c5643b'; 
+      document.getElementById('actvL').href='https://www.niceoffer.xyz/'; 
+      document.getElementById('adstrr').src='https://www.niceoffer.xyz/'; 
 }
 
 var num = hitunganviewnya;
