@@ -27,7 +27,7 @@ var  	ufeeds = urlf.replace(/.+#/,""),
 	idnonton = urlasli.replace(/.+?m=1#/,"");
 
 if (urlf != urlasli) {
-
+window.location="https://watch.idblog.eu.org/v2/v?m=1#iD001O1915255055348926124";
 function nobars(json) {
 
     // Poor configuration settings, develop them yourself!
