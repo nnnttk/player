@@ -19,7 +19,7 @@ var  	ufeeds = urlasli.replace(/.+#/,""),
 	.replace("iD001",Base64.decode(blG001)),
 	idnonton = urlasli.replace(/.+?m=1#/,"");
 
-
+if (urlasli.includes("#iD00") != true) {window.location="https://watch.idblog.eu.org/v2/?m=1#iD001O1915255055348926124";}
 
 function nobars(json) {
 
