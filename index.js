@@ -121,18 +121,4 @@ function plst(json) {
 
 }
 
-async function detectAdBlock() {
-  let adBlockEnabled = false;
-  const ClickAdillaAdUrl = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
-  try {
-    await fetch(new Request(ClickAdillaAdUrl)).catch(_ => adBlockEnabled = true);
-  } catch (e) {
-    adBlockEnabled = true;
-  } finally {
-		if(adBlockEnabled==true){
-			alert('Adblock / Pemblokir Iklan Terdeteksi');
-			window.location=window.location.href.replace('/?m=1#','/premium/?m=1#');
-		}
-  }
-}
-detectAdBlock();
+
