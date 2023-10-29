@@ -11,10 +11,5 @@ else{c2=utftext.charCodeAt(i+ 1);c3=utftext.charCodeAt(i+ 2);string+=String.from
 return string;}}
 
 var  urlasli = window.location.href, tknKTN = urlasli.replace(/ht.+#/,""), isiKTN = Base64.decode('PGlmcmFtZSBhbGxvd2Z1bGxzY3JlZW49ImFsbG93ZnVsbHNjcmVlbiIgd2Via2l0YWxsb3dmdWxsc2NyZWVuPSJ3ZWJraXRhbGxvd2Z1bGxzY3JlZW4iIG1vemFsbG93ZnVsbHNjcmVlbj0ibW96YWxsb3dmdWxsc2NyZWVuIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNjYiIHNyYz0iaHR0cHM6Ly93d3cuYmxvZ2dlci5jb20vdmlkZW8uZz90b2tlbj0=')+Base64.decode(tknKTN)+Base64.decode('IiBmcmFtZWJvcmRlcj0iMCI+PC9pZnJhbWU+');
-var  config = {
-  containerID: 'result-container', 
-  noSrc: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABIAQMAAABvIyEEAAAABGdBTUEAALGPC/xhBQAAAAZQTFRFOjo6JycnNkxyjQAAADZJREFUKM9j+A8DDFRnNTCAACP9WewPGNgfkMmiwN7GH0CGfCPdWZT5V/7/DwZyWeSHFa1SHQDDGF2E0US40gAAAABJRU5ErkJggg=='
-},
-d = document, container = d.getElementById(config.containerID);
-if (!container) { alert('Container not found.'); return;}
+var  container = document.getElementById('result-container');
 container.innerHTML = isiKTN;
