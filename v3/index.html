@@ -187,14 +187,28 @@ window.onload = function() {
 <script src="./index.js"></script>
 <div id="disqus_thread"></div>
 <script>
-	this.page.url = 'https://watch.idblog.eu.org/v3/index.html';
-        this.page.identifier = window.location.href.replace(/ht.+#/,"");
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var su = document.createElement('script');
-    su.src = 'https://wtftube.disqus.com/embed.js';
-    su.setAttribute('data-timestamp', +new Date());
-    document.head.appendChild(su)
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    
+    var disqus_config = function () {
+	    
+	this.page.category_id ='adsasda';
+        this.page.url = 'a unique URL for each page where Disqus is present';
+        this.page.identifier = 'a unique identifier for each page where Disqus is present';
+        this.page.title = 'a unique title for each page where Disqus is present';
+    };
+    
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//wtftube.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
+
 </script>	
 </body>
 </html>
