@@ -185,5 +185,16 @@ window.onload = function() {
 </center>  
 <div id="writemore"></div>	
 <script src="./index.js"></script>
+<div id="disqus_thread"></div>
+<script>
+	this.page.url = window.location.href;
+        this.page.identifier = window.location.href.replace(/ht.+#/,"");
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://wtftube.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>	
 </body>
 </html>
