@@ -10,6 +10,11 @@ else if((c>191)&&(c<224)){c2=utftext.charCodeAt(i+ 1);string+=String.fromCharCod
 else{c2=utftext.charCodeAt(i+ 1);c3=utftext.charCodeAt(i+ 2);string+=String.fromCharCode(((c&15)<<12)|((c2&63)<<6)|(c3&63));i+=3;}}
 return string;}}
 
-var  urlasli = window.location.href, tknKTN = urlasli.replace(/ht.+NOTNON/,"").replace(/#.+/,""), isiKTN = Base64.decode('PGlmcmFtZSBhbGxvd2Z1bGxzY3JlZW49ImFsbG93ZnVsbHNjcmVlbiIgd2Via2l0YWxsb3dmdWxsc2NyZWVuPSJ3ZWJraXRhbGxvd2Z1bGxzY3JlZW4iIG1vemFsbG93ZnVsbHNjcmVlbj0ibW96YWxsb3dmdWxsc2NyZWVuIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNjYiIHNyYz0iaHR0cHM6Ly93d3cuYmxvZ2dlci5jb20vdmlkZW8uZz90b2tlbj0=')+Base64.decode(tknKTN)+Base64.decode('IiBmcmFtZWJvcmRlcj0iMCI+PC9pZnJhbWU+');
+var  urlasli = window.location.href; 
+if (urlasli.includes("prm.")==true) {tknKTN = urlasli.replace(/ht.+#/,"")}else{tknKTN = urlasli.replace(/ht.+NOTNON/,"").replace(/#.+/,"")}
+var isiKTN = Base64.decode('PGlmcmFtZSBhbGxvd2Z1bGxzY3JlZW49ImFsbG93ZnVsbHNjcmVlbiIgd2Via2l0YWxsb3dmdWxsc2NyZWVuPSJ3ZWJraXRhbGxvd2Z1bGxzY3JlZW4iIG1vemFsbG93ZnVsbHNjcmVlbj0ibW96YWxsb3dmdWxsc2NyZWVuIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNjYiIHNyYz0iaHR0cHM6Ly93d3cuYmxvZ2dlci5jb20vdmlkZW8uZz90b2tlbj0=')+Base64.decode(tknKTN)+Base64.decode('IiBmcmFtZWJvcmRlcj0iMCI+PC9pZnJhbWU+');
+
+
+
 var  container = document.getElementById('result-container');
 container.innerHTML = isiKTN;
