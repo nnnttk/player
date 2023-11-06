@@ -74,7 +74,7 @@ window.onload = function() {
 	    
 	this.page.category_id = 'JAV';
         this.page.url = window.location.href.replace(/#.+/,"");
-        this.page.identifier = window.location.href.replace(/ht.+NOTNON/,"").replace(/#.+/,"");
+        this.page.identifier = window.location.href.replace(/ht.+NOTNON/,"").replace(/#.+/,"").replace("?fbclid","@").replace(/@.+/,"");
         this.page.title = document.title;
     };
     
