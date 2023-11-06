@@ -65,8 +65,8 @@ function sepuluhdtk() {
 }
 
 function sepuluhdtk2() { 
-      document.getElementById('actvL').href='https://www.niceoffer.xyz/'; 
-      document.getElementById('adstrr').src='https://www.niceoffer.xyz/'; 
+      document.getElementById('actvL').href='https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fwatch.idblog.eu.org'; 
+      document.getElementById('adstrr').src='https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fwatch.idblog.eu.org'; 
 }
 
 var num = hitunganviewnya;
