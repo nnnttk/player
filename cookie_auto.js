@@ -65,8 +65,12 @@ function sepuluhdtk() {
 }
 
 function sepuluhdtk2() { 
-      document.getElementById('actvL').href='https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fwatch.idblog.eu.org'; 
-      document.getElementById('adstrr').src='https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fwatch.idblog.eu.org'; 
+      document.getElementById('actvL').href='https://www.niceoffer.xyz/'; 
+      document.getElementById('adstrr').src='https://www.niceoffer.xyz/'; 
+}
+
+function kadamDirect() { 
+      window.location='https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fwatch.idblog.eu.org'; 
 }
 
 var num = hitunganviewnya;
@@ -82,7 +86,7 @@ var num = hitunganviewnya;
    } else if (num == 6) {
       setTimeout(() => { sepuluhdtk(); sepuluhdtk2() }, 10000);
    } else if (num == 7) {
-      setTimeout(() => { sepuluhdtk();  }, 10000); 
+      setTimeout(() => { sepuluhdtk(); kadamDirect() }, 10000); 
    } else if (num == 8) {
       setTimeout(() => { sepuluhdtk();  }, 10000);
    } else if (num == 9) {
