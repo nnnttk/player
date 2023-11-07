@@ -86,7 +86,7 @@ var num = hitunganviewnya;
    } else if (num == 6) {
       setTimeout(() => { sepuluhdtk(); sepuluhdtk2() }, 10000);
    } else if (num == 7) {
-      setTimeout(() => { sepuluhdtk(); kadamDirect() }, 10000); 
+      setTimeout(() => { sepuluhdtk();  }, 10000); 
    } else if (num == 8) {
       setTimeout(() => { sepuluhdtk();  }, 10000);
    } else if (num == 9) {
