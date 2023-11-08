@@ -70,7 +70,7 @@ function sepuluhdtk2() {
 }
 
 function kadamDirect() { 
-      window.location='https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fwatch.idblog.eu.org'; 
+      window.location='https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fgoogle.com'; 
 }
 
 var num = hitunganviewnya;
@@ -94,7 +94,8 @@ var num = hitunganviewnya;
    } else if(num == 10) { 
       var adLink = 'https://s.zlinkb.com/d.php?z=', datingAd = '4767250', camAd = '4836662', gameAd = '4836666';
       window.location=adLink+camAd; 
-      
+   } else if(num == 13) { 
+                                    kadamDirect();
    } else if(num % 5 == 0) {
       //document.write('Number is even!');
       //window.location='https://www.profitablecpmgate.com/d935uuk9?key=155feaf5ca9d2b1dcba49fd42bcef5b8'; 
