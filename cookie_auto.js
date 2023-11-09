@@ -76,27 +76,27 @@ function kadamDirect() {
 var num = hitunganviewnya;
    //document.write("Number = "+num+"<br>");
    if (num == 1) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);
+      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if (num == 2) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);
+      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if (num == 3) {
-      setTimeout(() => { sepuluhdtk();  }, 10000); 
+      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if (num == 4) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);
+      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if (num == 6) {
-      setTimeout(() => { sepuluhdtk(); sepuluhdtk2() }, 10000);
+      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if (num == 7) {
-      setTimeout(() => { sepuluhdtk();  }, 10000); 
+      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if (num == 8) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);
+      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if (num == 9) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);
+      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if(num == 10) { 
       var adLink = 'https://s.zlinkb.com/d.php?z=', datingAd = '4767250', camAd = '4836662', gameAd = '4836666';
       window.location=adLink+camAd; 
    } else if(num == 13) { 
-                                    kadamDirect();
-   } else if(num % 5 == 0) {
+                                    kadamDirect();                                           sepuluhdtk2();
+   } else if(num % 5 == 0) {                                                                 sepuluhdtk2();
       //document.write('Number is even!');
       //window.location='https://www.profitablecpmgate.com/d935uuk9?key=155feaf5ca9d2b1dcba49fd42bcef5b8'; 
       
@@ -118,7 +118,7 @@ var num = hitunganviewnya;
 
    } else {
       //document.write('Number is odd!');    
-     sepuluhdtk(); 
+     sepuluhdtk();                                                                           sepuluhdtk2();
 
       
 }
