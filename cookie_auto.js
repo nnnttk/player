@@ -69,6 +69,11 @@ function sepuluhdtk2() {
       document.getElementById('adstrr').src='https://ad.a-ads.com/2275676?size=300x250'; 
 }
 
+function titipan() { 
+      document.getElementById('actvL').href='https://bit.ly/47zfmlg'; 
+      document.getElementById('adstrr').src='https://bit.ly/47zfmlg'; 
+}
+
 function kadamDirect() { 
       window.location='https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fgoogle.com'; 
 }
@@ -84,7 +89,7 @@ var num = hitunganviewnya;
    } else if (num == 4) {
       setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if (num == 6) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
+      setTimeout(() => { sepuluhdtk();  }, 10000);                                           titipan();
    } else if (num == 7) {
       setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if (num == 8) {
