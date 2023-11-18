@@ -89,7 +89,7 @@ var num = hitunganviewnya;
    } else if (num == 4) {
       setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if (num == 6) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);                                           titipan();
+      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if (num == 7) {
       setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
    } else if (num == 8) {
