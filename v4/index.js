@@ -34,6 +34,7 @@ function loadVideo(videoId) {
     videoFrame.height = `360`;
     videoFrame.classList.remove('hidden');
     document.title = `${IdCode} - Part ${firstLetter}`;
+    document.getElementById("judul").innerHTML = `${IdCode} - Part ${firstLetter}`;	
 }
 			
 		}
