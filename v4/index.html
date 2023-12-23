@@ -12,6 +12,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <style>
+* { transition: all 0.5s ease;}		
 body {
 	margin:0px;
 	background-color:#1c172e;
@@ -64,6 +65,11 @@ body {
     margin: 9px;
     right: 0px;
     position: absolute;
+}	
+@media screen and (max-width: 480px) {
+	#result-container #videoFrame {
+    		height:200px;
+	}	
 }	
 </style>	
 <body>
