@@ -29,7 +29,7 @@ img {
     <div id="result-container"></div>
 <script>
 var IdCode = window.location.href.replace(/ht.+de=/,"")  
-const apiUrl = `./data/${IdCode}.json`,
+const apiUrl = `https://watch.idblog.eu.org/v4/data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
 fetch(apiUrl).then((t => {
     if (!t.ok) throw new Error(`HTTP error! Status: ${t.status}`);
