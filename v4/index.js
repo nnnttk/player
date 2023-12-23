@@ -1,6 +1,6 @@
 const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();  
-const DoHost = window.location.hostname;
-const apiUrl = `${DoHost}/v4/data/${IdCode}.json`,
+const DoHost = window.location.protocol+window.location.hostname+window.location.pathname;
+const apiUrl = `${DoHost}data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
 fetch(apiUrl).then((t => {
     if (!t.ok) throw new Error(`HTTP error! Status: ${t.status}`);
