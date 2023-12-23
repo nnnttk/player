@@ -130,9 +130,9 @@ body {
                 const dataJudul = `${DoHost}data/${data.filmTitles[i].toUpperCase()}.json`; 
 		const dJforScrp = data.filmTitles[i].replace('-','');
 		const jsData = " function Data("+dJforScrp+"){\n\
-        				var gmbrthumbnailImg = "+dJforScrp+".result.files[0].single_img; \n\
-        				var altthumbnailImg = '"+dJforScrp+"'; \n\
-					$('#filmList2').append(gmbrthumbnailImg+altthumbnailImg); \n\
+        				var gmbrthumbnailImg"+i+" = "+dJforScrp+".result.files[0].single_img; \n\
+        				var altthumbnailImg"+i+" = '"+dJforScrp+"'; \n\
+					$('#filmList2').append(gmbrthumbnailImg"+i+"+altthumbnailImg"+i+"); \n\
 				} \n\
 				\n\
 				$(document).ready(function() {\n\
