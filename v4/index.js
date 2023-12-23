@@ -17,7 +17,7 @@ fetch(apiUrl).then((t => {
         thumbnailImg.src = isi[i].single_img;
         thumbnailImg.alt = isi[i].title;
         videoLink.addEventListener("click", () => {
-            loadVideo(videoId);
+            loadVideo(videoId); 
         });
         thumbnailImg.addEventListener("click", () => {
             loadVideo(videoId);
@@ -33,6 +33,7 @@ function loadVideo(videoId) {
     videoFrame.src = `https://doods.pro/e/${videoId}`;
     videoFrame.height = `360`;
     videoFrame.classList.remove('hidden');
+    document.title = `${IdCode} - Part ${firstLetter}`;
 }
 			
 		}
