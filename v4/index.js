@@ -1,4 +1,4 @@
-var IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();   
+const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();   
 const apiUrl = `https://watch.idblog.eu.org/v4/data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
 fetch(apiUrl).then((t => {
@@ -11,7 +11,7 @@ fetch(apiUrl).then((t => {
 	const videoId = isi[i].file_code;		
         const videoLink = document.createElement("a");
         videoLink.href = '#';//https://doods.pro/e/'+isi[i].file_code;
-	var firstLetter = isi[i].title.charAt(0).charCodeAt(0)-96;		
+	const firstLetter = isi[i].title.charAt(0).charCodeAt(0)-96;		
         videoLink.textContent = `${IdCode} - Part ${firstLetter}`;		
 	const thumbnailImg = document.createElement("img");
         thumbnailImg.src = isi[i].single_img;
