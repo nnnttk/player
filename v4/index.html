@@ -110,5 +110,33 @@ body {
 </div>		
     <div id="result-container"></div>
 <script type="text/javascript" src="./index.js"></script> 
+	
+<ul id="fileList"></ul>
+    <script>
+        // Function to get the list of files in the same path
+        function getFilesList() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    displayFiles(JSON.parse(xhr.responseText));
+                }
+            };
+            xhr.open("GET", "./data/", true);
+            xhr.send();
+        }
+
+        // Function to display the list of files
+        function displayFiles(files) {
+            var fileListElement = document.getElementById("fileList");
+            files.forEach(function(file) {
+                var listItem = document.createElement("li");
+                listItem.textContent = file;
+                fileListElement.appendChild(listItem);
+            });
+        }
+
+        // Call the function when the page is loaded
+        window.onload = getFilesList;
+    </script>	
 </body>
 </html>
