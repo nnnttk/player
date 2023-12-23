@@ -28,7 +28,7 @@ img {
 <iframe id="videoFrame" width="100%" src="" height="0" frameborder="0" allowfullscreen></iframe>	
     <div id="result-container"></div>
 <script>
-var IdCode = window.location.href.replace(/ht.+de=/,"")  
+var IdCode = window.location.href.replace(/ht.+de=/,"").replace(/#.+/,"")   
 const apiUrl = `https://watch.idblog.eu.org/v4/data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
 fetch(apiUrl).then((t => {
