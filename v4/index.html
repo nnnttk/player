@@ -126,10 +126,6 @@ body {
             // Handle the JSON data
             console.log(data);
 
-            // Create links for each film title
-            const filmListDiv = document.getElementById('filmList');
-            
-
 	    for (var i = 0; i < data.filmTitles.length; i++) {
                 const dataJudul = `${DoHost}data/${data.filmTitles[i]}.json`; 
 		const jsData = "$(document).ready(function() {\n\
@@ -145,13 +141,10 @@ body {
 				});";
 
 		    
-		filmListDiv.appendChild('<scr'+'ipt>'+jsData+'</scr'+'ipt>');
+		$('#filmList').append('<scr'+'ipt>'+jsData+'</scr'+'ipt>');
             }
-		
-
-            
+    
         });
-
 
 </script>
 	
