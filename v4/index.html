@@ -132,9 +132,11 @@ body {
 		const jsData = " function Data("+dJforScrp+"){\n\
 					var posts = ''; \n\
 					for (var i = 0; i < "+dJforScrp+".result.files.length; i++) { \n\
-    						posts += ''; \n\
+        				var gmbrthumbnailImg"+i+" = "+dJforScrp+".result.files[0].single_img; \n\
+        				var altthumbnailImg"+i+" = "+dJforScrp+"; \n\
+    						posts += gmbrthumbnailImg"+i+"+altthumbnailImg"+i+"; \n\
 					} \n\
-					document.getElementById('filmList2').innerHTML = '<ul>'+posts+'</ul>'; \n\
+					$('#filmList2').append(posts); \n\
 				} \n\
 				\n\
 				$(document).ready(function() {\n\
