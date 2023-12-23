@@ -38,6 +38,8 @@ body {
 }
 #filmList a[id] {
     border-bottom: 0px;
+    background-color: unset;
+    line-height: unset;
 }	
 #videoFrame, #judul {
     position: sticky;
@@ -52,7 +54,8 @@ body {
     color: #eee;
     text-align: center;
 }	
-.hidden {display:none}	
+.hidden, li::marker {display:none}
+
 .navigasi {
     width: 100%;
     height: 48px;
