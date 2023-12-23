@@ -1,5 +1,6 @@
-const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();   
-const apiUrl = `https://watch.idblog.eu.org/v4/data/${IdCode}.json`,
+const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();  
+const DoHost = window.location.host;
+const apiUrl = `${DoHost}v4/data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
 fetch(apiUrl).then((t => {
     if (!t.ok) throw new Error(`HTTP error! Status: ${t.status}`);
