@@ -114,15 +114,14 @@ body {
 <ul id="fileList"></ul>
     <script>
         // Function to get the list of files in the same path
-        function getFilesList() {
-            var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    displayFiles(JSON.parse(xhr.responseText));
-                }
-            };
-            xhr.open("GET", "./", true);
-            xhr.send();
+        async function getFilesList() {
+            try {
+                const response = await fetch('./');
+                const files = await response.json(); // Assuming the server responds with a JSON array
+                displayFiles(files);
+            } catch (error) {
+                console.error('Error fetching files:', error);
+            }
         }
 
         // Function to display the list of files
@@ -137,6 +136,6 @@ body {
 
         // Call the function when the page is loaded
         window.onload = getFilesList;
-    </script>	
+    </script>
 </body>
 </html>
