@@ -111,8 +111,8 @@ body {
     <div id="result-container"></div>
 <script type="text/javascript" src="./index.js"></script> 
 	
+<div id="scriptc"></div>
 <div id="filmList"></div>
-<div id="filmList2"></div>
 <script>
     // Fetch the JSON file
     fetch('list.json')
@@ -128,11 +128,11 @@ body {
 	    for (var i = 0; i < data.filmTitles.length; i++) {
 		var posts = ``;
                 const dataJudul = `${DoHost}data/${data.filmTitles[i].toUpperCase()}.json`; 
-		const dJforScrp = data.filmTitles[i].replace(`-`,``);
-		const jsData = " function Data("+dJforScrp+"){\n\
-        				var gmbrthumbnailImg"+i+" = "+dJforScrp+".result.files[0].single_img; \n\
+		const dJforScrp = data.filmTitles[i];
+		const jsData = " function Data("+dJforScrp.replace('-','')+"){\n\
+        				const gmbrthumbnailImg"+i+" = "+dJforScrp+".result.files[0].single_img; \n\
 					var gmbrIMG = encodeURIComponent(gmbrthumbnailImg"+i+"); \n\
-					$('#filmList2').append(decodeURIComponent('%3Ca%20href%3D%22.%2F%3Fcode%3D"+data.filmTitles[i]+"%22%3E%3Cimg%20src%3D%22'+gmbrIMG+'%22%20alt%3D%22"+data.filmTitles[i]+"%22%20%2F%3E%3C%2Fa%3E')); \n\
+					$('#filmList').append(decodeURIComponent('%3Ca%20href%3D%22.%2F%3Fcode%3D"+data.filmTitles[i]+"%22%3E%3Cimg%20src%3D%22'+gmbrIMG+'%22%20alt%3D%22"+data.filmTitles[i]+"%22%20%2F%3E%3C%2Fa%3E')); \n\
 				} \n\
 				\n\
 				$(document).ready(function() {\n\
@@ -142,13 +142,13 @@ body {
         					success: function("+dJforScrp+") {Data("+dJforScrp+")},\n\
         					error: function(xhr, status, error) {\n\
             						console.error(status + ': ' + error);\n\
-            						$('#filmList2').text('Error fetching JSON data.');\n\
+            						$('#filmList').text('Error fetching JSON data.');\n\
         						}\n\
     					});\n\
 				});";
 
 		posts += jsData;   
-		$('#filmList').append('<scr'+'ipt>'+posts+'</scr'+'ipt>');
+		$('#scriptc').append('<scr'+'ipt>'+posts+'</scr'+'ipt>');
             }
     
         });
