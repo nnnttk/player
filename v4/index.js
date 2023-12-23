@@ -1,5 +1,5 @@
 const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();  
-if (IdCode !== 0) {alert("DELETED")}
+if (IdCode != "") {alert("DELETED")}
 const DoHost = window.location.protocol+'//'+window.location.hostname+window.location.pathname;
 const apiUrl = `${DoHost}data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
