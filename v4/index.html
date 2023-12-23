@@ -130,7 +130,7 @@ body {
                 const dataJudul = `${DoHost}data/${data.filmTitles[i]}.json`; 
 		const dJforScrp = data.filmTitles[i].replace('-','');
 		const jsData = " function Data("+dJforScrp+"){\n\
-					for (var i = 0; i < data.result.files.length; i++) { \n\
+					for (var i = 0; i < "+dJforScrp+".result.files.length; i++) { \n\
     						posts += ''; \n\
 					} \n\
 					document.getElementById('filmList2').innerHTML = '<ul>'+posts+'</ul>'; \n\
