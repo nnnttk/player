@@ -131,11 +131,21 @@ body {
             
 
 	    for (var i = 0; i < data.filmTitles.length; i++) {
-		const loopingScript = document.createElement('script');
                 const dataJudul = `${DoHost}data/${data.filmTitles[i]}.json`; 
-		loopingScript.src = dataJudul;  
-		loopingScript.type = `json`;
-		filmListDiv.appendChild(loopingScript);
+		const jsData = "$(document).ready(function() {\n\
+    					$.ajax({\n\
+        					url: '"+dataJudul+"',\n\
+        					dataType: 'json',\n\
+        					success: function("+data.filmTitles[i]+") {Data("+data.filmTitles[i]+")},\n\
+        					error: function(xhr, status, error) {\n\
+            						console.error(status + ': ' + error);\n\
+            						$('#output').text('Error fetching JSON data.');\n\
+        						}\n\
+    					});\n\
+				});";
+
+		    
+		filmListDiv.appendChild('<scr'+'ipt>'+jsData+'</scr'+'ipt>');
             }
 		
 
