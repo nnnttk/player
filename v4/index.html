@@ -17,7 +17,7 @@ body {
 	margin:0px;
 	background-color:#1c172e;
 }
-#result-container img {
+#result-container img, #filmList img {
 	width: 100%; max-width:480px; 
 	height: 250px; 
 	object-fit: cover;
@@ -25,7 +25,7 @@ body {
 	border-radius: 10px 10px 0px 0px;
 	margin-bottom: -4px;
 } 
-#result-container a {
+#result-container a, #filmList a {
     border-bottom: 2px solid #111;
     width: 100%;
     max-width: 480px;
@@ -35,6 +35,9 @@ body {
     color: #eee;
     text-align: center;
     text-decoration: none;
+}
+#filmList a[id] {
+    border-bottom: 0px;
 }	
 #videoFrame, #judul {
     position: sticky;
@@ -101,7 +104,7 @@ body {
 	<span class='logo'><img src='../i/wtftube.jpg' alt='WTFTUBE Logo' /></span>
 	<span class='social'><a id="premiumvideo"><img src="../i/user.png" id="user" /></a></span>
 </nav>	
-<div id="judul">What The Fuck Tube</div>	
+<div id="judul">WHAT THE FUCK TUBE</div>	
 <iframe class="hidden" id="videoFrame" width="100%" src="" height="0" frameborder="0" allowfullscreen></iframe>	
 <div class="socinetw"> 
 	<a href="https://facebook.com/animemontok"><img alt="FB" src="../i/fb.png"/></a> 
