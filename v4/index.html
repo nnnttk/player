@@ -130,12 +130,12 @@ body {
                 const dataJudul = `${DoHost}data/${data.filmTitles[i].toUpperCase()}.json`; 
 		const dJforScrp = data.filmTitles[i].replace('-','');
 		const jsData = " function Data"+i+"("+dJforScrp+"){ \n\
-					var isPosts = ''; \n\
+					var isPosts"+i+" = ''; \n\
 					for (var i2 = 0; i2 < 1; i2++) { \n\
         				const gmbrthumbnailImg = "+dJforScrp+".result.files[i2].single_img; \n\
 					var gmbrIMG = encodeURIComponent(gmbrthumbnailImg); \n\
 					} \n\
-					isPosts += '<li>'+decodeURIComponent('%3Ca%20id%3D%22"+dJforScrp+"%22%20href%3D%22.%2F%3Fcode%3D"+dJforScrp+"%22%3E%3Cimg%20src%3D%22'+gmbrIMG+'%22%20alt%3D%22"+dJforScrp+"%22%20%2F%3E%3C%2Fa%3E')+'</li>'; \n\
+					isPosts"+i+" += '<li>'+decodeURIComponent('%3Ca%20id%3D%22"+dJforScrp+"%22%20href%3D%22.%2F%3Fcode%3D"+dJforScrp+"%22%3E%3Cimg%20src%3D%22'+gmbrIMG+'%22%20alt%3D%22"+dJforScrp+"%22%20%2F%3E%3C%2Fa%3E')+'</li>'; \n\
 					document.getElementById('filmList').innerHTML = '<ul>'+isPosts+'</ul>';	\n\
 					 \n\
 				} \n\
