@@ -17,10 +17,10 @@ fetch(apiUrl).then((t => {
         thumbnailImg.src = isi[i].single_img;
         thumbnailImg.alt = isi[i].title;
         videoLink.addEventListener("click", () => {
-            loadVideo(videoId); 
+            loadVideo(videoId,IdCode,firstLetter); 
         });
         thumbnailImg.addEventListener("click", () => {
-            loadVideo(videoId);
+            loadVideo(videoId,IdCode,firstLetter);
         });		
 	resultContainer.appendChild(thumbnailImg);
 	resultContainer.appendChild(document.createElement("br"));
@@ -28,7 +28,7 @@ fetch(apiUrl).then((t => {
 	resultContainer.appendChild(document.createElement("br"));
 	resultContainer.appendChild(document.createElement("br"));
 			
-function loadVideo(videoId) {
+function loadVideo(videoId,IdCode,firstLetter) {
     const videoFrame = document.getElementById("videoFrame");
     videoFrame.src = `https://doods.pro/e/${videoId}`;
     videoFrame.height = `360`;
