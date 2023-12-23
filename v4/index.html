@@ -129,7 +129,7 @@ body {
 		var posts = ``;
                 const dataJudul = `${DoHost}data/${data.filmTitles[i].toUpperCase()}.json`; 
 		const dJforScrp = data.filmTitles[i].replace('-','');
-		const jsData = " function Data("+dJforScrp+"){ \n\
+		const jsData = " function Data"+i+"("+dJforScrp+"){ \n\
 					var isPosts = ''; \n\
 					for (var i2 = 0; i2 < 1; i2++) { \n\
         				const gmbrthumbnailImg = "+dJforScrp+".result.files[i2].single_img; \n\
@@ -144,7 +144,7 @@ body {
     					$.ajax({\n\
         					url: '"+dataJudul+"',\n\
         					dataType: 'json',\n\
-        					success: function("+dJforScrp+") {Data("+dJforScrp+")},\n\
+        					success: function("+dJforScrp+") {Data"+i+"("+dJforScrp+")},\n\
         					error: function(xhr, status, error) {\n\
             						console.error(status + ': ' + error);\n\
             						$('#filmList').text('Error fetching JSON data.');\n\
