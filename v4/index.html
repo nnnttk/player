@@ -112,7 +112,7 @@ body {
 <script type="text/javascript" src="./index.js"></script> 
 	
 <div id="filmList"></div>
-
+<div id="filmList2"></div>
 <script>
     // Fetch the JSON file
     fetch('list.json')
@@ -129,14 +129,21 @@ body {
 	    for (var i = 0; i < data.filmTitles.length; i++) {
                 const dataJudul = `${DoHost}data/${data.filmTitles[i]}.json`; 
 		const dJforScrp = data.filmTitles[i].replace('-','');
-		const jsData = "$(document).ready(function() {\n\
+		const jsData = " function Data("+dJforScrp+"){\n\
+					for (var i = 0; i < data.result.files.length; i++) { \n\
+    						posts += ''; \n\
+					} \n\
+					document.getElementById('filmList2').innerHTML = '<ul>'+posts+'</ul>'; \n\
+				} \n\
+				\n\
+				$(document).ready(function() {\n\
     					$.ajax({\n\
         					url: '"+dataJudul+"',\n\
         					dataType: 'json',\n\
         					success: function("+dJforScrp+") {Data("+dJforScrp+")},\n\
         					error: function(xhr, status, error) {\n\
             						console.error(status + ': ' + error);\n\
-            						$('#output').text('Error fetching JSON data.');\n\
+            						$('#filmList2').text('Error fetching JSON data.');\n\
         						}\n\
     					});\n\
 				});";
