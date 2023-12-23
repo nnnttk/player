@@ -128,15 +128,18 @@ body {
 
             // Create links for each film title
             const filmListDiv = document.getElementById('filmList');
-            const loopingScript = document.createElement('script');
+            
 
 	    for (var i = 0; i < data.filmTitles.length; i++) {
-                const dataJudul = `${DoHost}data/${data.filmTitles}.json`; 
-		loopingScript.src = dataJudul;    
+		const loopingScript = document.createElement('script');
+                const dataJudul = `${DoHost}data/${data.filmTitles[i]}.json`; 
+		loopingScript.src = dataJudul;  
+		loopingScript.type = `json`;
+		filmListDiv.appendChild(loopingScript);
             }
 		
 
-            filmListDiv.appendChild(loopingScript);
+            
         });
 
 
