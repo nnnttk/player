@@ -32,7 +32,7 @@ function loadVideo(videoId) {
     const videoFrame = document.getElementById("videoFrame");
     videoFrame.src = `https://doods.pro/e/${videoId}`;
     videoFrame.height = `360`;
-    videoFrame.class = ``;
+    videoFrame.classList.remove('hidden');
 }
 			
 		}
