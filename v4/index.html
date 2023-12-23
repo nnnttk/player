@@ -131,8 +131,7 @@ body {
 		const dJforScrp = data.filmTitles[i].replace(`-`,``);
 		const jsData = " function Data("+dJforScrp+"){\n\
         				var gmbrthumbnailImg"+i+" = "+dJforScrp+".result.files[0].single_img; \n\
-        				var altthumbnailImg"+i+" = '"+dJforScrp+"'; \n\
-					$('#filmList2').append('<img src='+gmbrthumbnailImg"+i+"+' alt='+altthumbnailImg"+i+"+' />'); \n\
+					$('#filmList2').append('<img src='+gmbrthumbnailImg"+i+"+' alt='"+dJforScrp+"' />'); \n\
 				} \n\
 				\n\
 				$(document).ready(function() {\n\
