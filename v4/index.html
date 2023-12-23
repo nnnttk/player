@@ -128,11 +128,15 @@ body {
 	    for (var i = 0; i < data.filmTitles.length; i++) {
 		var posts = ``;
                 const dataJudul = `${DoHost}data/${data.filmTitles[i].toUpperCase()}.json`; 
-		const dJforScrp = data.filmTitles[i];
-		const jsData = " function Data("+dJforScrp.replace('-','')+"){\n\
-        				const gmbrthumbnailImg"+i+" = "+dJforScrp+".result.files[0].single_img; \n\
+		const dJforScrp = data.filmTitles[i].replace('-','');
+		const jsData = " function Data("+dJforScrp+"){\n\
+					var othrPrt = ''; \n\
+					for (var i = 0; i < 1; i++) { \n\
+        				const gmbrthumbnailImg"+i+" = "+dJforScrp+".result.files[i].single_img; \n\
 					var gmbrIMG = encodeURIComponent(gmbrthumbnailImg"+i+"); \n\
-					$('#filmList').append(decodeURIComponent('%3Ca%20href%3D%22.%2F%3Fcode%3D"+data.filmTitles[i]+"%22%3E%3Cimg%20src%3D%22'+gmbrIMG+'%22%20alt%3D%22"+data.filmTitles[i]+"%22%20%2F%3E%3C%2Fa%3E')); \n\
+					othrPrt += '<li>'+decodeURIComponent('%3Ca%20href%3D%22.%2F%3Fcode%3D"+data.filmTitles[i]+"%22%3E%3Cimg%20src%3D%22'+gmbrIMG+'%22%20alt%3D%22"+data.filmTitles[i]+"%22%20%2F%3E%3C%2Fa%3E')+'</li>'; \n\
+					document.getElementById('filmList').innerHTML = '<ul>'+othrPrt+'</ul>';	\n\
+					//$('#filmList').append(decodeURIComponent('%3Ca%20href%3D%22.%2F%3Fcode%3D"+data.filmTitles[i]+"%22%3E%3Cimg%20src%3D%22'+gmbrIMG+'%22%20alt%3D%22"+data.filmTitles[i]+"%22%20%2F%3E%3C%2Fa%3E')); \n\
 				} \n\
 				\n\
 				$(document).ready(function() {\n\
