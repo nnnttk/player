@@ -133,17 +133,16 @@ body {
             data.filmTitles.forEach(filmTitle => {
                 const li = document.createElement('li');
                 const link = document.createElement('a');
-                link.href = '#' + filmTitle;  // You can replace '#' with the actual URL for each film title
+                link.href = `${DoHost}data/${filmTitle}.json`;  // You can replace '#' with the actual URL for each film title
                 link.textContent = filmTitle;
                 li.appendChild(link);
                 ul.appendChild(li);
             });
 
             filmListDiv.appendChild(ul);
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
         });
+
+
 </script>
 	
 </body>
