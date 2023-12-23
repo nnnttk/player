@@ -29,9 +29,9 @@ img {
     <div id="result-container"></div>
 <script>
 if(/^\?fbclid=/.test(location.search))
-     location.replace(location.href.replace(/\?fbclid.+/, ""));
+     location.replace(location.href.replace(/\&fbclid.+/, ""));
 	
-var IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","")   
+var IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","");   
 const apiUrl = `https://watch.idblog.eu.org/v4/data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
 fetch(apiUrl).then((t => {
