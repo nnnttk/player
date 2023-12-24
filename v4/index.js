@@ -24,6 +24,7 @@ fetch(apiUrl).then((t => {
             loadVideo(videoId,IdCode,firstLetter);
         });		
 	var newDiv = document.createElement('div');
+	newDiv.class =	'result-item';
 	resultContainer.appendChild(newDiv);			
 	newDiv.appendChild(thumbnailImg);	
 	newDiv.appendChild(videoLink);			
