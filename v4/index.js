@@ -23,11 +23,10 @@ fetch(apiUrl).then((t => {
         thumbnailImg.addEventListener("click", () => {
             loadVideo(videoId,IdCode,firstLetter);
         });		
-	resultContainer.appendChild(thumbnailImg);
-	resultContainer.appendChild(document.createElement("br"));
-	resultContainer.appendChild(videoLink);			
-	resultContainer.appendChild(document.createElement("br"));
-	resultContainer.appendChild(document.createElement("br"));
+	var newDiv = document.createElement('div');
+	resultContainer.appendChild(newDiv);			
+	newDiv.appendChild(thumbnailImg);	
+	newDiv.appendChild(videoLink);			
 			
 function loadVideo(videoId,IdCode,firstLetter) {
     const videoFrame = document.getElementById("videoFrame");
