@@ -20,7 +20,7 @@ body {
         #result-container, #filmList {
             display: flex;
             flex-wrap: wrap;
-            max-width: 720px; /* Set a maximum width for the container */
+            max-width: 100%; /* Set a maximum width for the container */
             margin: 0px; /* Add margin for spacing from the edges */
         }
 
@@ -107,6 +107,9 @@ body {
     #videoFrame {
 	height:200px;
     }	
+    .result-item {
+        flex: unset;
+    }
 }	
 li {
     list-style: none;
