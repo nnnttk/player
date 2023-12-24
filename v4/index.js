@@ -1,4 +1,4 @@
-const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();  document.title='Nonton '+IdCode;
+const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();  document.title= `Nonton ${IdCode}`;
 const DoHost = window.location.protocol+'//'+window.location.hostname+window.location.pathname;
 const apiUrl = `${DoHost}data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
@@ -8,7 +8,7 @@ fetch(apiUrl).then((t => {
 })).then((t => {
 	var isi = t.result.files;
 		for (var i = 0; i < isi.length; i++) {
-	
+	document.getElementById('judul').innerHTML = `${IdCode} | Total ${isi.length} Bagian`;
 	const videoId = isi[i].file_code;		
         const videoLink = document.createElement("a");
         videoLink.href = '#';//https://doods.pro/e/'+isi[i].file_code;
