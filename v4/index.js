@@ -67,7 +67,7 @@ fetch('list.json')
 					const gmbrSglImg = "+dJforScrp+".result.files[i2].single_img; \n\
 					var gmbrIMG = encodeURIComponent(gmbrthumbnailImg), sgLImg = encodeURIComponent(gmbrSglImg); \n\
 					} \n\
-					isPosts"+i+" += decodeURIComponent('%3Cdiv%20class%3D%22result-item%22%3E%3Ca%20id%3D%22"+data.filmTitles[i].toUpperCase()+"%22%20href%3D%22.%2F%3Fcode%3D"+data.filmTitles[i].toUpperCase()+"%22%3E%3Cimg%20src%3D%22'+gmbrIMG+'%22%20alt%3D%22"+data.filmTitles[i].toUpperCase()+"%22%20id%3D%22"+data.filmTitles[i].toUpperCase()+"%22%20onerror%3D%22loadAltImg()%22%20%2F%3E%3C%2Fa%3E%3Ca%20href%3D%22.%2F%3Fcode%3D"+data.filmTitles[i].toUpperCase()+"%22%3E"+data.filmTitles[i].toUpperCase()+"%3C%2Fa%3E%3C%2Fdiv%3E%3Cscript%3E%0Afunction%20loadAltImg()%20%7Bdocument.getElementById(%22"+data.filmTitles[i].toUpperCase()+"%22).src%20%3D%20%22'+sgLImg+'%22%3B%7D%0A%3C%2Fscript%3E'); \n\
+					isPosts"+i+" += decodeURIComponent('%3Cdiv%20class%3D%22result-item%22%3E%3Ca%20id%3D%22"+data.filmTitles[i].toUpperCase()+"%22%20href%3D%22.%2F%3Fcode%3D"+data.filmTitles[i].toUpperCase()+"%22%3E%3Cimg%20src%3D%22'+gmbrIMG+'%22%20alt%3D%22"+data.filmTitles[i].toUpperCase()+"%22%20id%3D%22"+data.filmTitles[i].toUpperCase()+"%22%20onerror%3D%22this.onerror%3Dnull%3Bthis.src%3D'+sgLImg+'%3B%22%20%2F%3E%3C%2Fa%3E%3Ca%20href%3D%22.%2F%3Fcode%3D"+data.filmTitles[i].toUpperCase()+"%22%3E"+data.filmTitles[i].toUpperCase()+"%3C%2Fa%3E%3C%2Fdiv%3E'); \n\
 					$('#filmList').append(isPosts"+i+");	\n\
 					 \n\
 				} \n\
