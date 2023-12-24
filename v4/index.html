@@ -17,38 +17,33 @@ body {
     margin:0px;
     background-color:#1c172e;
 }
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
-.row {
-    display: flex;
-    width: 100%;
-}
-.column {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-}	
-#result-container img, #filmList img {
-    width: 100%; max-width:480px; 
-    height: 250px; 
-    object-fit: cover;
-    object-position: 25% 25%; 
-    border-radius: 10px 10px 0px 0px;
-    margin-bottom: -4px;
-} 
-#result-container a, #filmList a {
-    border-bottom: 2px solid #111;
-    width: 100%;
-    max-width: 480px;
-    display: block;
-    background-color: black;
-    line-height: 30px;
-    color: #eee;
-    text-align: center;
-    text-decoration: none;
-}
+        #result-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px; /* Set a maximum width for the container */
+            margin: 20px; /* Add margin for spacing from the edges */
+        }
+
+        .result-item {
+            flex: 0 0 calc(33.333% - 20px); /* Set a specific width for each item with margin */
+            margin: 10px; /* Add margin for spacing between items */
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+        .result-item img {
+            width: 100%; /* Ensure images take 100% width within their containers */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Make images block-level for better spacing */
+        }
+
+        .result-item a {
+            text-align: center; /* Center the text within the link */
+            text-decoration: none; /* Remove the default underline from the links */
+            color: #333; /* Set the link color */
+            display: block; /* Make the links block-level for better spacing */
+            padding: 10px; /* Add padding for better appearance */
+            background-color: #fff; /* Set a background color for the links */
+        }
 #filmList a[id] {
     border-bottom: 0px;
     background-color: unset;
