@@ -10,111 +10,8 @@
 <title>Nonton</title>
 <script type="text/javascript" src="https://useqr.link/js/base64.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<style>
-* { transition: all 0.5s ease;}		
-body {
-    margin:0px;
-    background-color:#1c172e;
-}
-        #result-container, #filmList {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 100%; /* Set a maximum width for the container */
-            margin: 0px; /* Add margin for spacing from the edges */
-        }
-
-        .result-item {
-            flex: 0 0 calc(33.333% - 20px); /* Set a specific width for each item with margin */
-            margin: 10px; /* Add margin for spacing between items */
-            overflow: hidden; /* Hide overflowing content */
-        }
-
-        .result-item img {
-            width: 100%; /* Ensure images take 100% width within their containers */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Make images block-level for better spacing */
-        }
-
-        .result-item a {
-	    text-align: center;
-	    text-decoration: none;
-	    color: #eee;
-	    display: block;
-	    padding: 6px;
-	    background-color: #000;
-	}
-.result-item a[id] {
-    padding: 0px;
-}	
-#videoFrame, #judul {
-    position: sticky;
-}	
-#videoFrame {
-    top: 17px;
-}	
-#judul {
-    top: 0px;
-    width: 100%;
-    background-color: black;
-    color: #eee;
-    text-align: center;
-}	
-.hidden, li::marker {
-    display:none
-}
-.navigasi {
-    width: 100%;
-    height: 48px;
-    background-color: #0f0f0f;
-    border-bottom: 1px solid #515151;
-    box-shadow: 0 4px 2px -2px rgb(0 0 0 / 20%);
-    z-index: 3;
-    position: relative;
-    overflow: hidden;
-}
-.logo img {
-    height: 30px;
-    margin: 9px;
-    border-radius: 10px;
-}
-.socinetw { 
-    text-align: center;
-    box-shadow: 0 4px 2px -2px rgb(0 0 0 / 20%); 
-    background-color: #000;
-}
-.socinetw a {
-    text-decoration:none;
-}
-.socinetw a:hover {
-    transition: all .4s ease-in-out;
-    opacity: 0.8;
-}	
-.socinetw a img {
-    margin-top: 4px;
-    width: 32%;
-    max-height:28px;
-    max-width: 121px;
-}	
-#user, #premium {
-    width: 30px;
-    height: 30px;
-    margin: 9px;
-    right: 0px;
-    position: absolute;
-}	
-@media screen and (max-width: 480px) {
-    #videoFrame {
-	height:200px;
-    }	
-    .result-item {
-        flex: unset;
-    }
-}	
-li {
-    list-style: none;
-}	
-</style>	
+<link rel="stylesheet" type="text/css" href="./style.css"></link>	
+</head>	
 <body>
 <nav class='navigasi'>
 	<span class='logo'><img src='../i/wtftube.jpg' alt='WTFTUBE Logo' /></span>
@@ -127,57 +24,9 @@ li {
 	<a href="https://twitter.com/dniihen"><img alt="XT" src="../i/xt.png"/></a> 
 	<a href="https://t.me/blogmeat2"><img alt="TG" src="../i/tg.png"/></a> 
 </div>		
-    <div id="result-container"></div>
-<script type="text/javascript" src="./index.js"></script> 
-
+<div id="result-container"></div>
 <div id="scriptc"></div>
-<div id="filmList"></div>	
-<script>
-    // Fetch the JSON file
-    fetch('list.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            // Handle the JSON data
-            console.log(data);
-	    for (var i = 0; i < data.filmTitles.length; i++) {
-		var posts = ``;
-                const dataJudul = `${DoHost}data/${data.filmTitles[i].toUpperCase()}.json`; 
-		const dJforScrp = data.filmTitles[i].replace('-','');
-		const jsData = " function Data"+i+"("+dJforScrp+"){ \n\
-					var isPosts"+i+" = ''; \n\
-					for (var i2 = 0; i2 < 1; i2++) { \n\
-        				const gmbrthumbnailImg = "+dJforScrp+".result.files[i2].single_img; \n\
-					var gmbrIMG = encodeURIComponent(gmbrthumbnailImg); \n\
-					} \n\
-					isPosts"+i+" += decodeURIComponent('%3Cdiv%20class%3D%22result-item%22%3E%3Ca%20id%3D%22"+data.filmTitles[i].toUpperCase()+"%22%20href%3D%22.%2F%3Fcode%3D"+data.filmTitles[i].toUpperCase()+"%22%3E%3Cimg%20src%3D%22'+gmbrIMG+'%22%20alt%3D%22"+data.filmTitles[i].toUpperCase()+"%22%20%2F%3E%3C%2Fa%3E%3Ca%20href%3D%22.%2F%3Fcode%3D"+data.filmTitles[i].toUpperCase()+"%22%3E"+data.filmTitles[i].toUpperCase()+"%3C%2Fa%3E%3C%2Fdiv%3E'); \n\
-					$('#filmList').append(isPosts"+i+");	\n\
-					 \n\
-				} \n\
-				\n\
-				$(document).ready(function() {\n\
-    					$.ajax({\n\
-        					url: '"+dataJudul+"',\n\
-        					dataType: 'json',\n\
-        					success: function("+dJforScrp+") {Data"+i+"("+dJforScrp+")},\n\
-        					error: function(xhr, status, error) {\n\
-            						console.error(status + ': ' + error);\n\
-            						$('#filmList').text('Error fetching JSON data.');\n\
-        						}\n\
-    					});\n\
-				});";
-
-		posts += jsData;   
-		$('#scriptc').append('<scr'+'ipt>'+posts+'</scr'+'ipt>');
-            }
-    
-        });
-
-</script>
-	
+<div id="filmList"></div>
+<script type="text/javascript" src="./index.js"></script> 	
 </body>
 </html>
