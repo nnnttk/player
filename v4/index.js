@@ -1,4 +1,4 @@
-const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();  document.title= `Nonton ${IdCode}`;
+const IdCode = window.location.href.replace(/ht.+de=/,"").replace(/#.+/,"").replace(/\&fbclid.+/,"").toUpperCase();  document.title= `Nonton ${IdCode}`;
 const DoHost = window.location.protocol+'//'+window.location.hostname+window.location.pathname.replace('premium','');
 const DtcPrm = window.location.href.includes('premium'); 
 if (DtcPrm==false) {$('#premiumvideo').each(function(){$(this).attr("href", window.location.href.replace('v4/','v4/premium'));}); } 
