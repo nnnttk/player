@@ -13,7 +13,7 @@ fetch(apiUrl).then((t => {
 	document.getElementById('judul').innerHTML = `${IdCode} | Total ${isi.length} Bagian`;
 	const videoId = isi[i].file_code;		
         const videoLink = document.createElement("a");
-        videoLink.href = `#`;
+        videoLink.href = `https://watch.idblog.eu.org/v4/v?code=${isi[i].file_code}`;
 	const firstLetter = isi[i].title.charAt(0).charCodeAt(0)-96;		
         videoLink.textContent = `${IdCode} - Part ${firstLetter}`;		
 	const thumbnailImg = document.createElement("img");
