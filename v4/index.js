@@ -1,6 +1,6 @@
 const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();  document.title= `Nonton ${IdCode}`;
 const DoHost = window.location.protocol+'//'+window.location.hostname+window.location.pathname.replace('premium','');
-const DtcPrm = IdCode.includes('premium'); if (DtcPrm==true) {const thsPrm = 'premium'} else {const thsPrm = ''}
+const DtcPrm = IdCode.includes('premium'); 
 const apiUrl = `${DoHost}data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
 fetch(apiUrl).then((t => {
@@ -61,6 +61,7 @@ fetch('list.json')
 		var posts = ``;
                 const dataJudul = `${DoHost}data/${data.filmTitles[i].toUpperCase()}.json`; 
 		const dJforScrp = data.filmTitles[i].replace('-','');
+		if (DtcPrm==true) {var thsPrm = 'premium'} else {var thsPrm = ''} 
 		const jsData = " function Data"+i+"("+dJforScrp+"){ \n\
 					var isPosts"+i+" = ''; \n\
 					for (var i2 = 0; i2 < 1; i2++) { \n\
