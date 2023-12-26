@@ -58,7 +58,7 @@ var hitunganviewnya = amt();
 console.log(hitunganviewnya);
 
 var centerElement = document.createElement('center'), iframeElement = document.createElement('iframe');
-iframeElement.setAttribute('style', 'max-width:100%;max-height:600px;border:0px');
+iframeElement.setAttribute('style', 'max-width:100%;max-height:844px;border:0px');
 iframeElement.setAttribute('scrolling', 'no');
 iframeElement.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');
 
