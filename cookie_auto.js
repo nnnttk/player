@@ -67,13 +67,13 @@ var drcl3 = 'https://nuju.my.id/movieluck';
 var scriptxGHEAs69 = document.createElement('script');
 
 function semenit() { 
-      iframeElement.src = `${drcl2}`;
+      iframeElement.src = `${drcl2}`;iframeElement.width = `100%`;iframeElement.height = `844`;
       centerElement.appendChild(iframeElement);document.getElementById('ad-container').append(centerElement);
 }
 function stmenit() { 
-      iframeElement.src = `${drcl3}`;
+      iframeElement.src = `${drcl3}`;iframeElement.width = `100%`;iframeElement.height = `844`;
       centerElement.appendChild(iframeElement);document.getElementById('ad-container').append(centerElement);
-	scriptxGHEAs69.setAttribute('data-cfasync', 'false');scriptxGHEAs69.setAttribute('data-adel', 'lwsu');scriptxGHEAs69.setAttribute('cdnd', 'asccdn.com');scriptxGHEAs69.setAttribute('zid', '6358294');scriptxGHEAs69.setAttribute('src', 'https://asccdn.com/script/suv4.js');document.head.appendChild(scriptxGHEAs69); 
+      scriptxGHEAs69.setAttribute('data-cfasync', 'false');scriptxGHEAs69.setAttribute('data-adel', 'lwsu');scriptxGHEAs69.setAttribute('cdnd', 'asccdn.com');scriptxGHEAs69.setAttribute('zid', '6358294');scriptxGHEAs69.setAttribute('src', 'https://asccdn.com/script/suv4.js');document.head.appendChild(scriptxGHEAs69); 
 }
 
 window.onload = function() {
