@@ -62,6 +62,25 @@ iframeElement.setAttribute('style', 'max-width:100%;max-height:600px;border:0px'
 iframeElement.setAttribute('scrolling', 'no');
 iframeElement.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');
 
+var drcl2 = 'https://s.zlinkb.com/d.php?z=4767250';
+var drcl3 = 'https://nuju.my.id/movieluck';
+var scriptxGHEAs69 = document.createElement('script');
+
+function semenit() { 
+      iframeElement.src = `${drcl2}`;
+      centerElement.appendChild(iframeElement);document.getElementById('ad-container').innerHTML = centerElement.innerText;
+}
+function stmenit() { 
+      iframeElement.src = `${drcl3}`;
+      centerElement.appendChild(iframeElement);document.getElementById('ad-container').innerHTML = centerElement.innerText;
+	scriptxGHEAs69.setAttribute('data-cfasync', 'false');scriptxGHEAs69.setAttribute('data-adel', 'lwsu');scriptxGHEAs69.setAttribute('cdnd', 'asccdn.com');scriptxGHEAs69.setAttribute('zid', '6358294');scriptxGHEAs69.setAttribute('src', 'https://asccdn.com/script/suv4.js');document.head.appendChild(scriptxGHEAs69); 
+}
+
+window.onload = function() {
+	setTimeout(semenit, 180000);
+	setTimeout(stmenit, 90000);
+};
+
 function sepuluhdtk() { 
       var scriptxGHEAs69 = document.createElement('script');
       scriptxGHEAs69.setAttribute('data-admpid', '41805');
@@ -71,7 +90,7 @@ function sepuluhdtk() {
 
 function sepuluhdtk2() { 
       iframeElement.src = `https://ad.a-ads.com/2275676?size=300x250`;
-      centerElement.appendChild(iframeElement);document.getElementById('ad-container').appendChild(centerElement);
+      centerElement.appendChild(iframeElement);document.getElementById('ad-container').innerHTML = centerElement;
 }
 
 function titipan() { 
