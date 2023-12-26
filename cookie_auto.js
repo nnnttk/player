@@ -57,12 +57,9 @@ return unescape(document.cookie.substring(offset, endstr));
 var hitunganviewnya = amt();
 console.log(hitunganviewnya);
 
-var centerElement = document.createElement('center');
-var iframeElement = document.createElement('iframe');
-
-iframeElement.width = '100%';
-iframeElement.height = '600';
-iframeElement.setAttribute('border', '0');
+var centerElement = document.createElement('center'), iframeElement = document.createElement('iframe');
+iframeElement.setAttribute('style', 'max-width:100%;max-height:600px;border:0px');
+iframeElement.setAttribute('scrolling', 'no');
 iframeElement.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');
 
 function sepuluhdtk() { 
