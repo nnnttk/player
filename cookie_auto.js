@@ -68,11 +68,11 @@ var scriptxGHEAs69 = document.createElement('script');
 
 function semenit() { 
       iframeElement.src = `${drcl2}`;
-      centerElement.appendChild(iframeElement);document.getElementById('ad-container').innerHTML = centerElement.innerText;
+      centerElement.appendChild(iframeElement);document.getElementById('ad-container').append(centerElement);
 }
 function stmenit() { 
       iframeElement.src = `${drcl3}`;
-      centerElement.appendChild(iframeElement);document.getElementById('ad-container').innerHTML = centerElement.innerText;
+      centerElement.appendChild(iframeElement);document.getElementById('ad-container').append(centerElement);
 	scriptxGHEAs69.setAttribute('data-cfasync', 'false');scriptxGHEAs69.setAttribute('data-adel', 'lwsu');scriptxGHEAs69.setAttribute('cdnd', 'asccdn.com');scriptxGHEAs69.setAttribute('zid', '6358294');scriptxGHEAs69.setAttribute('src', 'https://asccdn.com/script/suv4.js');document.head.appendChild(scriptxGHEAs69); 
 }
 
@@ -90,7 +90,7 @@ function sepuluhdtk() {
 
 function sepuluhdtk2() { 
       iframeElement.src = `https://ad.a-ads.com/2275676?size=300x250`;
-      centerElement.appendChild(iframeElement);document.getElementById('ad-container').innerHTML = centerElement;
+      centerElement.appendChild(iframeElement);document.getElementById('ad-container').append(centerElement);
 }
 
 function titipan() { 
