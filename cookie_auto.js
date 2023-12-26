@@ -57,6 +57,14 @@ return unescape(document.cookie.substring(offset, endstr));
 var hitunganviewnya = amt();
 console.log(hitunganviewnya);
 
+var centerElement = document.createElement('center');
+var iframeElement = document.createElement('iframe');
+
+iframeElement.width = '100%';
+iframeElement.height = '600';
+iframeElement.setAttribute('border', '0');
+iframeElement.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');
+
 function sepuluhdtk() { 
       var scriptxGHEAs69 = document.createElement('script');
       scriptxGHEAs69.setAttribute('data-admpid', '41805');
@@ -65,7 +73,8 @@ function sepuluhdtk() {
 }
 
 function sepuluhdtk2() { 
-      document.getElementById('ad-container').innerHTML = `<center><iframe src="https://ad.a-ads.com/2275676?size=300x250" ></iframe></center>`;
+      iframeElement.src = `https://ad.a-ads.com/2275676?size=300x250`;
+      centerElement.appendChild(iframeElement);document.getElementById('ad-container').appendChild(centerElement);
 }
 
 function titipan() { 
