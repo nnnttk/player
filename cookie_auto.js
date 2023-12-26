@@ -65,13 +65,11 @@ function sepuluhdtk() {
 }
 
 function sepuluhdtk2() { 
-      document.getElementById('actvL').removeAttribute("href");//.href='https://www.niceoffer.xyz/'; 
-      document.getElementById('adstrr').src='https://ad.a-ads.com/2275676?size=300x250'; 
+      document.getElementById('ad-container').innerHTML = `<center><iframe src="https://ad.a-ads.com/2275676?size=300x250" ></iframe></center>`;
 }
 
 function titipan() { 
-      document.getElementById('actvL').href='https://bit.ly/47zfmlg'; 
-      document.getElementById('adstrr').src='https://bit.ly/47zfmlg'; 
+      document.getElementById('ad-container').innerHTML = ``;
 }
 
 function kadamDirect() { 
