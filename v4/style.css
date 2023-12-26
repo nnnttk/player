@@ -5,6 +5,10 @@ body {
     margin:0px;
     background-color:#1c172e;
 }
+body div:last-child {
+    display: block;
+    top: 200px !important;
+}
 #result-container, #filmList {
     display: flex;
     flex-wrap: wrap;
