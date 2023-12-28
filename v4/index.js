@@ -33,7 +33,7 @@ fetch(apiUrl).then((t => {
 			
 function loadVideo(videoId,IdCode,firstLetter) {
     const videoFrame = document.getElementById("videoFrame");
-    videoFrame.src = `https://ds2video.com/e/${videoId}`;
+    videoFrame.src = `https://d0o0d.com/e/${videoId}`;
     videoFrame.height = `360`;
     videoFrame.classList.remove('hidden');
     document.title = `${IdCode} - Part ${firstLetter}`;
