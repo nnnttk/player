@@ -47,6 +47,7 @@
 </div>	
 
 <script>
+document.getElementById('user').src = '../../i/premium.png';	
 const IdCode = window.location.href.replace(/ht.+n=/,"").replace("#","").replace(/\&fbclid.+/,"");
 document.getElementById("videoFrames").src = `https://drive.google.com/file/d/${IdCode}/preview`;
 document.getElementById("custom-overlay").style = `background-color: black;`;
