@@ -41,14 +41,14 @@
 </style>
 
 <div class="custom-container">
-    <iframe class="custom-iframe" id="videoFrame" frameborder="0" scrolling="no" seamless="" allowfullscreen></iframe>
+    <iframe class="custom-iframe" id="videoFrames" frameborder="0" scrolling="no" seamless="" allowfullscreen></iframe>
     <div class="custom-overlay">&nbsp;</div>
     <div></div>
 </div>	
 
 <script>
 const IdCode = window.location.href.replace(/ht.+n=/,"").replace("#","").replace(/\&fbclid.+/,"");
-videoFrame = document.getElementById("videoFrame"); videoFrame.src = `https://drive.google.com/file/d/${IdCode}/preview`;
+videoFrame = document.getElementById("videoFrames"); videoFrame.src = `https://drive.google.com/file/d/${IdCode}/preview`;
 </script> 
 <div></div>
 <div></div>	
