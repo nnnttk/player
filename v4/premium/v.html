@@ -10,11 +10,12 @@
 <link rel="icon" href="https://www.youtube.com/s/desktop/cd64ce7e/img/favicon_144x144.png" sizes="144x144">
 <title>Nonton</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../style.css"></link>	
 </head>	
 <body>
 <nav class='navigasi'>
-	<span class='logo'><img src='../i/wtftube.jpg' alt='WTFTUBE Logo' /></span>
-	<span class='social'><a id="premiumvideo"><img src="../i/user.png" id="user" /></a></span>
+	<span class='logo'><img src='../../i/wtftube.jpg' alt='WTFTUBE Logo' /></span>
+	<span class='social'><a id="premiumvideo"><img src="../../i/user.png" id="user" /></a></span>
 </nav>	
 <div id="judul">WHAT THE FUCK TUBE</div>	
 <style>
@@ -27,10 +28,6 @@
     .custom-iframe {
         width: 100%;
         height: 100%;
-        frameborder: 0;
-        scrolling: no;
-        seamless: "";
-        allowfullscreen;
     }
 
     .custom-overlay {
@@ -44,7 +41,7 @@
 </style>
 
 <div class="custom-container">
-    <iframe class="custom-iframe" id="videoFrame" ></iframe>
+    <iframe class="custom-iframe" id="videoFrame" frameborder="0" scrolling="no" seamless="" allowfullscreen></iframe>
     <div class="custom-overlay">&nbsp;</div>
 </div>	
 
