@@ -91,7 +91,7 @@ fetch('list.json')
 		const jsData = " function Data"+i+"("+dJforScrp+"){ \n\
 					var isPosts"+i+" = ''; \n\
 					for (var i2 = 0; i2 < 1; i2++) { \n\
-        				const gmbrthumbnailImg = "+bImgA+dJforScrp+".images[i2]; \n\
+        				const gmbrthumbnailImg = '"+bImgA+"'+"+dJforScrp+".images[i2]; \n\
 					const gmbrSglImg = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlV07M5tlamZ1Qp1XzWOsXPTvxD8eswgvolTVuUtt4sEGTvZbVSKyKnVOYqOCAUVcb_-ODoLnWy5X8x3nN2xUI2gqJBSAfqdeMQjzDQo6HqKv8BZbvWklIU8ZOnIVGbzdAciyGx5L7yjeVVGZd-SKswRKnLCIeMJ7TxwcW0yvlGJe9cY_Rr3xO22vvuA/w640-h386-c-rw/Parental_Advisory.webp'; \n\
 					var gmbrIMG = encodeURIComponent(gmbrthumbnailImg), sgLImg = encodeURIComponent(gmbrSglImg); \n\
 					} \n\
