@@ -43,10 +43,10 @@ fetch(apiUrl).then((t => {
 	document.getElementById('judul').innerHTML = `${IdCode} | Total ${isi.length} Bagian`;
 	const videoId = isi[i];		
         const videoLink = document.createElement("a");
-        videoLink.href = `https://watch.idblog.eu.org/v5/v?token=${videoId}`;		
+        videoLink.href = `${DoHost}v?token=${videoId}`;		
         videoLink.textContent = `${IdCode} - Part ${i+1}`;		
 	const thumbnailImg = document.createElement("img");
-        thumbnailImg.src = `https://blogger.googleusercontent.com/img/b/R29vZ2xl/${t.images[i]}/w320-h193-c-rw/Thumbnail.webp`;
+        thumbnailImg.src = `https://blogger.googleusercontent.com/img/b/R29vZ2xl/${t.images[i]}/w640-h386-c-rw/Thumbnail.webp`;
         thumbnailImg.alt = `${IdCode}`;
         videoLink.addEventListener("click", () => {
             loadVideo(videoId); 
@@ -61,7 +61,7 @@ fetch(apiUrl).then((t => {
 	newDiv.appendChild(videoLink);			
 			
 function loadVideo(videoId) {
-	window.location=`https://watch.idblog.eu.org/v5/v?token=${videoId}`;
+	window.location=`${DoHost}v?token=${videoId}`;
 }
 			
 		}
