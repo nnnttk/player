@@ -30,7 +30,7 @@
 <script>
 const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();  document.title= `Nonton ${IdCode}`;
 const DoHost = window.location.protocol+'//'+window.location.hostname+window.location.pathname.replace('premium','');
-const DtcPrm = window.location.href.includes('premium'); 
+const DtcPrm = window.location.href.includes('premium'), bImgA = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/', bImgB = '/w640-h386-c-rw/Thumbnail.webp'; 
 if (DtcPrm==false) {$('#premiumvideo').each(function(){$(this).attr("href", window.location.href.replace('v5/','v5/premium'));}); } 
 const apiUrl = `${DoHost}data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
@@ -46,7 +46,7 @@ fetch(apiUrl).then((t => {
         videoLink.href = `${DoHost}v?token=${videoId}`;		
         videoLink.textContent = `${IdCode} - Part ${i+1}`;		
 	const thumbnailImg = document.createElement("img");
-        thumbnailImg.src = `https://blogger.googleusercontent.com/img/b/R29vZ2xl/${t.images[i]}/w640-h386-c-rw/Thumbnail.webp`;
+        thumbnailImg.src = `${bImgA}${t.images[i]}${bImgB}`;
         thumbnailImg.alt = `${IdCode}`;
         videoLink.addEventListener("click", () => {
             loadVideo(videoId); 
@@ -91,7 +91,7 @@ fetch('list.json')
 		const jsData = " function Data"+i+"("+dJforScrp+"){ \n\
 					var isPosts"+i+" = ''; \n\
 					for (var i2 = 0; i2 < 1; i2++) { \n\
-        				const gmbrthumbnailImg = "+dJforScrp+".images[i2]; \n\
+        				const gmbrthumbnailImg = "+bImgA+dJforScrp+".images[i2]"+bImgB+"; \n\
 					const gmbrSglImg = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlV07M5tlamZ1Qp1XzWOsXPTvxD8eswgvolTVuUtt4sEGTvZbVSKyKnVOYqOCAUVcb_-ODoLnWy5X8x3nN2xUI2gqJBSAfqdeMQjzDQo6HqKv8BZbvWklIU8ZOnIVGbzdAciyGx5L7yjeVVGZd-SKswRKnLCIeMJ7TxwcW0yvlGJe9cY_Rr3xO22vvuA/w640-h386-c-rw/Parental_Advisory.webp'; \n\
 					var gmbrIMG = encodeURIComponent(gmbrthumbnailImg), sgLImg = encodeURIComponent(gmbrSglImg); \n\
 					} \n\
