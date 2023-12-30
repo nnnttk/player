@@ -28,6 +28,48 @@
 <div id="filmList"></div>
 <div class="linebreak"></div>	
 <script>
+const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();  document.title= `Nonton ${IdCode}`;
+const DoHost = window.location.protocol+'//'+window.location.hostname+window.location.pathname.replace('premium','');
+const DtcPrm = window.location.href.includes('premium'); 
+if (DtcPrm==false) {$('#premiumvideo').each(function(){$(this).attr("href", window.location.href.replace('v4/','v4/premium'));}); } 
+const apiUrl = `${DoHost}data/${IdCode}.json`,
+    resultContainer = document.getElementById("result-container");
+fetch(apiUrl).then((t => {
+    if (!t.ok) throw new Error(`HTTP error! Status: ${t.status}`);
+    return t.json()
+})).then((t => {
+	var isi = t.token;
+		for (var i = 0; i < isi.length; i++) {
+	document.getElementById('judul').innerHTML = `${IdCode} | Total ${isi.length} Bagian`;
+	const videoId = isi[i];		
+        const videoLink = document.createElement("a");
+        videoLink.href = `https://watch.idblog.eu.org/v5/v?code=${videoId}`;		
+        videoLink.textContent = `${IdCode} - Part ${i+1}`;		
+	const thumbnailImg = document.createElement("img");
+        thumbnailImg.src = `https://blogger.googleusercontent.com/img/b/R29vZ2xl/${t.images[i]/w320-h193-c-rw/Thumbnail.webp}`;
+        thumbnailImg.alt = `${IdCode}`;
+        videoLink.addEventListener("click", () => {
+            loadVideo(videoId); 
+        });
+        thumbnailImg.addEventListener("click", () => {
+            loadVideo(videoId);
+        });		
+	var newDiv = document.createElement('div');
+	newDiv.classList.add('result-item');
+	resultContainer.appendChild(newDiv);			
+	newDiv.appendChild(thumbnailImg);	
+	newDiv.appendChild(videoLink);			
+			
+function loadVideo(videoId) {
+
+}
+			
+		}
+
+    
+})).catch((t => {
+    window.location=window.location.protocol+'//'+window.location.hostname+'/home';
+}));  
   
 </script> 
 </body>
