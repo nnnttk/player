@@ -11,7 +11,7 @@ fetch(apiUrl).then((t => {
 	var isi = t.token;
 		for (var i = 0; i < isi.length; i++) {
 	document.getElementById('judul').innerHTML = `${IdCode} | Total ${isi.length} Bagian`;
-	const videoId = isi[i];		
+	const videoId = isi[i].replace("AD6v5d","");		
         const videoLink = document.createElement("a");
         videoLink.href = `${DoHost}v?token=${videoId}`;		
         videoLink.textContent = `${IdCode} - Part ${i+1}`;		
