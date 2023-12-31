@@ -13,13 +13,13 @@ fetch(apiUrl).then((t => {
 	document.getElementById('judul').innerHTML = `${IdCode} | Total ${isi.length} Bagian`;
 	const videoId = isi[i].replace("AD6v5d","");		
         const videoLink = document.createElement("a");
-        videoLink.href = `${DoHost}v?token=${videoId}`;		
+        videoLink.href = `${DoHost}v?token=${videoId}&j=${IdCode}&p=${i+1}`;		
         videoLink.textContent = `${IdCode} - Part ${i+1}`;		
 	const thumbnailImg = document.createElement("img");
         thumbnailImg.src = `${bImgA}${t.images[i]}${bImgB}`;
         thumbnailImg.alt = `${IdCode}`;
         thumbnailImg.addEventListener("click", () => {
-            loadVideo(videoId);
+            loadVideo(videoId,IdCode,i);
         });		
 	var newDiv = document.createElement('div');
 	newDiv.classList.add('result-item');
@@ -28,7 +28,7 @@ fetch(apiUrl).then((t => {
 	newDiv.appendChild(videoLink);			
 			
 function loadVideo(videoId) {
-	window.open(`${DoHost}v?token=${videoId}`);
+	window.open(`${DoHost}v?token=${videoId}&j=${IdCode}&p=${i+1}`);
 }
 			
 		}
