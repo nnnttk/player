@@ -1,7 +1,7 @@
 const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();  document.title= `Nonton ${IdCode}`;
 const DoHost = window.location.protocol+'//'+window.location.hostname+window.location.pathname.replace('premium','');
 const DtcPrm = window.location.href.includes('premium'), bImgA = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/', bImgB = '/w640-h386-c-rw/Thumbnail.webp'; 
-if (DtcPrm==false) {$('#premiumvideo').each(function(){$(this).attr("href", window.location.href.replace('v5/','v5/premium'));}); } 
+if (DtcPrm==false) {$('#premiumvideo').each(function(){$(this).attr("href", "https://t.me/blogmeat2/1321");}); } 
 const apiUrl = `${DoHost}data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
 fetch(apiUrl).then((t => {
