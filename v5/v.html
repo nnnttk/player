@@ -32,6 +32,7 @@
   videoFrame.height = `360`;
   videoFrame.classList.remove('hidden');
   document.title=`Nonton ${IdVideo.replace(/.+j=/,"").replace(/&p.+/,"")}`;
+  document.getElementById("judul").innerHTML=`${IdVideo.replace(/.+j=/,"").replace(/&p.+/,"")} | Part ${IdVideo.replace(/.+p=/,"")}`;
 </script> 	
 </body>
 </html>
