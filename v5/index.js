@@ -9,7 +9,7 @@ fetch(apiUrl).then((t => {
     return t.json()
 })).then((t => {
 	var isi = t.token;
-		for (var i = 0; i < isi.length; i++) {
+		for (var i = 0; i < isi.length; i++) { const p = i+1;
 	document.getElementById('judul').innerHTML = `${IdCode} | Total ${isi.length} Bagian`;
 	const videoId = isi[i].replace("AD6v5d","");		
         const videoLink = document.createElement("a");
@@ -19,7 +19,7 @@ fetch(apiUrl).then((t => {
         thumbnailImg.src = `${bImgA}${t.images[i]}${bImgB}`;
         thumbnailImg.alt = `${IdCode}`;
         thumbnailImg.addEventListener("click", () => {
-            loadVideo(videoId,IdCode,i);
+            loadVideo(videoId,IdCode,p);
         });		
 	var newDiv = document.createElement('div');
 	newDiv.classList.add('result-item');
@@ -27,8 +27,8 @@ fetch(apiUrl).then((t => {
 	newDiv.appendChild(thumbnailImg);	
 	newDiv.appendChild(videoLink);			
 			
-function loadVideo(videoId,IdCode,i) {
-	window.open(`${DoHost}v?token=${videoId}&j=${IdCode}&p=${i+1}`);
+function loadVideo(videoId,IdCode,p) {
+	window.open(`${DoHost}v?token=${videoId}&j=${IdCode}&p=${p}`);
 }
 			
 		}
