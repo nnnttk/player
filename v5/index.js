@@ -27,7 +27,7 @@ fetch(apiUrl).then((t => {
 	newDiv.appendChild(thumbnailImg);	
 	newDiv.appendChild(videoLink);			
 			
-function loadVideo(videoId) {
+function loadVideo(videoId,IdCode,i) {
 	window.open(`${DoHost}v?token=${videoId}&j=${IdCode}&p=${i+1}`);
 }
 			
