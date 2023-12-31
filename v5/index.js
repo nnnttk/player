@@ -18,9 +18,6 @@ fetch(apiUrl).then((t => {
 	const thumbnailImg = document.createElement("img");
         thumbnailImg.src = `${bImgA}${t.images[i]}${bImgB}`;
         thumbnailImg.alt = `${IdCode}`;
-        videoLink.addEventListener("click", () => {
-            loadVideo(videoId); 
-        });
         thumbnailImg.addEventListener("click", () => {
             loadVideo(videoId);
         });		
@@ -31,7 +28,7 @@ fetch(apiUrl).then((t => {
 	newDiv.appendChild(videoLink);			
 			
 function loadVideo(videoId) {
-	window.location=`${DoHost}v?token=${videoId}`;
+	window.open(`${DoHost}v?token=${videoId}`);
 }
 			
 		}
