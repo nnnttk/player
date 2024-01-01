@@ -99,7 +99,7 @@ li {
     #videoFrame {
 	height:200px;
     }	
-    .result-item {
+    #result-container .result-item {
         flex: unset;
     }
 }	
