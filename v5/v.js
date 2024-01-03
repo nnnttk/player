@@ -5,7 +5,8 @@
   videoFrame.classList.remove('hidden');
   document.title=`Nonton ${IdVideo.replace(/.+j=/,"").replace(/&p.+/,"")}`;
   document.getElementById("judul").innerHTML=`${IdVideo.replace(/.+j=/,"").replace(/&p.+/,"")} | Part ${IdVideo.replace(/.+p=/,"")}`;
-function detectDevTools() { if ( window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200 ) { window.location.href = 'https://s.zlinkb.com/d.php?z=4836662'; }} setInterval(detectDevTools, 4000);
+function detectDevTools() { if ( window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200 ) { window.location.href = 'https://s.zlinkb.com/d.php?z=4836662'; }} setInterval(detectDevTools, 2000);
+document.addEventListener('keydown', e => e.ctrlKey && e.key === 'u' && e.preventDefault());
 function GetCookie (name) {
 var arg = name + "=";
 var alen = arg.length;
