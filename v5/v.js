@@ -102,7 +102,7 @@ function sepuluhdtk2() {
 }
 
 function titipan() { 
-      document.getElementById('ad-container').innerHTML = ``;
+      window.location = `https://www.google.com/amp/s/nuju.my.id/mylink`;
 }
 
 function kadamDirect() { 
@@ -116,6 +116,8 @@ var num = hitunganviewnya;
       window.location=adLink+camAd; 
    } else if(num == 13) { 
       kadamDirect();                                           
+   }else if(num == 18) { 
+      titipan();                                           
    } else if(num % 5 == 0) {
       sepuluhdtk2();
       var _cpp = _cpp || [];
