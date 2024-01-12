@@ -102,7 +102,8 @@ function sepuluhdtk2() {
 }
 
 function titipan() { 
-      window.location = `https://www.google.com/amp/s/nuju.my.id/mylink`;
+      iframeElement.src = `https://nuju.my.id/mylink`;iframeElement.width = `100%`;iframeElement.height = `844`;
+      centerElement.appendChild(iframeElement);document.getElementById('ad-container').append(centerElement);
 }
 
 function kadamDirect() { 
@@ -116,8 +117,6 @@ var num = hitunganviewnya;
       window.location=adLink+camAd; 
    } else if(num == 13) { 
       kadamDirect();                                           
-   }else if(num == 18) { 
-      titipan();                                           
    } else if(num % 5 == 0) {
       sepuluhdtk2();
       var _cpp = _cpp || [];
@@ -133,4 +132,5 @@ var num = hitunganviewnya;
       document.head.appendChild(scriptxGHEAs68);   
    } else { 
       setTimeout(() => { sepuluhdtk();  }, 10000);  sepuluhdtk2();
+      setTimeout(() => { titipan();  }, 240000);
 }	
