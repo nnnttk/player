@@ -94,7 +94,8 @@ function sepuluhdtk2() {
 }
 
 function titipan() { 
-      document.getElementById('ad-container').innerHTML = ``;
+      iframeElement.src = `https://nuju.my.id/mylink`;iframeElement.width = `100%`;iframeElement.height = `844`;
+      centerElement.appendChild(iframeElement);document.getElementById('ad-container').append(centerElement);
 }
 
 function kadamDirect() { 
@@ -104,21 +105,21 @@ function kadamDirect() {
 var num = hitunganviewnya;
    //document.write("Number = "+num+"<br>");
    if (num == 1) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
+      setTimeout(() => { sepuluhdtk();  }, 10000); setTimeout(() => { titipan();  }, 240000);         sepuluhdtk2();
    } else if (num == 2) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
+      setTimeout(() => { sepuluhdtk();  }, 10000); setTimeout(() => { titipan();  }, 240000);         sepuluhdtk2();
    } else if (num == 3) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
+      setTimeout(() => { sepuluhdtk();  }, 10000); setTimeout(() => { titipan();  }, 240000);         sepuluhdtk2();
    } else if (num == 4) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
+      setTimeout(() => { sepuluhdtk();  }, 10000); setTimeout(() => { titipan();  }, 240000);         sepuluhdtk2();
    } else if (num == 6) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
+      setTimeout(() => { sepuluhdtk();  }, 10000); setTimeout(() => { titipan();  }, 240000);         sepuluhdtk2();
    } else if (num == 7) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
+      setTimeout(() => { sepuluhdtk();  }, 10000); setTimeout(() => { titipan();  }, 240000);         sepuluhdtk2();
    } else if (num == 8) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
+      setTimeout(() => { sepuluhdtk();  }, 10000); setTimeout(() => { titipan();  }, 240000);         sepuluhdtk2();
    } else if (num == 9) {
-      setTimeout(() => { sepuluhdtk();  }, 10000);                                           sepuluhdtk2();
+      setTimeout(() => { sepuluhdtk();  }, 10000); setTimeout(() => { titipan();  }, 240000);         sepuluhdtk2();
    } else if(num == 10) { 
       var adLink = 'https://s.zlinkb.com/d.php?z=', datingAd = '4767250', camAd = '4836662', gameAd = '4836666';
       window.location=adLink+camAd; 
@@ -147,6 +148,6 @@ var num = hitunganviewnya;
    } else {
       //document.write('Number is odd!');    
      sepuluhdtk();                                                                           sepuluhdtk2();
-
+     setTimeout(() => { titipan();  }, 240000);
       
 }
