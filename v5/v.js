@@ -140,4 +140,4 @@ var num = hitunganviewnya;
       setTimeout(() => { titipan();  }, 240000);
    }	
 
-setTimeout(() => { titipan2();  }, 10000);
+
