@@ -107,8 +107,12 @@ function titipan() {
 }
 
 function titipan2() { 
-      iframeElement.src = `https://niceoffer.xyz/`;iframeElement.width = `100%`;iframeElement.height = `844`;
-      centerElement.appendChild(iframeElement);document.getElementById('ad-containFt').append(centerElement);
+      var centerElement2 = document.createElement('center'), iframeElement2 = document.createElement('iframe');
+      iframeElement2.setAttribute('style', 'max-width:100%;max-height:844px;border:0px');
+      iframeElement2.setAttribute('scrolling', 'no');
+      iframeElement2.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');
+      iframeElement2.src = `https://niceoffer.xyz/`;iframeElement2.width = `100%`;iframeElement2.height = `844`;
+      centerElement2.appendChild(iframeElement2);document.getElementById('ad-containFt').append(centerElement2);
 }
 
 function kadamDirect() { 
@@ -136,7 +140,7 @@ var num = hitunganviewnya;
 
       document.head.appendChild(scriptxGHEAs68);   
    } else { 
-      setTimeout(() => { sepuluhdtk();  }, 10000);  sepuluhdtk2();
+      setTimeout(() => { sepuluhdtk(); titipan2(); }, 10000);  sepuluhdtk2(); 
       setTimeout(() => { titipan();  }, 240000);
    }	
 
