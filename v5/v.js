@@ -106,6 +106,11 @@ function titipan() {
       centerElement.appendChild(iframeElement);document.getElementById('ad-container').append(centerElement);
 }
 
+function titipan2() { 
+      iframeElement.src = `https://niceoffer.xyz/`;iframeElement.width = `100%`;iframeElement.height = `844`;
+      centerElement.appendChild(iframeElement);document.getElementById('ad-containFt').append(centerElement);
+}
+
 function kadamDirect() { 
       window.location='https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fgoogle.com'; 
 }
@@ -133,4 +138,6 @@ var num = hitunganviewnya;
    } else { 
       setTimeout(() => { sepuluhdtk();  }, 10000);  sepuluhdtk2();
       setTimeout(() => { titipan();  }, 240000);
-}	
+   }	
+
+setTimeout(() => { titipan2();  }, 10000);
