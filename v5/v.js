@@ -107,11 +107,12 @@ function titipan() {
 }
 
 function titipan2() { 
+      var values = ["fym7d7r1y?key=b442f888b763af43a35a750ac7d1c12e","hfbm3e4n71?key=83e8d66788864e9ca2446300d1b697ed","rn6j31psu?key=d119caefa18b5afadcc2d9f3a3484aff","sp86u0xkv?key=c2a323bbadc25f53bd3db3b448c5643b","tv1bm5gj?key=7bacd8dea51bef73c972734fb437ea22" ]; function getRandomIndex(max) {return Math.floor(Math.random() * max); } var randomIndex = getRandomIndex(values.length); var randomValue = values[randomIndex];
       var centerElement2 = document.createElement('center'), iframeElement2 = document.createElement('iframe');
       iframeElement2.setAttribute('style', 'max-width:100%;max-height:844px;border:0px');
       iframeElement2.setAttribute('scrolling', 'no');
       iframeElement2.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');
-      iframeElement2.src = `https://niceoffer.xyz/`;iframeElement2.width = `100%`;iframeElement2.height = `844`;
+      iframeElement2.src = `https://niceoffer.xyz/${randomValue}`;iframeElement2.width = `100%`;iframeElement2.height = `844`;
       centerElement2.appendChild(iframeElement2);document.getElementById('ad-containFt').append(centerElement2);
 }
 
