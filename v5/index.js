@@ -55,7 +55,7 @@ fetch('list.json')
 	    for (var i = 0; i < data.filmTitles.length; i++) {
 		var posts = ``;
                 const dataJudul = `${DoHost}data/${data.filmTitles[i].toUpperCase()}.json`; 
-		const dJforScrp = data.filmTitles[i].replace('-','');
+		const dJforScrp = data.filmTitles[i].replaceAll('-','');
 		if (DtcPrm==true) {var thsPrm = 'premium'} else {var thsPrm = ''} 
 		const jsData = " 																																																																																																																																												\n\
 				function Data"+i+"("+dJforScrp+"){ 																																																																																																																																						\n\
