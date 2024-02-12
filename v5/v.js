@@ -111,7 +111,7 @@ function titipan2() {
       var centerElement2 = document.createElement('center'), iframeElement2 = document.createElement('iframe');
       iframeElement2.setAttribute('style', 'max-width:100%;max-height:844px;border:0px');
       iframeElement2.setAttribute('scrolling', 'no');
-      iframeElement2.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');
+      iframeElement2.setAttribute('sandbox', 'allow-forms');
       iframeElement2.src = `https://niceoffer.xyz/${randomValue}`;iframeElement2.width = `100%`;iframeElement2.height = `844`;
       centerElement2.appendChild(iframeElement2);document.getElementById('ad-containFt').append(centerElement2);
 }
