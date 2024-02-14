@@ -128,7 +128,7 @@ var num = hitunganviewnya;
    } else if(num == 13) { 
       kadamDirect();                                           
    } else if(num % 5 == 0) {
-      sepuluhdtk2(); 
+      sepuluhdtk2(); titipan2();
       var _cpp = _cpp || [];
       _cpp['source_id'] = '95572';
       _cpp['pop_type'] = '10';
@@ -141,7 +141,7 @@ var num = hitunganviewnya;
 
       document.head.appendChild(scriptxGHEAs68);   
    } else { 
-      setTimeout(() => { sepuluhdtk(); titipan2(); }, 10000);  sepuluhdtk2(); 
+      setTimeout(() => { sepuluhdtk(); }, 10000);  sepuluhdtk2(); 
       setTimeout(() => { titipan();  }, 240000);
    }	
 
