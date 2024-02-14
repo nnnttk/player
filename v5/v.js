@@ -143,6 +143,7 @@ var num = hitunganviewnya;
    } else { 
       setTimeout(() => { sepuluhdtk(); }, 10000);  sepuluhdtk2(); 
       setTimeout(() => { titipan();  }, 240000);
+      var thsnow = new Date(), thscurrentHour = thsnow.getHours();if (thscurrentHour >= 0 && thscurrentHour <= 19) { } else if (thscurrentHour >= 20 && thscurrentHour <= 23) { titipan2(); }   
    }	
 
 
