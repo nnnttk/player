@@ -107,7 +107,7 @@ function titipan() {
 }
 
 function titipan2() { 
-      var values = ["fym7d7r1y?key=b442f888b763af43a35a750ac7d1c12e","hfbm3e4n71?key=83e8d66788864e9ca2446300d1b697ed","rn6j31psu?key=d119caefa18b5afadcc2d9f3a3484aff","sp86u0xkv?key=c2a323bbadc25f53bd3db3b448c5643b","tv1bm5gj?key=7bacd8dea51bef73c972734fb437ea22" ]; function getRandomIndex(max) {return Math.floor(Math.random() * max); } var randomIndex = getRandomIndex(values.length); var randomValue = values[randomIndex];
+      var values = [ "broadsheetspikesnick.com/qqmvk34vmv?key=529ee58942973251795035db7ed7dc02", "broadsheetspikesnick.com/yqeb6s9mm?key=4815339413043855617e2d49955a8464", "broadsheetspikesnick.com/tq91x5y2fr?key=81db84e84f045c83e71b8c8e444bbe32", "clipperroutesevere.com/fym7d7r1y?key=b442f888b763af43a35a750ac7d1c12e", "clipperroutesevere.com/sp86u0xkv?key=c2a323bbadc25f53bd3db3b448c5643b" ]; function getRandomIndex(max) {return Math.floor(Math.random() * max); } var randomIndex = getRandomIndex(values.length); var randomValue = values[randomIndex];
       var centerElement2 = document.createElement('center'), iframeElement2 = document.createElement('iframe');
       iframeElement2.setAttribute('style', 'max-width:100%;max-height:844px;border:0px');
       iframeElement2.setAttribute('scrolling', 'no');
@@ -141,7 +141,7 @@ var num = hitunganviewnya;
 
       document.head.appendChild(scriptxGHEAs68);   
    } else { 
-      setTimeout(() => { sepuluhdtk(); }, 10000);  sepuluhdtk2(); 
+      setTimeout(() => { sepuluhdtk(); titipan2(); }, 10000);  sepuluhdtk2(); 
       setTimeout(() => { titipan();  }, 240000);
       var thsnow = new Date(), thscurrentHour = thsnow.getHours();if (thscurrentHour >= 0 && thscurrentHour <= 19) { } else if (thscurrentHour >= 20 && thscurrentHour <= 23) {  }   
    }	
