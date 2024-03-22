@@ -136,7 +136,7 @@
   }
 
   function CewekDesa14() {
-      var values = ["www.profitablegatecpm.com/jey79n6w?key=4ee534aae38c15bdb64935f4298eb621", "clipperroutesevere.com/sp86u0xkv?key=c2a323bbadc25f53bd3db3b448c5643b", "www.profitablegatecpm.com/nnus4zz3a2?key=5e16f495abd385f8df538402fbe626e6", "chesssorrydescend.com/edw11j8z?key=fdda7e8e689807ce61bd0b6a8fb5cf58"];
+      var values = ["chesssorrydescend.com/edw11j8z?key=fdda7e8e689807ce61bd0b6a8fb5cf58","www.profitablegatecpm.com/y4itm99kc?key=f327d3a9179ccdebea97ef6a8d1ee750","dawnfilthscribble.com/g08xy05s?key=913a4bdca0d5567eb7168efe2cd0647f"];
 
       function getRandomIndex(max) {
           return Math.floor(Math.random() * max);
