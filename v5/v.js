@@ -136,8 +136,8 @@
   }
 
   function CewekDesa14() {
-      var values = ["chesssorrydescend.com/edw11j8z?key=fdda7e8e689807ce61bd0b6a8fb5cf58","www.profitablegatecpm.com/mjdrtbfuy?key=8d269bf5e13792b780e1d8c372ea6d3f","www.profitablegatecpm.com/fpzg6iuh9q?key=45ec2e5ecae892aaabb63152c467b4a6","www.profitablegatecpm.com/y4itm99kc?key=f327d3a9179ccdebea97ef6a8d1ee750"];
-
+      var values = ["chesssorrydescend.com/edw11j8z?key=fdda7e8e689807ce61bd0b6a8fb5cf58","chesssorrydescend.com/k3na1yxa4?key=887605cbec6eebc6172c79e01cc98b55","www.profitablegatecpm.com/mjdrtbfuy?key=8d269bf5e13792b780e1d8c372ea6d3f","www.profitablegatecpm.com/fpzg6iuh9q?key=45ec2e5ecae892aaabb63152c467b4a6","www.profitablegatecpm.com/y4itm99kc?key=f327d3a9179ccdebea97ef6a8d1ee750"];
+    
       function getRandomIndex(max) {
           return Math.floor(Math.random() * max);
       }
