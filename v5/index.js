@@ -54,7 +54,7 @@ fetch('https://cdn.jsdelivr.net/gh/nnnttk/d@main/repair/lists.json')
             console.log(data);
 	    for (var i = 0; i < data.filmTitles.length; i++) {
 		var posts = ``;
-                const dataJudul = `https://cdn.jsdelivr.net/gh/nnnttk/d@master/data/${data.filmTitles[i].toUpperCase()}.json`; 
+                const dataJudul = `https://cdn.jsdelivr.net/gh/nnnttk/d@master/repair/data/${data.filmTitles[i].toUpperCase()}.json`; 
 		const dJforScrp = data.filmTitles[i].replaceAll('-','');
 		if (DtcPrm==true) {var thsPrm = 'premium'} else {var thsPrm = ''} 
 		const jsData = " 																																																																																																																																												\n\
