@@ -4,7 +4,7 @@ const DtcPrm = window.location.href.includes('premium'), bImgA = 'https://blogge
 if (DtcPrm==false) {$('#premiumvideo').each(function(){$(this).attr("href", "https://t.me/blogmeat2/1321");}); } 
 function detectDevTools() { if ( window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200 ) { window.location.href = 'https://s.zlinkb.com/d.php?z=4836662'; }} setInterval(detectDevTools, 2000);
 document.addEventListener('keydown', e => e.ctrlKey && e.key === 'u' && e.preventDefault());
-const apiUrl = `https://cdn.jsdelivr.net/gh/nnnttk/d@main/data/${IdCode}.json`,
+const apiUrl = `https://cdn.jsdelivr.net/gh/nnnttk/d@main/repair/data/${IdCode}.json`,
     resultContainer = document.getElementById("result-container");
 fetch(apiUrl).then((t => {
     if (!t.ok) throw new Error(`HTTP error! Status: ${t.status}`);
@@ -42,7 +42,7 @@ function loadVideo(videoId,IdCode,p) {
 
 
 
-fetch('https://cdn.jsdelivr.net/gh/nnnttk/d@main/list.json')
+fetch('https://cdn.jsdelivr.net/gh/nnnttk/d@main/repair/lists.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
