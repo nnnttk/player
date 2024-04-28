@@ -42,7 +42,7 @@ function loadVideo(videoId,IdCode,p) {
 
 
 
-fetch('https://cdn.jsdelivr.net/gh/nnnttk/d@main/repair/list2.json')
+fetch('https://cdn.jsdelivr.net/gh/nnnttk/d@main/repair/list3.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
