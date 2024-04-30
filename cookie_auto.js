@@ -63,7 +63,7 @@ iframeElement.setAttribute('scrolling', 'no');
 iframeElement.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');
 
 var drcl2 = 'https://s.zlinkb.com/d.php?z=4767250';
-var drcl3 = 'https://nuju.my.id/movieluck';
+var drcl3 = 'https://s.zlinkb.com/d.php?z=4836662';
 var scriptxGHEAs69 = document.createElement('script');
 
 function semenit() { 
