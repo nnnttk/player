@@ -135,25 +135,26 @@
       document.getElementById('ad-container').append(centerElement);
   }
 
-  function CewekDesa14() {
-      var values = ["chesssorrydescend.com/edw11j8z?key=fdda7e8e689807ce61bd0b6a8fb5cf58","chesssorrydescend.com/k3na1yxa4?key=887605cbec6eebc6172c79e01cc98b55","www.highcpmgate.com/fpzg6iuh9q?key=45ec2e5ecae892aaabb63152c467b4a6","www.highcpmgate.com/mjdrtbfuy?key=8d269bf5e13792b780e1d8c372ea6d3f","www.highcpmgate.com/y4itm99kc?key=f327d3a9179ccdebea97ef6a8d1ee750"];
-    
-      function getRandomIndex(max) {
-          return Math.floor(Math.random() * max);
-      }
-      var randomIndex = getRandomIndex(values.length);
-      var randomValue = values[randomIndex];
-      var centerElement2 = document.createElement('center'),
-          iframeElement2 = document.createElement('iframe');
-      iframeElement2.setAttribute('style', 'max-width:100%;max-height:844px;border:0px');
-      iframeElement2.setAttribute('scrolling', 'no');
-      iframeElement2.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms');
-      iframeElement2.src = `https://niceoffer.xyz/${randomValue}`;
-      iframeElement2.width = `100%`;
-      iframeElement2.height = `844`;
-      centerElement2.appendChild(iframeElement2);
-      document.getElementById('ad-containFt').append(centerElement2);
+function CewekDesa14() {  
+  var values = ["chesssorrydescend.com/edw11j8z?key=fdda7e8e689807ce61bd0b6a8fb5cf58","chesssorrydescend.com/k3na1yxa4?key=887605cbec6eebc6172c79e01cc98b55","www.highcpmgate.com/fpzg6iuh9q?key=45ec2e5ecae892aaabb63152c467b4a6","www.highcpmgate.com/mjdrtbfuy?key=8d269bf5e13792b780e1d8c372ea6d3f","www.highcpmgate.com/y4itm99kc?key=f327d3a9179ccdebea97ef6a8d1ee750"];
+   
+  var values2 = ["clipperroutesevere.com/fym7d7r1y?key=b442f888b763af43a35a750ac7d1c12e","clipperroutesevere.com/rn6j31psu?key=d119caefa18b5afadcc2d9f3a3484aff","www.highcpmgate.com/fpzg6iuh9q?key=45ec2e5ecae892aaabb63152c467b4a6","www.highcpmgate.com/mjdrtbfuy?key=8d269bf5e13792b780e1d8c372ea6d3f"];
+
+  function getRandomValue(arr) {return arr[Math.floor(Math.random() * arr.length)];}
+  function createIframe(value) {
+    var iframe = document.createElement('iframe');
+    iframe.style.cssText = 'max-width:100%;max-height:844px;border:0px';
+    iframe.scrolling = 'no';
+    iframe.sandbox = 'allow-scripts allow-same-origin allow-forms';
+    iframe.src = `https://niceoffer.xyz/${value}`;
+    iframe.width = '100%';
+    iframe.height = '844';
+    return iframe;
   }
+  function appendIframeToElement(elementId, iframe) { document.getElementById(elementId).appendChild(iframe);}
+  var randomValue = getRandomValue(values);var iframe1 = createIframe(randomValue);appendIframeToElement('ad-containFt', iframe1);
+  randomValue = getRandomValue(values2);var iframe2 = createIframe(randomValue);appendIframeToElement('ad-containFt2', iframe2);
+}
 
   function kadamDirect() {
       window.location = 'https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fgoogle.com';
