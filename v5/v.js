@@ -84,7 +84,7 @@
   iframeElement.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');
 
   var orenodirect = 'https://s.zlinkb.com/d.php?z=4767250';
-  var dedySdirect = 'https://s.zlinkb.com/d.php?z=4836662';
+  var dedySdirect = 'https://niceoffer.xyz/404';
   var scrpAd = document.createElement('script');
 
   function exoClk() {
