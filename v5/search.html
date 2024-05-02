@@ -99,7 +99,7 @@
             displayResults([]);
             return;
         }
-        const data = await fetchData('https://cdn.jsdelivr.net/gh/nnnttk/d@main/repair/list4.json');
+        const data = await fetchData('list.json');
         if (data && data.filmTitles) {
             const results = searchFilms(query, data.filmTitles);
             displayResults(results);
