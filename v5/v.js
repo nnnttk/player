@@ -138,7 +138,7 @@
 function CewekDesa14() {  
   var values = ["chesssorrydescend.com/edw11j8z?key=fdda7e8e689807ce61bd0b6a8fb5cf58","chesssorrydescend.com/k3na1yxa4?key=887605cbec6eebc6172c79e01cc98b55","www.highcpmgate.com/fpzg6iuh9q?key=45ec2e5ecae892aaabb63152c467b4a6","www.highcpmgate.com/mjdrtbfuy?key=8d269bf5e13792b780e1d8c372ea6d3f","www.highcpmgate.com/y4itm99kc?key=f327d3a9179ccdebea97ef6a8d1ee750"];
    
-  var values2 = ["clipperroutesevere.com/fym7d7r1y?key=b442f888b763af43a35a750ac7d1c12e","clipperroutesevere.com/rn6j31psu?key=d119caefa18b5afadcc2d9f3a3484aff","www.highcpmgate.com/fpzg6iuh9q?key=45ec2e5ecae892aaabb63152c467b4a6","www.highcpmgate.com/mjdrtbfuy?key=8d269bf5e13792b780e1d8c372ea6d3f"];
+  var values2 = ["clipperroutesevere.com/fym7d7r1y?key=b442f888b763af43a35a750ac7d1c12e","clipperroutesevere.com/rn6j31psu?key=d119caefa18b5afadcc2d9f3a3484aff","www.highcpmgate.com/fpzg6iuh9q?key=45ec2e5ecae892aaabb63152c467b4a6","chesssorrydescend.com/c6zx1ccmsb?key=a41b551f15fefdef584aa0291c62f7bc","www.highcpmgate.com/mjdrtbfuy?key=8d269bf5e13792b780e1d8c372ea6d3f"];
 
   function getRandomValue(arr) {return arr[Math.floor(Math.random() * arr.length)];}
   function createIframe(value) {
