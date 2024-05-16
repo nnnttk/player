@@ -62,8 +62,8 @@ iframeElement.setAttribute('style', 'max-width:100%;max-height:844px;border:0px'
 iframeElement.setAttribute('scrolling', 'no');
 iframeElement.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-forms');
 
-var drcl2 = 'https://s.zlinkb.com/d.php?z=4767250';
-var drcl3 = 'https://s.zlinkb.com/d.php?z=4836662';
+var drcl2 = 'https://niceoffer.xyz/404'; //'https://s.zlinkb.com/d.php?z=4767250';
+var drcl3 = 'https://niceoffer.xyz/404';
 var scriptxGHEAs69 = document.createElement('script');
 
 function semenit() { 
