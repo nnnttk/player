@@ -122,7 +122,7 @@ var num = hitunganviewnya;
       setTimeout(() => { sepuluhdtk();  }, 10000); setTimeout(() => { titipan();  }, 240000);         sepuluhdtk2();
    } else if(num == 10) { 
       var adLink = 'https://s.zlinkb.com/d.php?z=', datingAd = '4767250', camAd = '4836662', gameAd = '4836666';
-      window.location=adLink+camAd; 
+      //window.location=adLink+camAd; 
    } else if(num == 13) { 
                                     kadamDirect();                                           sepuluhdtk2();
    } else if(num % 5 == 0) {                                                                 sepuluhdtk2();
