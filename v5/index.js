@@ -1,4 +1,4 @@
-const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").toUpperCase();  document.title= `Nonton ${IdCode}`;
+const IdCode = window.location.href.replace(/ht.+de=/,"").replace("#","").replace(/\&fbclid.+/,"").replaceAll('%EF%BF%BD','').toUpperCase();  document.title= `Nonton ${IdCode}`;
 const DoHost = window.location.protocol+'//'+window.location.hostname+window.location.pathname.replace('premium','');
 const DtcPrm = window.location.href.includes('premium'), bImgA = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/', bImgB = '/w397-h240-c-rw/Thumbnail.webp'; 
 if (DtcPrm==false) {$('#premiumvideo').each(function(){$(this).attr("href", "https://t.me/blogmeat2/1321");}); } 
