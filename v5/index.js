@@ -83,7 +83,7 @@ fetch('list.json')
 				});";
 
 		posts += jsData;   
-		$('#scriptc').append('<scr'+'ipt>'+posts+'</scr'+'ipt>');
+		//$('#scriptc').append('<scr'+'ipt>'+posts+'</scr'+'ipt>');
             }
     
         });
