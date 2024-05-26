@@ -41,19 +41,31 @@ function loadVideo(videoId,IdCode,p) {
 }));  
 
 
+const itemsPerPage = 15;
+let currentPage = 1;
+let filmTitles = [];
+
 fetch('list.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            // Handle the JSON data
-            console.log(data);
-	    for (var i = 0; i < data.filmTitles.length; i++) {
-		var posts = ``;
-                const dataJudul = `${DoHost}/data/${data.filmTitles[i].toUpperCase()}.json`; 
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        filmTitles = data.filmTitles;
+        renderPage(currentPage);
+        setupPagination();
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
+function renderPage(page) {
+    $('#scriptc').empty(); // Clear existing content
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+
+    for (var i = start; i < end && i < filmTitles.length; i++) {
+        const dataJudul = `${DoHost}/data/${filmTitles[i].toUpperCase()}.json`;
 		const dJforScrp = data.filmTitles[i].replaceAll('-','');
 		if (DtcPrm==true) {var thsPrm = 'premium'} else {var thsPrm = ''} 
 		const jsData = " 																																																																																																																																												\n\
@@ -81,8 +93,23 @@ fetch('list.json')
     					});																																																																																																																																												\n\
 				});";
 
-		posts += jsData;   
-		//$('#scriptc').append('<scr'+'ipt>'+posts+'</scr'+'ipt>');
-            }
-    
-        });
+		posts += jsData;
+        $('#scriptc').append('<scr' + 'ipt>' + posts + '</scr' + 'ipt>');
+    }
+}
+
+function setupPagination() {
+    const totalPages = Math.ceil(filmTitles.length / itemsPerPage);
+    $('#pagination').empty(); // Clear existing pagination
+
+    for (let i = 1; i <= totalPages; i++) {
+        $('#pagination').append(`<button class="page-btn" data-page="${i}">${i}</button>`);
+    }
+
+    // Attach click event to pagination buttons
+    $('.page-btn').on('click', function () {
+        const page = $(this).data('page');
+        currentPage = page;
+        renderPage(page);
+    });
+}
