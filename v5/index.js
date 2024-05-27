@@ -51,11 +51,18 @@ fetch('list.json')
         .then(data => {
             // Handle the JSON data
             console.log(data);
-	    for (var i = 0; i < 15; i++) {
-		var posts = ``;
+			for (var i = 0; i < 15; i++) {
+				var posts = ``;
                 const dataJudul = `${DoHost}/data/${data.filmTitles[i].toUpperCase()}.json`; 
-		const dJforScrp = data.filmTitles[i].replaceAll('-','');
-		if (DtcPrm==true) {var thsPrm = 'premium'} else {var thsPrm = ''} 
+				const dJforScrp = data.filmTitles[i].replaceAll('-','');
+				procPage(data,i,posts,dataJudul,dJforScrp,bImgA,bImgB);
+            }
+    
+        });
+
+
+function procPage(data,i,posts,dataJudul,dJforScrp,bImgA,bImgB) {
+	if (DtcPrm==true) {var thsPrm = 'premium'} else {var thsPrm = ''} 
 		const jsData = " 																																																																																																																																												\n\
 				function Data"+i+"("+dJforScrp+"){ 																																																																																																																																						\n\
 					var isPosts"+i+" = ''; 																																																																																																																																								\n\
@@ -83,6 +90,4 @@ fetch('list.json')
 
 		posts += jsData;   
 		$('#scriptc').append('<scr'+'ipt>'+posts+'</scr'+'ipt>');
-            }
-    
-        });
+}
