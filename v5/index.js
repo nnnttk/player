@@ -41,27 +41,51 @@ function loadVideo(videoId,IdCode,p) {
 }));  
 
 
-fetch('list.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            // Handle the JSON data
-            console.log(data);
-			for (var i = 0; i < 15; i++) {
-				var posts = ``;
-                const dataJudul = `${DoHost}/data/${data.filmTitles[i].toUpperCase()}.json`; 
-				const dJforScrp = data.filmTitles[i].replaceAll('-','');
-				procPage(data,i,posts,dataJudul,dJforScrp,bImgA,bImgB);
-            }
+document.addEventListener('DOMContentLoaded', function() {
+  const paginationDiv = document.getElementById('pagination');
+
+  let currentPage = 1;
+  const itemsPerPage = 15;
+  let filmTitles = [];
+
+  // Fetch data and initialize pagination
+  fetch('list.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(jsonData => {
+      filmTitles = jsonData.filmTitles;
+      renderPage(currentPage);
+      renderPagination();
+    })
+    .catch(error => {
+      console.error('There was a problem with the fetch operation:', error);
+    });
+
+  // Function to render film titles for a specific page
+  function renderPage(pageNumber) {
+    const startIndex = (pageNumber - 1) * itemsPerPage;
+    const endIndex = pageNumber * itemsPerPage;
+    const titlesOnPage = filmTitles.slice(startIndex, endIndex);
+
+    // Clear previous content
+    $('#scriptc').empty();
+    $('#filmList').empty();
     
-        });
-
-
-function procPage(data,i,posts,dataJudul,dJforScrp,bImgA,bImgB) {
+    // Loop through the titles and create <p> elements
+    for (let i = 0; i < titlesOnPage.length; i++) {
+      const titleElement = titlesOnPage[i];
+	  	var posts = ``;
+        const dataJudul = `${DoHost}/data/${titleElement.toUpperCase()}.json`; 
+		const dJforScrp = titleElement.replaceAll('-','');
+		procPage(titlesOnPage,i,posts,dataJudul,dJforScrp,bImgA,bImgB);
+    }
+  }
+  
+function procPage(titlesOnPage,i,posts,dataJudul,dJforScrp,bImgA,bImgB) {
 	if (DtcPrm==true) {var thsPrm = 'premium'} else {var thsPrm = ''} 
 		const jsData = " 																																																																																																																																												\n\
 				function Data"+i+"("+dJforScrp+"){ 																																																																																																																																						\n\
@@ -71,7 +95,7 @@ function procPage(data,i,posts,dataJudul,dJforScrp,bImgA,bImgB) {
 					const gmbrSglImg = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlV07M5tlamZ1Qp1XzWOsXPTvxD8eswgvolTVuUtt4sEGTvZbVSKyKnVOYqOCAUVcb_-ODoLnWy5X8x3nN2xUI2gqJBSAfqdeMQjzDQo6HqKv8BZbvWklIU8ZOnIVGbzdAciyGx5L7yjeVVGZd-SKswRKnLCIeMJ7TxwcW0yvlGJe9cY_Rr3xO22vvuA/w640-h386-c-rw/Parental_Advisory.webp'; 																																																																\n\
 					var gmbrIMG = encodeURIComponent(gmbrthumbnailImg), sgLImg = encodeURIComponent(gmbrSglImg); 																																																																																																																						\n\
 					} 																																																																																																																																													\n\
-					isPosts"+i+" += decodeURIComponent('%3Cdiv%20class%3D%22result-item%22%3E%3Ca%20id%3D%22"+data.filmTitles[i].toUpperCase()+"%22%20href%3D%22.%2F"+thsPrm+"%3Fcode%3D"+data.filmTitles[i].toUpperCase()+"%22%3E%3Cimg%20loading%3D%22lazy%22%20src%3D%22'+gmbrIMG+'%22%20alt%3D%22"+data.filmTitles[i].toUpperCase()+"%22%20id%3D%22"+data.filmTitles[i].toUpperCase()+"%22%20onerror%3D%22this.onerror%3Dnull%3Bthis.src%3D%60'+sgLImg+'%60%3B%22%20%2F%3E%3C%2Fa%3E%3Ca%20href%3D%22.%2F%3Fcode%3D"+data.filmTitles[i].toUpperCase()+"%22%3E"+data.filmTitles[i].toUpperCase()+"%3C%2Fa%3E%3C%2Fdiv%3E'); \n\
+					isPosts"+i+" += decodeURIComponent('%3Cdiv%20class%3D%22result-item%22%3E%3Ca%20id%3D%22"+titlesOnPage[i].toUpperCase()+"%22%20href%3D%22.%2F"+thsPrm+"%3Fcode%3D"+titlesOnPage[i].toUpperCase()+"%22%3E%3Cimg%20loading%3D%22lazy%22%20src%3D%22'+gmbrIMG+'%22%20alt%3D%22"+titlesOnPage[i].toUpperCase()+"%22%20id%3D%22"+titlesOnPage[i].toUpperCase()+"%22%20onerror%3D%22this.onerror%3Dnull%3Bthis.src%3D%60'+sgLImg+'%60%3B%22%20%2F%3E%3C%2Fa%3E%3Ca%20href%3D%22.%2F%3Fcode%3D"+titlesOnPage[i].toUpperCase()+"%22%3E"+titlesOnPage[i].toUpperCase()+"%3C%2Fa%3E%3C%2Fdiv%3E'); \n\
 					$('#filmList').append(isPosts"+i+");																																																																																																																																				\n\
 																																																																																																																																																		\n\
 				} 																																																																																																																																														\n\
@@ -91,3 +115,34 @@ function procPage(data,i,posts,dataJudul,dJforScrp,bImgA,bImgB) {
 		posts += jsData;   
 		$('#scriptc').append('<scr'+'ipt>'+posts+'</scr'+'ipt>');
 }
+
+  // Function to render pagination buttons
+  function renderPagination() {
+    const totalPages = Math.ceil(filmTitles.length / itemsPerPage);
+
+    // Clear previous pagination buttons
+    paginationDiv.innerHTML = '';
+
+    // Create and append previous button
+    const prevButton = document.createElement('button');
+    prevButton.textContent = 'PREV';
+    prevButton.addEventListener('click', function() {
+      if (currentPage > 1) {
+        currentPage--;
+        renderPage(currentPage);
+      }
+    });
+    paginationDiv.appendChild(prevButton);
+
+    // Create and append next button
+    const nextButton = document.createElement('button');
+    nextButton.textContent = 'NEXT';
+    nextButton.addEventListener('click', function() {
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderPage(currentPage);
+      }
+    });
+    paginationDiv.appendChild(nextButton);
+  }
+});
