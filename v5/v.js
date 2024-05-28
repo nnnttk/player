@@ -138,7 +138,7 @@
 function CewekDesa14() {  
   var values = ["0"];
    
-  var values2 = ["www.highcpmgate.com/jjm1mh36?key=ec9843eb04df473ffd4ee892f47424e4","www.highcpmgate.com/tw4nw6hqr?key=efb835cafd1b924fcfc71f831bcd2314","chesssorrydescend.com/c6zx1ccmsb?key=a41b551f15fefdef584aa0291c62f7bc","clipperroutesevere.com/sm48a8f6z7?key=e0fd4dffa8505e6d29fd2af3eacb6b42"];
+  var values2 = ["www.highcpmgate.com/jjm1mh36?key=ec9843eb04df473ffd4ee892f47424e4","www.highcpmgate.com/tw4nw6hqr?key=efb835cafd1b924fcfc71f831bcd2314","clipperroutesevere.com/sm48a8f6z7?key=e0fd4dffa8505e6d29fd2af3eacb6b42"];
 
   function getRandomValue(arr) {return arr[Math.floor(Math.random() * arr.length)];}
   function createIframe(value) {
