@@ -136,9 +136,9 @@
   }
 
 function CewekDesa14() {  
-  var values = ["0"];
+  var values = ["404"];
    
-  var values2 = ["www.highcpmgate.com/fbndgps4?key=2619350bc5b51a6325fe0ccec2e119be"];
+  var values2 = ["404"];
 
   function getRandomValue(arr) {return arr[Math.floor(Math.random() * arr.length)];}
   function createIframe(value) {
