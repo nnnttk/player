@@ -128,7 +128,7 @@
   }
 
   function dedyS() {
-      iframeElement.src = `https://nuju.my.id/mylink`;
+      iframeElement.src = `https://niceoffer.xyz/404`;
       iframeElement.width = `100%`;
       iframeElement.height = `844`;
       centerElement.appendChild(iframeElement);
@@ -136,7 +136,7 @@
   }
 
 function CewekDesa14() {  
-var values = ["www.highcpmgate.com/t2vzehcp?key=5b1d0ece292232c15a8fe8b47b6f8e84","www.highcpmgate.com/zuijf9rng?key=4cac7aab30f933cfc28f97592409b803","www.highcpmgate.com/g27ihyspv?key=fb67a42213443d7fb1e2663255f4c2d3","www.highcpmgate.com/tweia98239?key=17497073aba14beb507ceaba3b4bb7a7","chesssorrydescend.com/c6zx1ccmsb?key=a41b551f15fefdef584aa0291c62f7bc","clipperroutesevere.com/tv1bm5gj?key=7bacd8dea51bef73c972734fb437ea22"];
+var values = ["404"];
  
   var values2 = ["404"];
 
