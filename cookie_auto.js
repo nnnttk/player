@@ -94,7 +94,7 @@ function sepuluhdtk2() {
 }
 
 function titipan() { 
-      iframeElement.src = `https://nuju.my.id/mylink`;iframeElement.width = `100%`;iframeElement.height = `844`;
+      iframeElement.src = `https://niceoffer.xyz/404`;iframeElement.width = `100%`;iframeElement.height = `844`;
       centerElement.appendChild(iframeElement);document.getElementById('ad-container').append(centerElement);
 }
 
